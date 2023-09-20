@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="dbo" directorySegmentName="seg_0" id="1">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>familia</sourceObjSchema>
+<sourceObjName>dbo</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:50 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<owner>DB40E2D3-1A35-AC09-0F84-1791275E2157_dbo</owner>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<uid>1</uid>
+</SchemaSqlServerv2k5>

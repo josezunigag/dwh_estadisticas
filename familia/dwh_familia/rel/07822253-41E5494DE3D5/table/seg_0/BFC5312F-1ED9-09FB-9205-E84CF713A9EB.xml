@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFC5312F-1ED9-09FB-9205-E84CF713A9EB" schemaObject="81C2A2E0-6765-0143-51F5-2E9396AC4EF9" name="tbl_nna">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>tbl_nna</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:04 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dv_nna" id="87FB78F2-AB4A-3BD5-E764-8A224AA11130">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>tbl_nna</sourceObjSchema>
+<sourceObjName>dv_nna</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:04 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_nna" id="1566D28B-6D6B-9E8A-B634-9DF839761274">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>tbl_nna</sourceObjSchema>
+<sourceObjName>nombre_nna</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:04 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>200</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,200,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="0F80D3B7-594E-1B21-90E5-A0151FA938BC">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>tbl_nna</sourceObjSchema>
+<sourceObjName>observaciones</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:04 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>200</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,200,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rit_causa" id="4971E52D-5077-A99B-8A5E-3252DBF52BCE">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>tbl_nna</sourceObjSchema>
+<sourceObjName>rit_causa</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:04 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jurisdiccion" id="0B277FC8-55B9-D922-E3D0-D8F9BDC2D0DA">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>tbl_nna</sourceObjSchema>
+<sourceObjName>jurisdiccion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:04 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

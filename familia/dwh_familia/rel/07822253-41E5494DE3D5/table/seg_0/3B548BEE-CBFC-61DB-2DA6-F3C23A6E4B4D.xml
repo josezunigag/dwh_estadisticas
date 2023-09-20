@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B548BEE-CBFC-61DB-2DA6-F3C23A6E4B4D" schemaObject="81C2A2E0-6765-0143-51F5-2E9396AC4EF9" name="dim_estados_solicitudes">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_estados_solicitudes</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:55 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_solicitud" id="9161FC55-5DFE-4CE8-3C2B-89A1BB1DEBF2">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_solicitudes</sourceObjSchema>
+<sourceObjName>id_estado_solicitud</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:55 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_solicitud" id="F61A618F-B7A8-8991-B7AB-95F788F3CAE8">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_solicitudes</sourceObjSchema>
+<sourceObjName>est_solicitud</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:55 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estsolicitud" id="AFDDC2B9-7619-EE52-E4C7-7089F7662416">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_solicitudes</sourceObjSchema>
+<sourceObjName>gls_estsolicitud</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:55 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5CC5EA1-5A54-F4C6-198D-EF0CBD52AEEC" name="pk_dim_estados_solicitudes">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_estados_solicitudes</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:55 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9161FC55-5DFE-4CE8-3C2B-89A1BB1DEBF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

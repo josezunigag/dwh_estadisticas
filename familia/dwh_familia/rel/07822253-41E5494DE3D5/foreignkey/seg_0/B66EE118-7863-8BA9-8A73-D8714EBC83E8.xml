@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B66EE118-7863-8BA9-8A73-D8714EBC83E8" containerWithKeyObject="069F9D33-0122-31C8-1657-06E279DFCAE2" localFKIndex="DF9DC0CA-799D-A0AB-568A-1515C07D46C4" name="fk_fact_esc_relations_dim_cort">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_esc_relations_dim_cort</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:14 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_cortes_tribunales</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DF7CCE9E-AB55-F074-1531-B2AA32FA090D</referredTableID>
+<keyObject>0C7EB11C-EA56-4FA5-6D39-77D756878A15</keyObject>
+<referredKeyID>0C7EB11C-EA56-4FA5-6D39-77D756878A15</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_corte_tribunal</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

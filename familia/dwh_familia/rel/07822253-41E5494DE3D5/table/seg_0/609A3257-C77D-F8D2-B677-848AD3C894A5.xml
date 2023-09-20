@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="609A3257-C77D-F8D2-B677-848AD3C894A5" schemaObject="81C2A2E0-6765-0143-51F5-2E9396AC4EF9" name="dim_estados_notificaciones">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_estados_notificaciones</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:12 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="estado_notificacion_id" id="ED516755-E60F-9352-8A43-F82CE453B2E1">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_notificaciones</sourceObjSchema>
+<sourceObjName>estado_notificacion_id</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:12 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_notificacion" id="EFC80422-B397-1C76-3F64-36D1F768E649">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_notificaciones</sourceObjSchema>
+<sourceObjName>est_notificacion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:12 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estnotificacion" id="93B8DFD4-BAD1-3924-08E1-C9044D9D430F">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_notificaciones</sourceObjSchema>
+<sourceObjName>gls_estnotificacion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:12 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_vigente" id="998C81A9-1400-5E5D-494D-D1D6C2738BC0">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dim_estados_notificaciones</sourceObjSchema>
+<sourceObjName>flg_vigente</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:12 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1C86AE7-6F62-B3B8-BE7B-5D1A15E95DBA" name="PK__dim_esta__CB9C00BE543501AB">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK__dim_esta__CB9C00BE543501AB</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:12 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED516755-E60F-9352-8A43-F82CE453B2E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

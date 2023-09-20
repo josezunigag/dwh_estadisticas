@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="10DF77AE-A208-05B0-D646-FC00CE5D0939" containerWithKeyObject="78EB3555-A64F-B093-87B8-5A09751BE7AE" localFKIndex="8870767A-95C0-1054-0A33-C24E7E842E6C" name="fact_noti_tipo_FK">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fact_noti_tipo_FK</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_tipos_notificaciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1EB6BB79-D564-42ED-E7D4-214EFB7B8553</referredTableID>
+<keyObject>E7172463-C1A8-5394-70E3-23CE5F07FF98</keyObject>
+<referredKeyID>E7172463-C1A8-5394-70E3-23CE5F07FF98</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>tipo_notificacion_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

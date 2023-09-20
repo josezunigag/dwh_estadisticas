@@ -1,0 +1,266 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78EB3555-A64F-B093-87B8-5A09751BE7AE" schemaObject="81C2A2E0-6765-0143-51F5-2E9396AC4EF9" name="fact_notificaciones">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fact_notificaciones</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="notifica" id="DF00063B-6481-BAD8-CF82-B57928FBF638">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>notifica</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_fecha_notificacion" id="1DA60602-4744-0748-3A32-C9068EBDB7FD">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>id_fecha_notificacion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_fecha_tramite" id="3E9DD5B3-0A8A-49F0-4653-0D27F7ECA306">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>id_fecha_tramite</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_corte_tribunal" id="8B6D7351-0B53-11FB-181C-94F7D05A99C5">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>id_corte_tribunal</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C1735B3-697B-8D28-F189-CEBAD50969E3" referredColumn="1BAD5492-3B53-9481-DD90-DFC7403A2D27"/>
+</associations>
+</Column>
+<Column name="crr_causa" id="40BCF877-3200-F6A1-DD0C-11788B765A08">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>crr_causa</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E0721B6-4A67-7242-7034-1E8AAEFBBE55" referredColumn="130D1A24-A0E4-001B-857D-638E282FF52A"/>
+</associations>
+</Column>
+<Column name="estado_notificacion_id" id="48F5CC25-243D-7B15-FCA3-3621668F60D2">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>estado_notificacion_id</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F991B67-639C-0701-1A34-86F610F48E53" referredColumn="ED516755-E60F-9352-8A43-F82CE453B2E1"/>
+</associations>
+</Column>
+<Column name="tipo_notificacion_id" id="0D908635-3862-0709-389F-9EB0C43E872B">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>tipo_notificacion_id</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10DF77AE-A208-05B0-D646-FC00CE5D0939" referredColumn="39E22A8A-749C-6FF5-D0BB-61FD30C58941"/>
+</associations>
+</Column>
+<Column name="crr_idnotificalitigante" id="FAFE44DD-7F13-939A-8FB9-3121F498B091">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>crr_idnotificalitigante</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duracion" id="78A5C4EF-A852-5D2F-E56B-5C8E9EF76CA3">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>duracion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_creacion" id="CEEF6DF9-3DFF-F052-DAA0-628632E84268">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>fec_creacion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_modificacion" id="C0A4357F-6D43-F4C0-F849-B063F54B44C4">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>fact_notificaciones</sourceObjSchema>
+<sourceObjName>fec_modificacion</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15680196-9BAB-398B-09D1-40E4043A2533" name="fact_notificaciones_PK">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fact_notificaciones_PK</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAFE44DD-7F13-939A-8FB9-3121F498B091"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5D18F20-46E3-7EEA-1B79-2100D263F230" name="fact_noti_causas_FK">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40BCF877-3200-F6A1-DD0C-11788B765A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26A275AA-3E61-EB93-1F93-94291401AC9F" name="fact_noti_cortes_FK">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B6D7351-0B53-11FB-181C-94F7D05A99C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A0D7B1B-F645-212A-0901-13C8A019CA09" name="fact_noti_estado_FK">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48F5CC25-243D-7B15-FCA3-3621668F60D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8870767A-95C0-1054-0A33-C24E7E842E6C" name="fact_noti_tipo_FK">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D908635-3862-0709-389F-9EB0C43E872B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

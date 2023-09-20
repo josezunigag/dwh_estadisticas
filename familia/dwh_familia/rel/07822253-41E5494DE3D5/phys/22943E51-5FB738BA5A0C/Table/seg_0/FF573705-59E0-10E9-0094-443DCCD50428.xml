@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_materias" directorySegmentName="seg_0" id="FF573705-59E0-10E9-0094-443DCCD50428">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_tipomateria" id="0498B549-54A5-71EE-45DE-5160ACF197B0">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="materia_id" id="07BFF500-7AC3-4428-73EF-A56FF2E1BD4D">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_procedimientoseg" id="08FC87E6-CCB4-8BB9-C3D6-48675BC28AC0">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_materia" id="26DBB3A0-4CC1-90E5-C8E7-EDA1A2024ECE">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_vigencia" id="3188624A-B7C8-2394-5A9A-E308B4C0B900">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_reservado" id="5C64D776-0593-E7F6-D600-18D40EF5F853">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_radicacion" id="5CB6E41F-E6F3-A611-D5B9-48B57BA33C56">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="procedimiento_id" id="720AAA47-488A-F154-1927-1523A077FC5B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_agrupador" id="7EFECFAA-6311-50F9-7953-C810DC57ABDC">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_causa_id" id="82607E47-4415-1714-F54B-D9B82E9CB2CE">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_materia" id="9B1ADD04-E585-CF07-824E-2E60BB172E73">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_visibletodo" id="B4AAA353-8D96-D276-ACB6-09B54C8FC463">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="naturaleza_id" id="BA6F8BCA-A2DF-1D19-0A4B-56E1C333953B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_cumplimiento" id="C3906967-DE25-2C0D-54E7-2FEABAFEB376">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_materia_new" id="C83FC09C-E77F-0D81-86BC-2821F6779B3B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="num_orden" id="D04929FD-968F-3CD6-73BC-235EFF1166B8">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_mediacion" id="E5B34393-E13D-4F2C-7F33-DBCA1A54508B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK__dim_mate__9AD87C7385D1C0B3" id="0C44AA46-7762-5196-6751-C75E947AAA53">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

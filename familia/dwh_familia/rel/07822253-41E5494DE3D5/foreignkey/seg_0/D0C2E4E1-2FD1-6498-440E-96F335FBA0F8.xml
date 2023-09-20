@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D0C2E4E1-2FD1-6498-440E-96F335FBA0F8" containerWithKeyObject="069F9D33-0122-31C8-1657-06E279DFCAE2" localFKIndex="880FCBA1-E960-3E64-20EF-8ED0D3FE2C52" name="fk_fact_esc_rel_escri_dim_tipo">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_esc_rel_escri_dim_tipo</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:14 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_tipos_solicitudes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>45C66EC7-3FB2-8F7E-91DE-744E6778E951</referredTableID>
+<keyObject>4AC1887D-5CE1-6079-E3AA-9EF4CE92F834</keyObject>
+<referredKeyID>4AC1887D-5CE1-6079-E3AA-9EF4CE92F834</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_tipo_solicitud</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

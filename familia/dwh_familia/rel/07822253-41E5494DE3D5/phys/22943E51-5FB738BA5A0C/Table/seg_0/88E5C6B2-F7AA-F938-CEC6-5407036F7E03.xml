@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_estados_firmas" directorySegmentName="seg_0" id="88E5C6B2-F7AA-F938-CEC6-5407036F7E03">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_estfirma" id="8BA4A953-7D5A-5836-F4D5-F825D10AB28B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="estado_firma_id" id="9EE41007-9FFD-8A87-6C2E-977ED730314E">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="est_firma" id="AFEBC925-BB79-E9E0-74F8-83B9217F99FB">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_creacion" id="C0D4B9C7-C1EB-17CD-4AF5-55F08A71302D">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_modificacion" id="F64AF4F2-972F-54E6-86BE-C8E0EDD7FD3F">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="index_1v4" id="81BEDD66-41C0-F3B3-26F6-7812236ADC46">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>OFF</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK_dim_estados_firmas" id="70EE5237-B10F-5293-9C0C-13144E95616E">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

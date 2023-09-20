@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="fact_notificaciones" directorySegmentName="seg_0" id="78EB3555-A64F-B093-87B8-5A09751BE7AE">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_notificacion_id" id="0D908635-3862-0709-389F-9EB0C43E872B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_notificacion" id="1DA60602-4744-0748-3A32-C9068EBDB7FD">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_tramite" id="3E9DD5B3-0A8A-49F0-4653-0D27F7ECA306">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_causa" id="40BCF877-3200-F6A1-DD0C-11788B765A08">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="estado_notificacion_id" id="48F5CC25-243D-7B15-FCA3-3621668F60D2">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="duracion" id="78A5C4EF-A852-5D2F-E56B-5C8E9EF76CA3">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_corte_tribunal" id="8B6D7351-0B53-11FB-181C-94F7D05A99C5">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_modificacion" id="C0A4357F-6D43-F4C0-F849-B063F54B44C4">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_creacion" id="CEEF6DF9-3DFF-F052-DAA0-628632E84268">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="notifica" id="DF00063B-6481-BAD8-CF82-B57928FBF638">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idnotificalitigante" id="FAFE44DD-7F13-939A-8FB9-3121F498B091">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_noti_cortes_FK" id="26A275AA-3E61-EB93-1F93-94291401AC9F">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_noti_estado_FK" id="6A0D7B1B-F645-212A-0901-13C8A019CA09">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_noti_tipo_FK" id="8870767A-95C0-1054-0A33-C24E7E842E6C">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_noti_causas_FK" id="C5D18F20-46E3-7EEA-1B79-2100D263F230">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="fact_notificaciones_PK" id="15680196-9BAB-398B-09D1-40E4043A2533">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

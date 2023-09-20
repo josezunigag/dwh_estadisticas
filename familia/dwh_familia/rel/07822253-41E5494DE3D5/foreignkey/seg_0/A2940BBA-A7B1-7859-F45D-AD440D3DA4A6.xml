@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A2940BBA-A7B1-7859-F45D-AD440D3DA4A6" containerWithKeyObject="E835E9CA-E534-C7B9-A18C-1292269A1E8C" localFKIndex="7C1E9F1E-EA23-6641-BBB9-DFC0501BE638" name="fk_fact_aud_audiencia_dim_esta">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_aud_audiencia_dim_esta</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_estados_audiencias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A576F13-4A3E-D15F-9494-3E3C77B8383B</referredTableID>
+<keyObject>38EEDEF7-8E33-3964-B1AC-74E6A20D9A44</keyObject>
+<referredKeyID>38EEDEF7-8E33-3964-B1AC-74E6A20D9A44</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>estado_audiencia_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

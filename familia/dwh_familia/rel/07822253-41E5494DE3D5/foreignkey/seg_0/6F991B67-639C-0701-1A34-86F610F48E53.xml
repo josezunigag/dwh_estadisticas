@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6F991B67-639C-0701-1A34-86F610F48E53" containerWithKeyObject="78EB3555-A64F-B093-87B8-5A09751BE7AE" localFKIndex="6A0D7B1B-F645-212A-0901-13C8A019CA09" name="fact_noti_estado_FK">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fact_noti_estado_FK</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_estados_notificaciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>609A3257-C77D-F8D2-B677-848AD3C894A5</referredTableID>
+<keyObject>E1C86AE7-6F62-B3B8-BE7B-5D1A15E95DBA</keyObject>
+<referredKeyID>E1C86AE7-6F62-B3B8-BE7B-5D1A15E95DBA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>estado_notificacion_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

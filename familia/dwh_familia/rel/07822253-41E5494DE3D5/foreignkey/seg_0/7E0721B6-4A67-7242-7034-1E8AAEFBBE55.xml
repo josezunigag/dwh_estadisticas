@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7E0721B6-4A67-7242-7034-1E8AAEFBBE55" containerWithKeyObject="78EB3555-A64F-B093-87B8-5A09751BE7AE" localFKIndex="C5D18F20-46E3-7EEA-1B79-2100D263F230" name="fact_noti_causas_FK">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fact_noti_causas_FK</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_causas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA8F254F-1648-6B98-1BA7-7290BF19DADA</referredTableID>
+<keyObject>6616DF62-8341-8DB0-123B-93FB731B3D0F</keyObject>
+<referredKeyID>6616DF62-8341-8DB0-123B-93FB731B3D0F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>crr_causa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

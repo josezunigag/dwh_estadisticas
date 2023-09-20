@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_cortes_tribunales" directorySegmentName="seg_0" id="DF7CCE9E-AB55-F074-1531-B2AA32FA090D">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:06 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_corte_tribunal" id="1BAD5492-3B53-9481-DD90-DFC7403A2D27">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_corte" id="9BA02AC3-FE0A-5472-AA04-D4D45B667AFA">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_corte" id="AC881473-D529-836C-6F54-759E2E4575B6">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_tribunal" id="BC01BAB6-01ED-119E-F81A-03FE45DBC2C6">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_tribunal" id="C6EC9DE4-A27E-5E03-473B-CB17C616250E">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK__dim_cort__C297569E3B5A6DC3" id="0C7EB11C-EA56-4FA5-6D39-77D756878A15">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="fact_ingresos_materias" directorySegmentName="seg_0" id="B9F3D390-75CF-BC67-60D0-3DD6025BDADA">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idfuncionario" id="05426D43-6F0A-7C6F-9547-2898FAFFBED0">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_id" id="3EDE5E0C-CB8E-2BDE-BB02-DE8C0C7E994D">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_cambioestfirma" id="71161AD1-5218-CCFD-69BD-B44D5CF3D14B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="materia_id" id="BA76A3AD-1066-1550-40EF-C3B840C99966">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_causa" id="D268594E-7596-D927-45EB-C31BBB5AB0C8">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_corte" id="DE0A79D7-ACE4-4B4D-3CE3-E0E8248A150B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_causa_id" id="EF02CEAD-394D-A9F6-B495-A779C7378145">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_fallo_id" id="F1EE7534-CB3B-09AA-A196-B52A85C2A0D6">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_tribunal" id="F90E2857-4AAD-0027-D7C1-816C98D7739B">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="index_1" id="7274753A-3071-E78B-6FEA-E51B4D236B65">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<fillFactor>80</fillFactor>
+<recomputeStatistics>ON</recomputeStatistics>
+<includeColumns>3EDE5E0C-CB8E-2BDE-BB02-DE8C0C7E994D, D268594E-7596-D927-45EB-C31BBB5AB0C8, BA76A3AD-1066-1550-40EF-C3B840C99966, EF02CEAD-394D-A9F6-B495-A779C7378145</includeColumns>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="index_2" id="ABB5C8BB-35AF-05AB-F25B-BB31F7E112F4">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:53 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<fillFactor>80</fillFactor>
+<recomputeStatistics>ON</recomputeStatistics>
+<includeColumns>D268594E-7596-D927-45EB-C31BBB5AB0C8, BA76A3AD-1066-1550-40EF-C3B840C99966, EF02CEAD-394D-A9F6-B495-A779C7378145</includeColumns>
+</IndexProxy>
+</indexProxies>
+</TableProxySqlServerv2k5>

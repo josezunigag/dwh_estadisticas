@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="dwh_familia" id="B5218F84-614E-5EDF-011A-7677828F6A9D" version="3.5">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:23:06 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B5218F84-614E-5EDF-011A-7677828F6A9D</designId>
+</OSDM_Design>

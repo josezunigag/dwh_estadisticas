@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_tipos_subs_tramites" directorySegmentName="seg_0" id="6887E2C0-418B-FB0C-4C58-F8EBB43AF40D">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_modificacion" id="083D5E92-5279-F513-7DC1-B8020C18A806">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_creacion" id="161E7B8E-20EE-EFD3-073D-9DDBC1A48C66">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_receptor" id="1A27DECA-8C26-3426-F9F9-95D46275127C">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_vigenciatst" id="24D98517-2097-10A3-9DCA-8E1C258B94CF">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tip_subtramite" id="557A96E1-1C31-BE99-2D2C-3646BBF637DA">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_tipsubtramite" id="9890EDC8-F90C-891E-DAEE-8C22B98DA6F6">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_tramite_id" id="A3B07078-1406-34D3-E834-530B9BEF63D4">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gct_tipsubtramite" id="B4C34EEB-68B9-4874-CC4A-EF84C8761191">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_sub_tramite_id" id="DFD36722-6016-073D-5520-44A2930EA106">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:51 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="FK__dim_tipos__tipo___0E6E26BF" id="85CFB300-F8AC-F989-7E1B-E1E5EF6E0DFA">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK__dim_tipo__2DA1B03EBFD0A8B0" id="CD7A76B0-3742-5E82-3CBC-DC0AC8585469">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

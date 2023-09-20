@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_tipos_notificaciones" directorySegmentName="seg_0" id="1EB6BB79-D564-42ED-E7D4-214EFB7B8553">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<schemaObject>81C2A2E0-6765-0143-51F5-2E9396AC4EF9</schemaObject>
+<database>DB40E2D3-1A35-AC09-0F84-1791275E2157</database>
+<filegroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tip_notificacion" id="39A78BC2-3FC9-1768-0F26-E1F2D964388D">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_notificacion_id" id="39E22A8A-749C-6FF5-D0BB-61FD30C58941">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cant_notificaciones" id="7652F0C0-5C2A-A347-6964-DC9E75AC9071">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_vigente" id="7AEBE943-CA05-122D-952C-80BE5F268ED4">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_modificacion" id="8C1CB7A7-0F88-9ABB-2E37-1D70470CE1D8">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_creacion" id="C3FB3863-D8D5-E406-4499-D2D18FA15E35">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="num_despliegue" id="D5E61FE7-0B47-7D12-8941-7F158C2BF447">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_tipnotificacion" id="E0BF4C90-8A8F-A520-EF49-6A7ABB3AE452">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:02 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<collation>Modern_Spanish_CI_AS</collation>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK__dim_tipo__099F1C98B6CE7149" id="E7172463-C1A8-5394-70E3-23CE5F07FF98">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:03 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>1338E6E9-2176-8EF9-696E-76AC88A4CC1B</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

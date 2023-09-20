@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="DWH Familia" id="07822253-DBBC-A9AE-49AF-41E5494DE3D5" mainViewID="713A7360-1711-C09E-36C0-83FEC25474BE">
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:28:49 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>22943E51-0387-1F2A-CED9-5FB738BA5A0C</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>DWH Familia</connName>
+<connUser>est_omanriquez</connUser>
+<connType>2</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

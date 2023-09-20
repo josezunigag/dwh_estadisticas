@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="75F2EBFE-6B3C-0B39-DD7A-7CD519C429F7" containerWithKeyObject="069F9D33-0122-31C8-1657-06E279DFCAE2" localFKIndex="4DAB7621-2D77-3728-5EC5-E15737EEA026" name="FK_FACT_ESC_REFERENCE_DIM_TIPOINGCAUSA">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK_FACT_ESC_REFERENCE_DIM_TIPOINGCAUSA</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:14 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_tipos_ingresos_causas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4E5E63A6-D0ED-D0F8-4DFB-D4C148AD5A05</referredTableID>
+<keyObject>C47C9ED6-70D7-1B83-8639-61A48808D543</keyObject>
+<referredKeyID>C47C9ED6-70D7-1B83-8639-61A48808D543</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>tipo_ingreso_causa_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

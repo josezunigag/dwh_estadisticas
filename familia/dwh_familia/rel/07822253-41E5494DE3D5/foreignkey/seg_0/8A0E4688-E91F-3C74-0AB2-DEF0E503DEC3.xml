@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8A0E4688-E91F-3C74-0AB2-DEF0E503DEC3" containerWithKeyObject="E835E9CA-E534-C7B9-A18C-1292269A1E8C" localFKIndex="A48A1F47-FBC6-466C-1769-AC6AA0BDE221" name="fk_fact_aud_reference_dim_sala">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_aud_reference_dim_sala</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_salas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>179AB610-2C6C-8275-97CB-6442103C201F</referredTableID>
+<keyObject>307444BF-80CA-D34F-FA03-FF58B3FA071C</keyObject>
+<referredKeyID>307444BF-80CA-D34F-FA03-FF58B3FA071C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_sala</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

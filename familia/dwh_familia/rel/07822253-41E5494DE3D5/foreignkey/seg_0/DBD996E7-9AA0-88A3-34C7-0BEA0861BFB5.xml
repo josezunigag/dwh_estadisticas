@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DBD996E7-9AA0-88A3-34C7-0BEA0861BFB5" containerWithKeyObject="6887E2C0-418B-FB0C-4C58-F8EBB43AF40D" localFKIndex="85CFB300-F8AC-F989-7E1B-E1E5EF6E0DFA" name="FK__dim_tipos__tipo___0E6E26BF">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK__dim_tipos__tipo___0E6E26BF</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:13 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_tipos_tramites</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2670FA3A-6FD5-AA85-75CD-2133F7C14C6B</referredTableID>
+<keyObject>C0DBD90D-3B27-A25B-E9AE-E68E56651EAD</keyObject>
+<referredKeyID>C0DBD90D-3B27-A25B-E9AE-E68E56651EAD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tipo_tramite_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

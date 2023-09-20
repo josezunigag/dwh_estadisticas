@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D2400546-19C2-7EB9-9ED2-52B449698CD1" containerWithKeyObject="069F9D33-0122-31C8-1657-06E279DFCAE2" localFKIndex="2666BE6E-50C7-2BAA-FEEE-8092787CCB81" name="fk_fact_esc_reference_dim_tipo">
+<sourceConnName>DWH Familia</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_esc_reference_dim_tipo</sourceObjName>
+<createdBy>omanriquez</createdBy>
+<createdTime>2023-09-14 15:29:14 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<referredTableLongName>familia_dbo.dim_tipos_litigantes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>67DB6F68-4911-2346-AAFA-AF6803549A16</referredTableID>
+<keyObject>54224F36-3689-4150-8471-134F1B065E90</keyObject>
+<referredKeyID>54224F36-3689-4150-8471-134F1B065E90</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_tipo_litigante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
