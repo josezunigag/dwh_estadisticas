@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_sentenciados_agravantes" directorySegmentName="seg_1" id="E5F1D594-ADB3-7710-2CD0-79DDE9464BD0">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_agravante" id="02267372-A5BA-E9D0-E375-E9EAA367E8BE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_tipo_agravante" id="1E4552BD-F307-B2AE-56B3-DDBCE6E3FE8A">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_sentenciado_agravante" id="6DFDCD62-F6E6-FC3E-A579-90FDEB496C8D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idsentenciado" id="A7B71C99-2BB4-3984-775D-1F0146D01B79">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idsentencia" id="FAAB4D5D-1365-39CE-2665-08FAAC37C316">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="dim_agravantes_dim_tipos_agravante_FK" id="2A254BC0-B76B-9187-3A73-C45CB5E4810A">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="dim_agravantes_fact_sentencias_FK" id="30A751D3-1A43-C2EC-74B8-43B855AB38F1">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="dim_agravantes_PK" id="A22A81CE-D350-0D2B-5B84-95AAD0D4B11D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

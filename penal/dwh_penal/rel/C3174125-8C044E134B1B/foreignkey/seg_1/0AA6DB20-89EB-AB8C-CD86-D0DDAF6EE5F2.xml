@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="0AA6DB20-89EB-AB8C-CD86-D0DDAF6EE5F2" containerWithKeyObject="093E2827-B904-999A-D79F-B7DEF5393A27" localFKIndex="C65F35A9-21D5-09D3-A1A2-B1A66D52461C" name="dim_penas_corporales_dim_grados_penal_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 16:18:51 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_grados_penal</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>83EC3388-8657-AE0F-AEC1-227DB931F703</referredTableID>
+<keyObject>9572EF70-A250-E5D6-184F-EFBEAEE5163E</keyObject>
+<referredKeyID>9572EF70-A250-E5D6-184F-EFBEAEE5163E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_grado_penal</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

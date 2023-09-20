@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D2BB588-4173-A683-4406-1F6F2F121ECC" name="dim_grados_ejecuciones">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_grados_ejecuciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_grado_ejecucion" id="130268D1-504F-708A-E891-0AAD8D754DEC">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_grados_ejecuciones</sourceObjSchema>
+<sourceObjName>id_grado_ejecucion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_gradoejec" id="A252A424-FF6A-1733-EFEB-F684B8C660AD">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_grados_ejecuciones</sourceObjSchema>
+<sourceObjName>cod_gradoejec</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_gradoejec" id="44297918-0822-5071-F5FA-155BD25F9494">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_grados_ejecuciones</sourceObjSchema>
+<sourceObjName>gls_gradoejec</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B08AC2E7-1E30-19AD-577B-215E890A9538" name="pk_dim_grados_ejecuciones">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_grados_ejecuciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="130268D1-504F-708A-E891-0AAD8D754DEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

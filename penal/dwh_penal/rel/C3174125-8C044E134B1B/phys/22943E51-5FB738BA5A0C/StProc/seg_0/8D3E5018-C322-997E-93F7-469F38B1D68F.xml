@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_fact_terminos_actualizaciones" directorySegmentName="seg_0" id="8D3E5018-C322-997E-93F7-469F38B1D68F">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_fact_terminos_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_fact_terminos_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+		
+	DECLARE @id_fecha_inicial int, @id_fecha_final int
+
+
+	SELECT @id_fecha_inicial = min(id_fecha)
+			,@id_fecha_final = max(id_fecha)
+	FROM view_terminos_tmp
+
+	-- EXEC [dbo].[sp_fact_terminos_actualizaciones]
+	MERGE fact_terminos AS f
+	USING view_terminos_tmp AS tmp 
+	ON (f.id_corte_tribunal = tmp.id_corte_tribunal
+		AND f.crr_idcausa = tmp.crr_idcausa
+		AND f.crr_idevento = tmp.crr_idevento
+		AND f.crr_idrelacion = tmp.crr_idrelacion
+		AND f.id_tipo_hito = tmp.id_tipo_hito)
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET	id_tipo_causa			= tmp.id_tipo_causa
+			,id_materia				= tmp.id_materia
+			,id_estado_relacion		= tmp.id_estado_relacion
+			,crr_idparticipante		= tmp.crr_idparticipante
+			,duracion				= tmp.duracion
+			,id_fecha				= tmp.id_fecha
+			,id_fecha_concluida		= tmp.id_fecha_concluida
+			,id_procedimiento		= tmp.id_procedimiento
+			,fec_modificacion		= getdate()
+	WHEN NOT MATCHED BY TARGET
+	THEN INSERT (id_fecha,		id_corte_tribunal,		crr_idcausa,		crr_idevento,		id_tipo_causa
+				,id_materia,	crr_idrelacion,			id_estado_relacion,	id_tipo_hito,		crr_idparticipante
+				,fec_carga,		id_fecha_concluida,		duracion,			id_procedimiento) 
+		 VALUES (tmp.id_fecha,		tmp.id_corte_tribunal,		tmp.crr_idcausa,		tmp.crr_idevento,		tmp.id_tipo_causa
+				,tmp.id_materia,	tmp.crr_idrelacion,			tmp.id_estado_relacion,	tmp.id_tipo_hito,		tmp.crr_idparticipante
+				,getdate(),			tmp.id_fecha_concluida,		tmp.duracion,			tmp.id_procedimiento)
+	WHEN NOT MATCHED BY SOURCE AND f.id_fecha between @id_fecha_inicial and @id_fecha_final
+	THEN DELETE;
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

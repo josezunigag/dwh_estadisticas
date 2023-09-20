@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="914E6EA6-9A3D-3851-5F07-771BDC8C1563" name="dim_tipos_participantes">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:20:21 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_61</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_participante" id="A479F5F0-5E5D-D7C3-DC52-F4DEBD2BA085">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:20:42 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_participante" id="B0E3B699-B4EA-AD13-4A58-BA80DE0DA12B">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:20:58 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipparticipante" id="21FD6D9B-D4A7-685F-B008-555AF28C9469">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:21:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_colaborador" id="CFA86EE8-A364-E640-5440-8D8083719787">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:21:38 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_grupopart" id="4D6A0EE8-6B51-5444-69B0-F38DAE3ADDBA">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:21:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_orden" id="1B3C9FE1-1970-0219-3EDD-D9ABECC86126">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:22:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F779E68-6008-77F6-E080-7B283B90C0AC" name="dim_tipos_participantes_PK">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-02 17:22:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A479F5F0-5E5D-D7C3-DC52-F4DEBD2BA085"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

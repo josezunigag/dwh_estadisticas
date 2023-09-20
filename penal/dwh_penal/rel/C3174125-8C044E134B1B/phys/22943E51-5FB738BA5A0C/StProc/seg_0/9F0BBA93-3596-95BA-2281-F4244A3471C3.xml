@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_fact_sanciones_actualizaciones" directorySegmentName="seg_0" id="9F0BBA93-3596-95BA-2281-F4244A3471C3">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_fact_sanciones_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_fact_sanciones_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+-- EXEC sp_fact_sanciones_actualizaciones
+
+	MERGE fact_sanciones AS res
+	USING view_sanciones_tmp AS tmp 
+    ON ( res.crr_idcausa = tmp.crr_idcausa
+    AND res.crr_idsentencia = tmp.crr_idsentencia
+    AND res.crr_iddelito = tmp.crr_iddelito
+    AND res.crr_idparticipante = tmp.crr_idparticipante
+    AND res.crr_relacion = tmp.crr_relacion
+    AND res.crr_idpena = tmp.crr_idpena
+    AND res.crr_idpenarpa = tmp.crr_idpenarpa
+	) 
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET 
+            res.id_corte_tribunal   = tmp.id_corte_tribunal,
+            res.idfecha_ingreso     = tmp.idfecha_ingreso,
+            res.idfecha_sancion     = tmp.idfecha_sancion,
+            res.id_forma_inicio     = tmp.id_forma_inicio,
+            res.id_materia          = tmp.id_materia,
+            res.id_tipo_sancion     = tmp.id_tipo_sancion,
+            res.id_tipo_resultado   = tmp.id_tipo_resultado,
+            res.id_tipo_moneda      = tmp.id_tipo_moneda,
+            res.id_pais             = tmp.id_pais,
+            res.procedimiento       = tmp.procedimiento,
+            res.cumplim_rpa         = tmp.cumplim_rpa,
+            res.delitos             = tmp.delitos,
+            res.fec_sentencia       = tmp.fec_sentencia,
+            res.año_sancion         = tmp.año_sancion,
+            res.horas               = tmp.horas,
+            res.cantidad            = tmp.cantidad,
+            res.escala              = tmp.escala,
+            res.multa               = tmp.multa,
+            res.victimas            = tmp.victimas,
+            res.rut_victima         = tmp.rut_victima,
+            res.sexo_victima        = tmp.sexo_victima,
+            res.nombre_victima      = tmp.nombre_victima,
+            res.pais_victima        = tmp.pais_victima,
+            res.fec_nacim_victima1  = tmp.fec_nacim_victima1,
+            res.fec_nacim_victima2  = tmp.fec_nacim_victima2,
+            res.edad_victima1       = tmp.edad_victima1,
+            res.edad_victima2       = tmp.edad_victima2,
+            res.crr_litigante_id    = tmp.crr_litigante_id,
+            res.edad_condenado      = tmp.edad_condenado,
+            res.flg_rpa             = tmp.flg_rpa,
+            res.marca_rpa           = tmp.marca_rpa,
+            res.beneficio           = tmp.beneficio,
+            res.tip_causaref        = tmp.tip_causaref
+	WHEN NOT MATCHED
+	THEN INSERT ([id_corte_tribunal], [idfecha_ingreso], [idfecha_sancion], [id_forma_inicio], [id_materia], [id_tipo_sancion], [id_tipo_resultado], [id_tipo_moneda], [id_pais]
+                ,[crr_idcausa], [crr_idsentencia], [crr_iddelito], [crr_idparticipante], [crr_relacion], [crr_idpena], [crr_idpenarpa], [procedimiento], [cumplim_rpa]
+                ,[delitos], [fec_sentencia], [año_sancion], [horas], [cantidad], [escala], [multa], [victimas], [rut_victima], [sexo_victima], [nombre_victima]
+                ,[pais_victima], [fec_nacim_victima1], [fec_nacim_victima2], [edad_victima1], [edad_victima2], [crr_litigante_id], [edad_condenado], [flg_rpa], [marca_rpa]
+                ,[beneficio], [tip_causaref]) 
+		 VALUES (tmp.[id_corte_tribunal], tmp.[idfecha_ingreso], tmp.[idfecha_sancion], tmp.[id_forma_inicio], tmp.[id_materia], tmp.[id_tipo_sancion], tmp.[id_tipo_resultado], tmp.[id_tipo_moneda], tmp.[id_pais]
+                ,tmp.[crr_idcausa], tmp.[crr_idsentencia], tmp.[crr_iddelito], tmp.[crr_idparticipante], tmp.[crr_relacion], tmp.[crr_idpena], tmp.[crr_idpenarpa], tmp.[procedimiento], tmp.[cumplim_rpa]
+                ,tmp.[delitos], tmp.[fec_sentencia], tmp.[año_sancion], tmp.[horas], tmp.[cantidad], tmp.[escala], tmp.[multa], tmp.[victimas], tmp.[rut_victima], tmp.[sexo_victima], tmp.[nombre_victima]
+                ,tmp.[pais_victima], tmp.[fec_nacim_victima1], tmp.[fec_nacim_victima2], tmp.[edad_victima1], tmp.[edad_victima2], tmp.[crr_litigante_id], tmp.[edad_condenado], tmp.[flg_rpa], tmp.[marca_rpa]
+                ,tmp.[beneficio], tmp.[tip_causaref]);
+	
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

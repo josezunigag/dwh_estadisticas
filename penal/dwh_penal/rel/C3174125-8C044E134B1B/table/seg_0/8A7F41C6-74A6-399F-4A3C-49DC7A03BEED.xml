@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A7F41C6-74A6-399F-4A3C-49DC7A03BEED" name="dim_audiencias_hitos">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:27:46 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_56</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_audiencia_hito" id="6D39AAA7-CA8B-D89F-3F49-709A4515DB2B">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:28:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idaudiencia" id="3E135B60-AC9C-2E29-8FC1-7E0D47ADE4B5">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:28:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2D7B39A-2B4B-5A95-6F74-2437A3E5D5DF" referredColumn="8C1E2699-5388-F617-B893-E7168AF8590D"/>
+</associations>
+</Column>
+<Column name="crr_idhito" id="66676EFF-633C-370B-15C3-491358A8F264">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:34:52 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idhitoact" id="68963ABC-E1D5-1D7C-572B-3036052EAC3A">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:35:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_hito" id="37004788-ACD3-6BC4-0CE9-4EAF1A2E13DA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:36:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4349E71B-7F76-1572-972F-04DFAFFA9DC9" referredColumn="CCF4A93D-80F4-17A8-8CF2-B6CFD94EEF37"/>
+</associations>
+</Column>
+<Column name="id_estado_hito" id="800DD215-5CF3-B66B-4F40-8B61812B0DE6">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 13:47:26 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBF85BCA-1163-6EE2-D26E-D3DDDC1BBDDE" referredColumn="C9BACEB3-B0F4-4F99-3205-8F5CA5BDBF44"/>
+</associations>
+</Column>
+<Column name="gls_hitoact" id="609634FF-AFE9-AED6-6DF4-640B6B8582D0">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 15:26:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_evento" id="BAA73465-3678-334A-F9A5-8B662C129895">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 15:27:32 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63EA86C7-5EE7-FF44-7923-F69703326568" referredColumn="30FF11F6-C4B9-882E-DF4E-4FE8036ACCCF"/>
+</associations>
+</Column>
+<Column name="fec_hito" id="5D9667B9-19A7-7BC6-CF30-0CF6E32ABFE0">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 15:18:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9C78B47-B0F5-C6B0-98ED-DF2602F2EFFB" name="dim_audiencias_hitos_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:28:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D39AAA7-CA8B-D89F-3F49-709A4515DB2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="426E319A-E299-CCC4-EB47-A3EE1ABBD387" name="dim_audiencias_hitos__IDX">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 17:32:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E135B60-AC9C-2E29-8FC1-7E0D47ADE4B5" sortOrder="DESC"/>
+<colUsage columnID="66676EFF-633C-370B-15C3-491358A8F264"/>
+<colUsage columnID="68963ABC-E1D5-1D7C-572B-3036052EAC3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE2F27C6-EB49-1D22-4B3B-ED30343DDB41" name="dim_audiencias_hitos_fact_audiencias_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:28:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E135B60-AC9C-2E29-8FC1-7E0D47ADE4B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56FD880D-8355-879B-0A14-C4D5C471E82F" name="dim_audiencias_hitos_dim_tipos_hitos_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:36:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37004788-ACD3-6BC4-0CE9-4EAF1A2E13DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A91BFA0C-A713-5AA4-A7AF-A81218198D7E" name="dim_audiencias_hitos_dim_estados_hitos_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 13:47:26 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="800DD215-5CF3-B66B-4F40-8B61812B0DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBA31F60-EFFA-CBFA-336A-886E49AABDDD" name="dim_audiencias_hitos_dim_tipos_eventos_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 15:27:32 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAA73465-3678-334A-F9A5-8B662C129895"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FB75241-E1F1-1DAD-CC27-9C31C4273E1C" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_paises">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_paises</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pais" id="3DB73198-C37F-7293-19DF-7EF7252296F1">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_paises</sourceObjSchema>
+<sourceObjName>id_pais</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_pais" id="2B785571-2A75-C270-6F25-B76FF7ACF64C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_paises</sourceObjSchema>
+<sourceObjName>cod_pais</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_pais" id="C13E2600-AA89-578A-AA1E-4E72D7C26997">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_paises</sourceObjSchema>
+<sourceObjName>gls_pais</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF1C209C-C965-FA13-DD23-EB2FC1D8F0D9" name="pk_dim_paises">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_paises</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DB73198-C37F-7293-19DF-7EF7252296F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

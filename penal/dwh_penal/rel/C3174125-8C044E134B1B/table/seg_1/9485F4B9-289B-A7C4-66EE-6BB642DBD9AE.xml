@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="9485F4B9-289B-A7C4-66EE-6BB642DBD9AE" name="dim_tipos_agravantes">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:07:53 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_86</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_agravante" id="2B7FAD16-E946-343F-6A9E-DFAC8FDDA5EC">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:08:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_agravante" id="E1477000-FE7A-F228-4663-08A5776839CE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:08:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipagravante" id="26AFCDCD-7311-B1B7-D6EF-5EE535C25D10">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:08:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F96D962-EB1C-AE4A-0EA6-866F25CFB50B" name="dim_tipos_agravante_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:09:05 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B7FAD16-E946-343F-6A9E-DFAC8FDDA5EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

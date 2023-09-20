@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_tipos_sanciones" directorySegmentName="seg_0" id="3BEC82B7-6611-4E3C-74AE-A2D5FE1D90A7">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<schemaObject>98C42462-4E13-C0DB-D54B-1179E036D239</schemaObject>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+<filegroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_hitoact" id="13F55ADC-E042-4DBD-F3B5-BEE6D2875B76">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_tipsancion" id="494464EF-D112-FBE6-B356-6E5AED185FA1">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<collation>Modern_Spanish_100_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tip_penamenor" id="6DA7F9BB-1895-6704-D3C9-31EAA3D755FF">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_tipo_sancion" id="8BAB30DC-092B-1621-FBF7-CDF4A70CA1D8">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tip_sancion" id="F14AD1A6-6BBA-1D88-4E32-9091637FF38E">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="pk_dim_tipos_sanciones" id="8DAC1EBF-0EA5-C2E3-C1CD-57452FA64F12">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

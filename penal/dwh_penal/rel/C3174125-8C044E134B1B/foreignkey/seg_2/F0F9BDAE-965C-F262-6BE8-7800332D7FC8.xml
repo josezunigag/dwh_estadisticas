@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="F0F9BDAE-965C-F262-6BE8-7800332D7FC8" containerWithKeyObject="80FBC665-DE0E-68BC-C435-7874D71DC7BE" localFKIndex="A0A07BED-BF32-6E98-565E-3CDB1EF6C604" name="dim_penas_rpa_dim_tipos_monedas_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 16:09:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_tipos_monedas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B0491EF2-F1C8-F431-5397-4EA84F1B7777</referredTableID>
+<keyObject>1D30C2DF-76AB-23A0-9AD9-6661B5EC30B5</keyObject>
+<referredKeyID>1D30C2DF-76AB-23A0-9AD9-6661B5EC30B5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_moneda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

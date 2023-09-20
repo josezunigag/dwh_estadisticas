@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="97F8ACE3-34E5-7D2E-19A5-D5F05CB44B2B" name="dim_tipos_inhabilidades">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 04:07:01 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_85</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_inhabilidad" id="C5CD0D88-1DD7-18F9-7A00-425948455982">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 04:07:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_inhabilidades" id="2965F43F-B96E-57B8-D0B3-88842F8871AE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 04:07:58 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_inhabilidades" id="A03B9410-639B-ADCC-C252-7CB6FEFA4332">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 04:08:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0100A20A-9AAD-83C3-CAEB-0F8ACDFFA433" name="dim_tipos_inhabilidades_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 04:07:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5CD0D88-1DD7-18F9-7A00-425948455982"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

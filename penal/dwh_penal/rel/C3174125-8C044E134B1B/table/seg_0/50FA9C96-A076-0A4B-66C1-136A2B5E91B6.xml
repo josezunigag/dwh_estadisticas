@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50FA9C96-A076-0A4B-66C1-136A2B5E91B6" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_tipos_sub_terminos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_tipos_sub_terminos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_sub_termino" id="C547DF3B-EC3A-3775-6906-F17035CA0020">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_sub_terminos</sourceObjSchema>
+<sourceObjName>id_tipo_sub_termino</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_termino" id="028544A7-B2AB-7909-063B-6463822AF2D6">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_sub_terminos</sourceObjSchema>
+<sourceObjName>id_tipo_termino</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC49C42E-7FF7-824E-87D2-B66BED4FF5EE" referredColumn="CAD65794-D9FB-68E2-263C-DA2E06FBA46F"/>
+</associations>
+</Column>
+<Column name="cod_submottermino" id="DA2FFD24-F8AF-C02B-2A61-F142D7425352">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_sub_terminos</sourceObjSchema>
+<sourceObjName>cod_submottermino</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_submottermino" id="3BD5CB35-1840-BD90-9981-E0D528795753">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_sub_terminos</sourceObjSchema>
+<sourceObjName>gls_submottermino</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88A80F1E-1189-13CE-69BD-DD194BB35206" name="pk_dim_tipos_sub_terminos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_tipos_sub_terminos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C547DF3B-EC3A-3775-6906-F17035CA0020"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEEAB9C2-CB02-699C-D4AA-777F1D0A2B38" name="relationship_7_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>relationship_7_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="028544A7-B2AB-7909-063B-6463822AF2D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC94A39C-9898-76A9-6E43-61118138D1CB" name="fk_dim_tipo_relations_dim_tipo_termino">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="028544A7-B2AB-7909-063B-6463822AF2D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

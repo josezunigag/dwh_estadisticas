@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="dwh_penal" id="5A360BBB-CC03-0A9D-C7CE-AE2580A30125" version="3.5">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 02:24:40 UTC</createdTime>
+<ownerDesignName>DWH_Estadisticas</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5A360BBB-CC03-0A9D-C7CE-AE2580A30125</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5A360BBB-CC03-0A9D-C7CE-AE2580A30125">
+<designStoragePath>D:\Proyectos\Archivos Documentacion\ModelosDatos\dtm_penal\Penal</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

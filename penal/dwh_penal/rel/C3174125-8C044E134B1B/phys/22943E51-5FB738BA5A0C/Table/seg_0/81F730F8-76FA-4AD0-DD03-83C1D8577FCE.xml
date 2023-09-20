@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_materias_agrupadas" directorySegmentName="seg_0" id="81F730F8-76FA-4AD0-DD03-83C1D8577FCE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<schemaObject>98C42462-4E13-C0DB-D54B-1179E036D239</schemaObject>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+<filegroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_materia_agrupada" id="46B75A61-2153-11C1-C653-45F11F3225EE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_agrupmateria" id="712E028B-65FF-C6A2-3648-0AEDD0689673">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<collation>Modern_Spanish_100_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_agrupmateria" id="9C4C03A4-32A1-BD5A-3109-B948110A6662">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="pk_dim_materias_agrupadas" id="EE01787E-221C-D28F-181D-8498D0EF6705">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

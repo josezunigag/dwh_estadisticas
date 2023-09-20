@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="3E57CF77-D6AC-ED14-B397-AF303EA3B77E" name="dim_tipos_sanciones">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:26:21 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_102</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_sancion" id="8E49A085-A36D-0BAC-9509-8736C173DE00">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:26:41 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_tipo_sancion" id="4A7C30B9-9172-2E76-597D-E7EFABD83862">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:28:32 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipo_sancion" id="E88B8F6E-5BF4-6BDC-3864-BC79A0155144">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:28:50 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_tipo_pena_menor" id="C0CE1056-4143-E6A5-7A27-E7EA32B4AA12">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:30:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipo_pena_menor" id="CD5030B5-6C93-6BCF-1CE1-D09DEB2C9B90">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:30:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C15845D-E772-F612-6D31-95883539613C" name="dim_tipos_sanciones_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 15:27:26 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E49A085-A36D-0BAC-9509-8736C173DE00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

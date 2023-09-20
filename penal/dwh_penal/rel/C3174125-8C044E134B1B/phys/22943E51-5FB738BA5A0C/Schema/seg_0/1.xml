@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="dbo" directorySegmentName="seg_0" id="1">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>penal</sourceObjSchema>
+<sourceObjName>dbo</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<schemaObject>98C42462-4E13-C0DB-D54B-1179E036D239</schemaObject>
+<owner>BD157CEA-D7DB-6D0A-C997-C24556DC64F1_dbo</owner>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+<uid>1</uid>
+</SchemaSqlServerv2k5>

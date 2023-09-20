@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_fact_audiencias_actualizaciones" directorySegmentName="seg_0" id="8D1B4A6E-33A0-1AA6-7565-438A45DD39D7">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_fact_audiencias_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_fact_audiencias_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+-- EXEC sp_fact_audiencias_actualizaciones
+
+	DECLARE @id_fecha_inicial int, @id_fecha_final int
+
+
+	SELECT @id_fecha_inicial = min(id_fecha)
+			,@id_fecha_final = max(id_fecha)
+	FROM view_audiencias_tmp
+
+	MERGE fact_audiencias AS aud
+	USING [dbo].[view_audiencias_tmp] AS tmp 
+	ON (aud.crr_idaudiencia = tmp.crr_idaudiencia) 
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET 
+			aud.id_fecha						= tmp.id_fecha
+			,aud.id_corte_tribunal				= tmp.id_corte_tribunal
+			,aud.crr_idcausa					= tmp.crr_idcausa
+			,aud.id_estado_audiencia			= tmp.id_estado_audiencia
+			,aud.id_motivo_suspension_audiencia = tmp.id_motivo_suspension_audiencia
+			,aud.id_motivo_audiencia			= tmp.id_motivo_audiencia
+			,aud.id_solicitud_audiencia			= tmp.id_solicitud_audiencia
+			,aud.id_estado_audiencia_est		= tmp.id_estado_audiencia_est
+			,aud.id_estado_evento				= tmp.id_estado_evento
+			,aud.crr_evento						= tmp.crr_evento
+			,aud.crr_eventoprg					= tmp.crr_eventoprg
+			,aud.id_fecha_prg					= tmp.id_fecha_prg
+			,aud.id_hora_prg					= tmp.id_hora_prg
+			,aud.id_fecha_inicioreal			= tmp.id_fecha_inicioreal
+			,aud.id_hora_inicioreal				= tmp.id_hora_inicioreal
+			,aud.id_fecha_terminoreal			= tmp.id_fecha_terminoreal
+			,aud.id_hora_terminoreal			= tmp.id_hora_terminoreal
+			,aud.tipo_audiencia					= tmp.tipo_audiencia
+			,aud.flg_agenda						= tmp.flg_agenda
+			,aud.fec_suspension					= tmp.fec_suspension
+			,aud.idf_usuario					= tmp.idf_usuario
+			,aud.fec_sistema					= tmp.fec_sistema
+			,aud.flg_notificacion				= tmp.flg_notificacion
+			,aud.crr_fiscal						= tmp.crr_fiscal
+			,aud.crr_defensor					= tmp.crr_defensor
+			,aud.flg_sacardemeta				= tmp.flg_sacardemeta
+			,aud.flg_audnorealizada				= tmp.flg_audnorealizada
+			,aud.duracion_dias					= tmp.duracion_dias
+			,aud.duracion_minutos				= tmp.duracion_minutos
+			,aud.plazo							= tmp.plazo
+			,aud.fec_modificacion				= getdate()
+	WHEN NOT MATCHED  BY TARGET
+	THEN INSERT (id_fecha,				id_corte_tribunal,			crr_idcausa,				id_estado_audiencia,		id_motivo_suspension_audiencia,
+				id_motivo_audiencia,	id_solicitud_audiencia,		id_estado_audiencia_est,	id_estado_evento,			crr_evento,
+				crr_eventoprg,			id_fecha_prg,				id_hora_prg,				id_fecha_inicioreal,		id_hora_inicioreal,
+				id_fecha_terminoreal,	id_hora_terminoreal,		tipo_audiencia,				flg_agenda,					fec_suspension,
+				idf_usuario,			fec_sistema,				flg_notificacion,			crr_fiscal,					crr_defensor,
+				flg_sacardemeta,		flg_audnorealizada,			duracion_dias,				duracion_minutos,			plazo,
+				fec_creacion,			crr_idaudiencia) 
+		 VALUES (tmp.id_fecha,				tmp.id_corte_tribunal,			tmp.crr_idcausa,				tmp.id_estado_audiencia,		tmp.id_motivo_suspension_audiencia,
+				tmp.id_motivo_audiencia,	tmp.id_solicitud_audiencia,		tmp.id_estado_audiencia_est,	tmp.id_estado_evento,			tmp.crr_evento,
+				tmp.crr_eventoprg,			tmp.id_fecha_prg,				tmp.id_hora_prg,				tmp.id_fecha_inicioreal,		tmp.id_hora_inicioreal,
+				tmp.id_fecha_terminoreal,	tmp.id_hora_terminoreal,		tmp.tipo_audiencia,				tmp.flg_agenda,					tmp.fec_suspension,
+				tmp.idf_usuario,			tmp.fec_sistema,				tmp.flg_notificacion,			tmp.crr_fiscal,					tmp.crr_defensor,
+				tmp.flg_sacardemeta,		tmp.flg_audnorealizada,			tmp.duracion_dias,				tmp.duracion_minutos,			tmp.plazo,
+				getdate(),					tmp.crr_idaudiencia)
+	WHEN NOT MATCHED BY SOURCE AND aud.id_fecha between @id_fecha_inicial and @id_fecha_final
+	THEN DELETE;
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

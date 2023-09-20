@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0C1BC9E-19E3-3687-F045-C6CA3BA7DA43" name="dim_estados_penas">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_estados_penas</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:12 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_pena" id="13917266-8FBA-5F93-49C5-E6AF6C23AE2E">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_estados_penas</sourceObjSchema>
+<sourceObjName>id_estado_pena</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:12 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_pena" id="59697A80-E07F-E344-4436-DE96821412E0">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_estados_penas</sourceObjSchema>
+<sourceObjName>est_pena</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:12 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estpena" id="CA558AD9-D439-94CA-0847-4502DE3FDD02">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_estados_penas</sourceObjSchema>
+<sourceObjName>gls_estpena</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:12 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_unificado" id="67F3361E-528C-6140-7831-3ACD362FC9BA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-29 20:16:42 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="402D691E-0922-237A-193E-BD81A2AFBD54" name="pk_dim_estados_penas">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_estados_penas</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:12 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13917266-8FBA-5F93-49C5-E6AF6C23AE2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

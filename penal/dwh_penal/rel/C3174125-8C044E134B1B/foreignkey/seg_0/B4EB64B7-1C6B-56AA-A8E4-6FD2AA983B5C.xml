@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B4EB64B7-1C6B-56AA-A8E4-6FD2AA983B5C" containerWithKeyObject="3329D59A-25F7-EDF8-5118-E7EE05EE6308" localFKIndex="CA7CB7B3-4FE8-E6A8-C6CB-DD321556DD6F" name="fk_fact_act_reference_dim_tipo">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_act_reference_dim_tipo</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.dim_tipos_eventos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5FD1A81C-4108-634D-CFEC-F5BC70F081A1</referredTableID>
+<keyObject>8FD00BF6-4E46-308E-5663-1936B4577AE3</keyObject>
+<referredKeyID>8FD00BF6-4E46-308E-5663-1936B4577AE3</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_tipo_evento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="40A54D74-259C-D1D0-6E8D-2E8F5E01DC24" containerWithKeyObject="4AE599D4-B902-5862-857F-4CD770AC9DF7" localFKIndex="771CD2CF-AC3B-3EE9-EF71-BE7E30A502AA" name="dim_sentenciado_delito_dim_situacion_libertad_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 20:49:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_situacion_libertad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B23EBC75-3D1D-0A00-DB3F-7C5CE02E9327</referredTableID>
+<keyObject>B0493845-FC51-DA35-339E-0DD51BBCB008</keyObject>
+<referredKeyID>B0493845-FC51-DA35-339E-0DD51BBCB008</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_situacion_libertad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

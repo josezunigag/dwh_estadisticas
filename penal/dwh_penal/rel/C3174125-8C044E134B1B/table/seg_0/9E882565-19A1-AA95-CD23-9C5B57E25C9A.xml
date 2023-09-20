@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E882565-19A1-AA95-CD23-9C5B57E25C9A" name="dim_estados_notificaciones">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:22:55 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_63</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_notificacion" id="C54B5604-7F82-2F79-C2A7-8B9B999997D4">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:23:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_notificacion" id="7F199B6E-9DED-F3C3-0C62-6DAD8C851531">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:23:57 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estnotificacion" id="6E6A45BF-377D-B0AB-7137-1B123DEC923F">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:24:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B61A10C-0FA6-21FB-9940-B2A3E65FB3A7" name="dim_estados_notificaciones_PK">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:23:37 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C54B5604-7F82-2F79-C2A7-8B9B999997D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

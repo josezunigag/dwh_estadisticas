@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A10CB2F2-5882-BFD9-93EF-2864D04DCC40" name="penas_accesorias">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-23 15:39:10 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<engineerTo>
+<item key="C3174125-B928-18ED-8854-8C044E134B1B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

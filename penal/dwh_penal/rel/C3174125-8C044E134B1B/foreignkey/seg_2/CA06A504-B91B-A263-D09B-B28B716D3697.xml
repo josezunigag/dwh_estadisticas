@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="CA06A504-B91B-A263-D09B-B28B716D3697" containerWithKeyObject="769831C9-6D6F-A680-F174-58F1B27C4346" localFKIndex="43E0FEEB-EF97-FE85-63B1-0BAF7C215842" name="dim_penas_accesorias_dim_tipos_penasaccesorias_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:51:17 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_tipos_penasaccesorias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C9107F5-8C06-3D1C-695E-1A9083B470CA</referredTableID>
+<keyObject>156E8135-46B6-0B90-467F-D23A09C0B59F</keyObject>
+<referredKeyID>156E8135-46B6-0B90-467F-D23A09C0B59F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_penaaccesoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

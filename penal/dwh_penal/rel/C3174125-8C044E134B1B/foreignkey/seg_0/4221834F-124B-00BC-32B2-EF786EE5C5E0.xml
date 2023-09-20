@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4221834F-124B-00BC-32B2-EF786EE5C5E0" containerWithKeyObject="3F837571-0F51-2BB2-8182-3920525FCC3E" localFKIndex="B2A63C7A-F176-6B46-4723-7AA295E483E2" name="fk_fact_ter_dimmate">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_ter_dimmate</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_materias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4F99A391-5599-5AC4-0694-9770F281A4B8</referredTableID>
+<keyObject>0B7D2FE4-7505-3995-FB1F-EB179F168F07</keyObject>
+<referredKeyID>0B7D2FE4-7505-3995-FB1F-EB179F168F07</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_materia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="3DB53236-8105-3564-7AEF-CF0BAEAADEDA" containerWithKeyObject="093E2827-B904-999A-D79F-B7DEF5393A27" localFKIndex="60B574AB-B7E3-DE3E-C28B-E34D41CDFA0C" name="dim_penas_corporales_dim_cuantia_penal_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:06:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_cuantia_penal</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>566D02D6-A2CC-5EB8-25E6-521B0F3B7FA6</referredTableID>
+<keyObject>4B1D9358-C045-AE91-10F1-71CAB762F20A</keyObject>
+<referredKeyID>4B1D9358-C045-AE91-10F1-71CAB762F20A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_cuantia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

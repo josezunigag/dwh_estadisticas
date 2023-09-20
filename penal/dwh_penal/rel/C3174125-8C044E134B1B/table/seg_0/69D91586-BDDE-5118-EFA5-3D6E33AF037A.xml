@@ -1,0 +1,205 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69D91586-BDDE-5118-EFA5-3D6E33AF037A" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_motivos_audiencias">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_motivos_audiencias</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_motivo_audiencia" id="3791126A-07A4-36B0-ADF8-A168E9BFE428">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>id_motivo_audiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_solicitud_audiencia" id="5EEA27AF-B8EB-58C7-BDD5-DBDB9F58D99F">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>id_solicitud_audiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41374210-EF2B-BECF-CAE4-92490CFAC22C" referredColumn="140DE372-F718-D714-0843-6DC8374D24A3"/>
+</associations>
+</Column>
+<Column name="cod_motaudiencia" id="5A0879C4-7818-6BF1-C3FB-DC3E6C49BE6E">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>cod_motaudiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_motaudiencia" id="2D0783C7-8D2F-CA95-BA25-83D83E05DC09">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>gls_motaudiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_jurisdiccion" id="ACC61089-C1C1-5EB0-08F1-BA91AC24D47F">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>tip_jurisdiccion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_vigencia" id="8D78ADAC-0C3B-4895-0547-68164D4AF91A">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>flg_vigencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_enaudiencia" id="836D4277-6563-5C40-FA25-F89170DE10C1">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>flg_enaudiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_fueraaudiencia" id="2E583450-8EA0-04BC-2848-7062D11F6F67">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_audiencias</sourceObjSchema>
+<sourceObjName>flg_fueraaudiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FBABC2A-2095-C595-9F83-C60888637CAE" name="pk_dim_motivos_audiencias">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_motivos_audiencias</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3791126A-07A4-36B0-ADF8-A168E9BFE428"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="679BD945-CA53-01A9-3371-A93A4016F86C" name="index_1v4">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>index_1</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3791126A-07A4-36B0-ADF8-A168E9BFE428"/>
+<colUsage columnID="5EEA27AF-B8EB-58C7-BDD5-DBDB9F58D99F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE0B3F5C-47FF-95B7-0872-3009AD3C7FBA" name="relationship_5_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>relationship_5_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EEA27AF-B8EB-58C7-BDD5-DBDB9F58D99F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1F9C01A-7B4B-BE92-1838-6B14B989055A" name="fk_dim_moti_relations_dim_soli">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EEA27AF-B8EB-58C7-BDD5-DBDB9F58D99F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

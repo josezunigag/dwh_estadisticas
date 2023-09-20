@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_causas_actualizaciones" directorySegmentName="seg_0" id="1EE92D68-DEFF-9724-47E4-789AC61D4F00">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_causas_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_causas_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+-- EXEC sp_causas_actualizaciones
+
+	MERGE dim_causas AS cau
+	USING view_ingresos_tmp AS tmp 
+	ON (
+		cau.crr_idcausa = tmp.crr_idcausa 
+	AND cau.cod_corte = tmp.cod_corte
+	AND cau.cod_tribunal = tmp.cod_tribunal 
+	) 
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET 
+			cau.[idf_rolunico] = tmp.[idf_rolunico],
+			cau.[idf_rolinterno] = tmp.[idf_rolinterno],
+            cau.[fecha_id] = tmp.[fecha_id],
+			cau.[fec_era] = tmp.[fec_era],
+			cau.[id_tipo_causa] = tmp.[id_tipo_causa],
+			cau.[idf_nomcausa] = tmp.[idf_nomcausa],
+			cau.[id_forma_inicio] = tmp.[id_forma_inicio],
+			cau.[fec_ingreso] = tmp.[fec_ingreso],
+			cau.[id_estado_relacion] = tmp.[id_estado_relacion],
+			cau.[id_etapa] = tmp.[id_etapa],
+			cau.[fec_cambioest] = tmp.[fec_cambioest],
+			cau.[fec_cambioeta] = tmp.[fec_cambioeta],
+			cau.[snd_nomcausa] = tmp.[snd_nomcausa],
+			cau.[cod_tribunalorigen] = tmp.[cod_tribunalorigen],
+			cau.[cod_ubicacion] = tmp.[cod_ubicacion],
+			cau.[flg_incorporada] = tmp.[flg_incorporada],
+			cau.[flg_viadom] = tmp.[flg_viadom],
+			cau.[crr_litigpasivo] = tmp.[crr_litigpasivo],
+			cau.[crr_litigactivo] = tmp.[crr_litigactivo],
+			cau.[fec_digitacion] = tmp.[fec_digitacion],
+			cau.[idf_usuariodigita] = tmp.[idf_usuariodigita],
+			cau.[fec_sistema] = tmp.[fec_sistema],
+			cau.[idf_usuario] = tmp.[idf_usuario],
+			cau.[flg_confidencialidad] = tmp.[flg_confidencialidad],
+			cau.[id_tipo_ingreso] = tmp.[id_tipo_ingreso],
+			cau.rit = CAST(tmp.idf_rolinterno AS VARCHAR)+'-'+CAST(tmp.fec_era AS VARCHAR),
+			cau.[flg_vif] = tmp.[flg_vif],
+            cau.[flg_rpa] = tmp.[flg_rpa]
+	WHEN NOT MATCHED 
+	THEN INSERT ([cod_corte],[cod_tribunal],[fecha_id],[crr_idcausa],[idf_rolunico],[idf_rolinterno],[fec_era],[id_tipo_causa],[idf_nomcausa],[id_forma_inicio],[fec_ingreso],[id_estado_relacion],[id_etapa],
+				 [fec_cambioest],[fec_cambioeta],[snd_nomcausa],[cod_tribunalorigen],[cod_ubicacion],[flg_incorporada],[flg_viadom],[crr_litigpasivo],
+				 [crr_litigactivo],[fec_digitacion],[idf_usuariodigita],[fec_sistema],[idf_usuario],[flg_confidencialidad],[id_tipo_ingreso],rit,[flg_vif],[flg_rpa]) 
+		 VALUES (tmp.[cod_corte],tmp.[cod_tribunal],tmp.[fecha_id],tmp.[crr_idcausa],tmp.[idf_rolunico],tmp.[idf_rolinterno],tmp.[fec_era],tmp.[id_tipo_causa],tmp.[idf_nomcausa],
+				 tmp.[id_forma_inicio],tmp.[fec_ingreso],tmp.[id_estado_relacion],tmp.[id_etapa],tmp.[fec_cambioest],tmp.[fec_cambioeta],tmp.[snd_nomcausa],
+				 tmp.[cod_tribunalorigen],tmp.[cod_ubicacion],tmp.[flg_incorporada],tmp.[flg_viadom],tmp.[crr_litigpasivo],tmp.[crr_litigactivo],tmp.[fec_digitacion],tmp.[idf_usuariodigita],tmp.[fec_sistema],tmp.[idf_usuario],tmp.[flg_confidencialidad]
+				 ,tmp.[id_tipo_ingreso],CAST(tmp.idf_rolinterno AS VARCHAR)+'-'+CAST(tmp.fec_era AS VARCHAR),tmp.[flg_vif],tmp.[flg_rpa]);
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="2C4DDB52-609D-0846-C55E-7B5D1199326F" containerWithKeyObject="3474838C-1495-592A-9614-60397592C983" localFKIndex="689AB17D-FA87-E80D-1EA0-2CC610B693DB" name="dim_cautelares_delitos_dim_estados_relaciones_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:11:13 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_estados_relaciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EFCED5A4-A546-4215-8A92-86857B117409</referredTableID>
+<keyObject>FB1E308D-E3CA-B9F4-DFDA-435B3B24BAE8</keyObject>
+<referredKeyID>FB1E308D-E3CA-B9F4-DFDA-435B3B24BAE8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_relacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_fact_actuaciones_eliminadas" directorySegmentName="seg_0" id="47D0F350-A034-76AF-02AF-FA829304ED5E">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_fact_actuaciones_eliminadas</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_fact_actuaciones_eliminadas]
+AS
+BEGIN
+-- EXEC sp_fact_actuaciones_eliminadas
+	SET NOCOUNT ON;
+	-- Creo Variable Tabla.
+	DECLARE @resultado TABLE (
+		accion VARCHAR(50),
+		cod_corte INT NULL,
+		cod_tribunal INT NULL,
+		fec_evento DATE NULL
+    )
+
+	MERGE fact_actuaciones AS res
+	USING [dbo].[eventos_eliminados_tmp] AS tmp
+	ON (res.crr_idevento = tmp.crr_idevento
+	AND res.crr_causa = tmp.crr_causa
+	AND res.cod_corte = tmp.cod_corte
+	AND res.cod_tribunal = tmp.cod_tribunal
+	) 
+	WHEN MATCHED 
+	THEN DELETE
+	OUTPUT $action as accion,  -- Capturo las acciones de la clausula merge y la inserto en una variable tabla.
+		   CASE WHEN $action = 'DELETE'
+				THEN deleted.cod_corte
+				WHEN $action = 'INSERT'
+				THEN inserted.cod_corte
+				WHEN $action = 'UPDATE'
+				THEN tmp.cod_corte
+		   END AS cod_corte,
+		   CASE WHEN $action = 'DELETE'
+				THEN deleted.cod_tribunal
+				WHEN $action = 'INSERT'
+				THEN inserted.cod_tribunal
+				WHEN $action = 'UPDATE'
+				THEN tmp.cod_tribunal
+		   END AS cod_tribunal,
+		   CASE WHEN $action = 'DELETE'
+				THEN deleted.fec_evento
+				WHEN $action = 'INSERT'
+				THEN inserted.fec_evento
+				WHEN $action = 'UPDATE'
+				THEN tmp.fec_evento
+		   END AS fecha_id
+	INTO @resultado;
+
+	-- Creo un tabla Comun con los totalizados de la tabla causas.
+	WITH resumenes_indicadores_tmp AS (
+		SELECT res.cod_corte,
+			   res.cod_tribunal,
+			   cmt.ano,
+			   cmt.mes,
+			   COUNT(1) AS actuaciones,
+			   1 AS flg_exhorto
+		FROM fact_actuaciones AS res
+		INNER JOIN (
+			SELECT der.cod_corte,
+				   der.cod_tribunal,
+				   YEAR(fec_evento) AS ano,
+				   MONTH(fec_evento) AS mes
+			FROM @resultado AS der 
+			GROUP BY der.cod_corte,
+					 der.cod_tribunal,
+				     YEAR(fec_evento),
+				     MONTH(fec_evento)
+				
+		) AS cmt
+		ON res.cod_corte = cmt.cod_corte
+		AND res.cod_tribunal = cmt.cod_tribunal
+		AND YEAR(res.fec_evento)  = cmt.ano
+		AND MONTH(res.fec_evento) = cmt.mes
+		WHERE EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = res.crr_causa
+			AND cau.cod_corte     = res.cod_corte
+			AND cau.cod_tribunal  = res.cod_tribunal
+			AND cau.id_tipo_causa IN (1, 2, 4, 5)
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		) 
+		GROUP BY res.cod_corte,
+				 res.cod_tribunal,
+				 cmt.ano,
+				 cmt.mes
+	)
+	
+	-- Actualizado la tabla resumen con los años y meses completos.
+	UPDATE res 
+	SET res.actuaciones = tmp.actuaciones
+	FROM resumenes_indicadores AS res
+	INNER JOIN resumenes_indicadores_tmp AS tmp
+	ON res.cod_corte = tmp.cod_corte
+	AND res.cod_tribunal = tmp.cod_tribunal
+	AND res.ano = tmp.ano
+	AND res.mes = tmp.mes
+	AND res.flg_exhorto = tmp.flg_exhorto;
+
+	-- Sin exhortos.
+
+	WITH resumenes_indicadores_tmp AS (
+		SELECT res.cod_corte,
+			   res.cod_tribunal,
+			   cmt.ano,
+			   cmt.mes,
+			   COUNT(1) AS actuaciones,
+			   0 AS flg_exhorto
+		FROM fact_actuaciones AS res
+		INNER JOIN (
+			SELECT der.cod_corte,
+				   der.cod_tribunal,
+				   YEAR(fec_evento) AS ano,
+				   MONTH(fec_evento) AS mes
+			FROM @resultado AS der 
+			GROUP BY der.cod_corte,
+					 der.cod_tribunal,
+				     YEAR(fec_evento),
+				     MONTH(fec_evento)
+				
+		) AS cmt
+		ON res.cod_corte = cmt.cod_corte
+		AND res.cod_tribunal = cmt.cod_tribunal
+		AND YEAR(res.fec_evento)  = cmt.ano
+		AND MONTH(res.fec_evento) = cmt.mes
+		WHERE EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = res.crr_causa
+			AND cau.cod_corte     = res.cod_corte
+			AND cau.cod_tribunal  = res.cod_tribunal
+			AND cau.id_tipo_causa IN (1, 4, 5) -- Excluyo exhortos.
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)                   
+		GROUP BY res.cod_corte,
+				 res.cod_tribunal,
+				 cmt.ano,
+				 cmt.mes
+	)
+
+	-- Actualizado la tabla resumen con los años y meses completos.
+	UPDATE res 
+	SET res.actuaciones = tmp.actuaciones
+	FROM resumenes_indicadores AS res
+	INNER JOIN resumenes_indicadores_tmp AS tmp
+	ON res.cod_corte = tmp.cod_corte
+	AND res.cod_tribunal = tmp.cod_tribunal
+	AND res.ano = tmp.ano
+	AND res.mes = tmp.mes
+	AND res.flg_exhorto = tmp.flg_exhorto;
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

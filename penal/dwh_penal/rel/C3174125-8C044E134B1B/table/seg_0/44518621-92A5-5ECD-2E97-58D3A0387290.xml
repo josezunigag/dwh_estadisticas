@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44518621-92A5-5ECD-2E97-58D3A0387290" name="dim_cortes_tribunales">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_cortes_tribunales</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<usedAsRemoteObject>true</usedAsRemoteObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_corte_tribunal" id="2AC05971-05F7-0FC8-8A21-FF092AC6BCE1">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>id_corte_tribunal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_corte" id="C869E75E-11E8-876F-C050-D9FFD1AE84DE">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>cod_corte</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_corte" id="A09C1220-0B2D-7F1D-D510-C2DBA814F693">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>gls_corte</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_tribunal" id="3C0AC970-3831-7EDA-A7CF-B0F1B8C80229">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>cod_tribunal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tribunal" id="7963151A-72FF-BA80-B04A-92EEDEDBFB2A">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>gls_tribunal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_jurisdiccion" id="D7CE7195-3877-EABB-87EB-9EF5E44E6A07">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>tip_jurisdiccion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipjurisdiccion" id="1518A449-3AED-2268-D52D-F02E57C3EB85">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>gls_tipjurisdiccion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_comuna" id="5BCEAA36-3150-8CD0-ADF1-DBD79472FB00">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>cod_comuna</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_vigencia" id="D4AD70CE-ECC2-85A4-A09C-C3D97592E89B">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_cortes_tribunales</sourceObjSchema>
+<sourceObjName>flg_vigencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B4A45DC-31ED-0134-30E6-DFF8EDED046F" name="pk_dim_cortes_tribunales">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_cortes_tribunales</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:27 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AC05971-05F7-0FC8-8A21-FF092AC6BCE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

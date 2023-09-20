@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="DTM_PENAL" id="C3174125-B928-18ED-8854-8C044E134B1B" mainViewID="7A8F47E5-D9F9-796C-777E-EFDC95FA68E3">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:23:56 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>980FCE9E-D688-BDF0-C89A-C9FB2DCAED45</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>datawarehouse estadisticas</connName>
+<connUser>user_bi_ddi</connUser>
+<connType>2</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

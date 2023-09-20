@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_fact_actuaciones_actualizaciones" directorySegmentName="seg_0" id="E2006073-46C0-5261-21AD-2C74F2109B3C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_fact_actuaciones_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_fact_actuaciones_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+		
+	DECLARE @id_fecha_inicial int, @id_fecha_final int
+
+
+	SELECT @id_fecha_inicial = min(id_fecha)
+			,@id_fecha_final = max(id_fecha)
+	FROM view_actuaciones_tmp
+
+	-- EXEC [dbo].[sp_fact_terminos_actualizaciones]
+	MERGE fact_actuaciones AS f
+	USING view_actuaciones_tmp AS tmp 
+	ON (f.id_corte_tribunal = tmp.id_corte_tribunal
+		AND f.crr_idcausa	= tmp.crr_idcausa
+		AND f.crr_idevento	= tmp.crr_idevento)
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET	id_fecha			= tmp.id_fecha
+			,id_tipo_evento		= tmp.id_tipo_evento
+			,id_estado_evento	= tmp.id_estado_evento
+			,id_tipo_ingreso	= tmp.id_tipo_ingreso
+			,gls_observacion_evento	= tmp.gls_observacion_evento
+			,id_fecha_firma		= tmp.id_fecha_firma
+			,id_hora_firma		= CASE WHEN tmp.id_fecha_sistema = tmp.id_fecha_firma THEN tmp.id_hora_firma ELSE f.id_hora_firma END
+			,id_fecha_digitacion= tmp.id_fecha_digitacion
+			,id_hora_digitacion = tmp.id_hora_digitacion
+			,crr_persona_digita	= tmp.crr_persona_digita
+			,idf_usuario_digita	= tmp.idf_usuario_digita
+			,crr_persona_firma	= tmp.crr_persona_firma
+			,idf_usuario_firma	= tmp.idf_usuario_firma
+			,fec_cambioest		= tmp.fec_cambioest
+			,fec_sistema		= tmp.fec_sistema
+			,fec_proveer		= tmp.fec_proveer
+			,fec_asigna			= tmp.fec_asigna
+			,crr_documento		= tmp.crr_documento
+			,fec_modificacion	= getdate()
+	WHEN NOT MATCHED BY TARGET
+	THEN INSERT (id_fecha,			id_corte_tribunal,		crr_idcausa,				crr_idevento,		id_tipo_evento
+				,id_estado_evento,	id_tipo_ingreso,		gls_observacion_evento,		id_fecha_firma,		id_hora_firma
+				,id_fecha_digitacion,id_hora_digitacion,	crr_persona_digita,			idf_usuario_digita,	crr_persona_firma
+				,idf_usuario_firma,	fec_cambioest,			fec_sistema,				fec_proveer,		fec_asigna
+				,crr_documento,		fec_creacion) 
+		 VALUES (tmp.id_fecha,				tmp.id_corte_tribunal,		tmp.crr_idcausa,				tmp.crr_idevento,		tmp.id_tipo_evento
+				,tmp.id_estado_evento,		tmp.id_tipo_ingreso,		tmp.gls_observacion_evento,		tmp.id_fecha_firma,		CASE WHEN tmp.id_fecha_sistema = tmp.id_fecha_firma THEN tmp.id_hora_firma ELSE NULL END
+				,tmp.id_fecha_digitacion,	tmp.id_hora_digitacion,		tmp.crr_persona_digita,			tmp.idf_usuario_digita,	tmp.crr_persona_firma
+				,tmp.idf_usuario_firma,		tmp.fec_cambioest,			tmp.fec_sistema,				tmp.fec_proveer,		tmp.fec_asigna
+				,tmp.crr_documento,			getdate())
+	WHEN NOT MATCHED BY SOURCE AND f.id_fecha between @id_fecha_inicial and @id_fecha_final
+	THEN DELETE;
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

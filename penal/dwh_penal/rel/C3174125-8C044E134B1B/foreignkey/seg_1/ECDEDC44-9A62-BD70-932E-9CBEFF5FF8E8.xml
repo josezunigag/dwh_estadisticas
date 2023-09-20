@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="ECDEDC44-9A62-BD70-932E-9CBEFF5FF8E8" containerWithKeyObject="3474838C-1495-592A-9614-60397592C983" localFKIndex="7C25870C-4E47-1B0D-27B5-D9AFC29B5666" name="dim_cautelares_delitos_dim_materias_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:08:48 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_materias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4F99A391-5599-5AC4-0694-9770F281A4B8</referredTableID>
+<keyObject>0B7D2FE4-7505-3995-FB1F-EB179F168F07</keyObject>
+<referredKeyID>0B7D2FE4-7505-3995-FB1F-EB179F168F07</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_materia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

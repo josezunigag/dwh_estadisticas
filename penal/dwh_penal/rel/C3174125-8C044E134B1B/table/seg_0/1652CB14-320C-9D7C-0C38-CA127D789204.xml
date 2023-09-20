@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1652CB14-320C-9D7C-0C38-CA127D789204" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_tipos_suspensiones">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_tipos_suspensiones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_suspension" id="7B44265D-B15B-AA8B-1E06-99E0A27E3A1D">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_suspensiones</sourceObjSchema>
+<sourceObjName>id_tipo_suspension</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_motsuspension" id="E3A7C960-32C1-C7F1-4E46-952B3F12D4E2">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_suspensiones</sourceObjSchema>
+<sourceObjName>cod_motsuspension</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_motsuspension" id="9EC0E8F3-3294-AFC9-9D0C-9C89A12B2148">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_suspensiones</sourceObjSchema>
+<sourceObjName>gls_motsuspension</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C193A785-5EB6-97A9-D1EA-86095BEE7B20" name="pk_dim_tipos_suspensiones">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_tipos_suspensiones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B44265D-B15B-AA8B-1E06-99E0A27E3A1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

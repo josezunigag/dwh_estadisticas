@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B99DF484-49F1-EB44-6D7E-C2F270A86C44" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_motivos_suspensiones_audiencias">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_motivos_suspensiones_audiencias</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_motivo_suspension_audiencia" id="729C59ED-7EC5-EAEB-A131-7F0002499426">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_suspensiones_audiencias</sourceObjSchema>
+<sourceObjName>id_motivo_suspension_audiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_motsuspaud" id="35ECC5B5-6E10-C1F6-DCDF-0B8E7C7DD51C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_suspensiones_audiencias</sourceObjSchema>
+<sourceObjName>cod_motsuspaud</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_motsuspaud" id="56506B9F-C0E1-4B80-FC98-612220E9B0E8">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_suspensiones_audiencias</sourceObjSchema>
+<sourceObjName>gls_motsuspaud</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_vigencia" id="0BA8E095-4D18-9F6D-C13B-B03ADD5E7CDE">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_motivos_suspensiones_audiencias</sourceObjSchema>
+<sourceObjName>flg_vigencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03354872-064C-2FBB-50B0-34B4D835F6FE" name="pk_dim_motivos_suspensiones_au">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_motivos_suspensiones_au</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="729C59ED-7EC5-EAEB-A131-7F0002499426"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3319E4C3-B8C7-A2F4-4DB2-95D278EEF25B" name="index_1v5">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>index_1</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:15 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="729C59ED-7EC5-EAEB-A131-7F0002499426"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

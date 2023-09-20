@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="769831C9-6D6F-A680-F174-58F1B27C4346" name="dim_penas_accesorias">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:31:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_100</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pena_accesoria" id="AD8AAA84-EE88-2BEA-04D5-5A39425B8BAB">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:49:07 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_pena_accesoria" id="90722BC4-6B13-08D6-8F31-CD0A4A6B0178">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:48:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_penaaccesoria" id="A64B6EC5-6183-F3D6-7196-3B01197BB4A7">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:51:17 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA06A504-B91B-A263-D09B-B28B716D3697" referredColumn="1F3DD78E-BEBF-BB37-6C2A-19BA4D52F449"/>
+</associations>
+</Column>
+<Column name="era_accesoria" id="CAB7E278-1354-467D-D8E0-BBC61CDF898B">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:53:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mes_accesoria" id="381FA689-C3F0-8030-77A4-9ED7F6387179">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:53:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_accesoria" id="835CA24D-CD1F-5882-6D2C-7E65D6A82741">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:53:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_sentenciado_delito" id="B16E2569-053C-C2A4-2E78-5E4B5C6A9F3D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-31 13:09:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9061095A-0719-28DA-E1CC-45343DD4F768" referredColumn="6F73F418-4E5E-5641-91BC-89B111C439B9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7970714-5B2F-3D3D-A50E-0447B32BC00F" name="dim_penas_accesorias_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:49:07 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD8AAA84-EE88-2BEA-04D5-5A39425B8BAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21908499-A86C-A489-BF7B-8F83BD43CC72" name="dim_penas_accesorias__IDX">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-06-15 14:16:50 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90722BC4-6B13-08D6-8F31-CD0A4A6B0178" sortOrder="DESC"/>
+<colUsage columnID="B16E2569-053C-C2A4-2E78-5E4B5C6A9F3D" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43E0FEEB-EF97-FE85-63B1-0BAF7C215842" name="dim_penas_accesorias_dim_tipos_penasaccesorias_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:51:17 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A64B6EC5-6183-F3D6-7196-3B01197BB4A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AA219FD-A133-91D6-D513-ACD927B6707C" name="dim_penas_accesorias_dim_sentenciado_delito_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-31 13:09:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B16E2569-053C-C2A4-2E78-5E4B5C6A9F3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

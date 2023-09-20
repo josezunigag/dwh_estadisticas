@@ -1,0 +1,234 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F010B3D2-77DC-4697-FC2D-C0CCCCEABAC0" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_actuaciones_hitos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_actuaciones_hitos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_actuacion_hito" id="6012A93C-4280-8875-4CB9-AF50896BE1D0">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>id_actuacion_hito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_actuacion" id="AF2395DB-796F-994C-5DE3-AC335D85E0CC">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>id_actuacion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7B582FB-04F3-CE34-3167-98CD3EE8EE16" referredColumn="B901B2C7-8BF0-55D1-7590-803EF7571AFA"/>
+</associations>
+</Column>
+<Column name="crr_idhito" id="4804C822-E6E3-6073-5BAD-D71840295C5C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>crr_idhito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_hitoact" id="D70DA46D-44C3-CF1D-65DF-64B8B1D5BF1C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>crr_hitoact</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_hito" id="93962955-5CBD-1AEB-7F46-B2F94971943E">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>id_tipo_hito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D8CDFD8-540D-DBF5-0F64-F219DC7159FC" referredColumn="CCF4A93D-80F4-17A8-8CF2-B6CFD94EEF37"/>
+</associations>
+</Column>
+<Column name="id_estado_hito" id="9D6C96AA-40E2-6B85-5343-D43AE56F696B">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>id_estado_hito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1FE3AA3-4E7E-62D7-6C44-771BE856E332" referredColumn="C9BACEB3-B0F4-4F99-3205-8F5CA5BDBF44"/>
+</associations>
+</Column>
+<Column name="id_tipo_evento" id="7E3146B3-F13F-570A-E5A5-80A254EFC309">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>id_tipo_evento</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E5F4750F-1A61-1539-F573-CF23E68FE1AB" referredColumn="30FF11F6-C4B9-882E-DF4E-4FE8036ACCCF"/>
+</associations>
+</Column>
+<Column name="gls_hitoact" id="5EF97E85-BD64-AE06-9E2C-67690657C074">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_actuaciones_hitos</sourceObjSchema>
+<sourceObjName>gls_hitoact</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="703C7975-CD00-4E78-AB3E-2D2003EEA641" name="pk_dim_actuaciones_hitos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_actuaciones_hitos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6012A93C-4280-8875-4CB9-AF50896BE1D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32B2DA4A-2C63-4385-54A1-EAA68E92DEBB" name="index_1v18">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>index_1</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF2395DB-796F-994C-5DE3-AC335D85E0CC"/>
+<colUsage columnID="4804C822-E6E3-6073-5BAD-D71840295C5C"/>
+<colUsage columnID="D70DA46D-44C3-CF1D-65DF-64B8B1D5BF1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="280F421E-EE5A-A49F-3447-94EBBB5ABE18" name="fk_dim_actu_reference_dim_esta">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D6C96AA-40E2-6B85-5343-D43AE56F696B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66E9B270-02C4-5151-751A-30AB57857F41" name="fk_dim_actu_reference_dim_tipoevento">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E3146B3-F13F-570A-E5A5-80A254EFC309"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7DC4FBC-3F4D-D84E-AAAE-DFB4FFB7B1E0" name="fk_dim_actu_reference_fact_act">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF2395DB-796F-994C-5DE3-AC335D85E0CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89D332DB-328B-0721-23ED-D8AFC72270A8" name="fk_dim_actu_reference_dim_tipo">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93962955-5CBD-1AEB-7F46-B2F94971943E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

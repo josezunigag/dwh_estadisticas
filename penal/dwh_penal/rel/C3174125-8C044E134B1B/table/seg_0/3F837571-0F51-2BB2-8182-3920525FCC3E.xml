@@ -1,0 +1,503 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F837571-0F51-2BB2-8182-3920525FCC3E" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="fact_terminos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fact_terminos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_termino" id="5D3E312C-8648-3CB4-456B-F7E82EA3CE1C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_termino</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_fecha" id="77550E4C-7FB8-4A8C-8F98-A2C487953E5C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_fecha</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_corte_tribunal" id="0D147B22-A456-7855-798E-48FC61DBA83C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_corte_tribunal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83FF59A8-1467-1F35-6694-8423E86FBB25" referredColumn="2AC05971-05F7-0FC8-8A21-FF092AC6BCE1"/>
+</associations>
+</Column>
+<Column name="crr_idcausa" id="A57CE300-D24B-FC8E-55B6-73A172D8617D">
+<createdBy>josez</createdBy>
+<createdTime>2022-10-21 17:16:57 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D9040F8-06CB-C520-13EA-219BEDD9C8E1" referredColumn="AF4B65AE-6B85-6E01-36B9-67A2B6BE3A92"/>
+</associations>
+</Column>
+<Column name="crr_idevento" id="3EA0DF6D-E22B-557F-23C9-6C62E6581582">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>crr_idevento</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idrelacion" id="D1A71394-A8BC-3B50-0615-C24B5B47EF7B">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>crr_idrelacion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_causa" id="B97C34AA-B66D-FFB7-158A-6F3AB3891D63">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_tipo_causa</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="149FFD5F-5366-FC41-4360-5FD86F813205" referredColumn="59747796-C913-4F53-D7D9-7AA88BA45B62"/>
+</associations>
+</Column>
+<Column name="id_materia" id="7660DAC9-7904-C5D3-FDA4-9F25559B4DBF">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_materia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4221834F-124B-00BC-32B2-EF786EE5C5E0" referredColumn="D870ED2C-CC39-7982-6E9D-E31E380594ED"/>
+</associations>
+</Column>
+<Column name="id_procedimiento" id="3A959572-B315-6193-BC3E-A1362910B30E">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_procedimiento</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E06BE5E8-0C23-4C65-243B-C8C0DBB9D944" referredColumn="FC7C8780-78B3-5781-EF52-0D92C706FF9D"/>
+</associations>
+</Column>
+<Column name="id_estado_relacion" id="D7770A3B-2D2F-67E0-047D-B8E7E677E8B9">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_estado_relacion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53CF353F-6BBA-9ABF-8A4B-4AAE45F6FEDB" referredColumn="79BC042F-D680-F8C5-D855-4E463DC4B113"/>
+</associations>
+</Column>
+<Column name="id_tipo_hito" id="044B5418-1862-99C5-FB16-777BEC713147">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_tipo_hito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D95B5E2A-A61E-C3C2-AE01-BE26BD0585BD" referredColumn="CCF4A93D-80F4-17A8-8CF2-B6CFD94EEF37"/>
+</associations>
+</Column>
+<Column name="crr_idparticipante" id="5529A7FD-249E-17B1-7DC0-5270155AD505">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>crr_idparticipante</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4DF1944-45FE-2DA0-0808-9FD6ECA9BEF7" referredColumn="6370531E-CCFD-7B93-B34F-674A4D8216FE"/>
+</associations>
+</Column>
+<Column name="id_fecha_concluida" id="271328F0-8584-D2D0-2E92-BE77A1AC61E0">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>id_fecha_concluida</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duracion" id="BF652B36-E665-B055-EB5B-C22AE5C6CAA4">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>duracion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_carga" id="3BA34D57-ACF1-860A-599E-49BA3A5DF7B4">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>fec_carga</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_modificacion" id="E72885CC-551E-8C3A-490D-DD9A2A04CBB5">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>fact_terminos</sourceObjSchema>
+<sourceObjName>fec_modificacion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_termino" id="6ABDD376-B5BA-C53A-FF15-3437093D2798">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 17:32:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86B4BF6E-1B2C-7D22-C2BC-45979F82223C" referredColumn="CAD65794-D9FB-68E2-263C-DA2E06FBA46F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC2041A7-9B71-264E-70CB-AD4D25F47178" name="PK_facterminos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_facterminos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D3E312C-8648-3CB4-456B-F7E82EA3CE1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DA80ACF-3F99-C4B0-1142-DD32804111E0" name="causas_terminos_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>causas_terminos_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A57CE300-D24B-FC8E-55B6-73A172D8617D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="651A20ED-1C91-EAC1-1C90-C492188601B4" name="cortes_tribunales_terminos_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>cortes_tribunales_terminos_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D147B22-A456-7855-798E-48FC61DBA83C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23C2493E-04CA-A125-F210-003EB3D58587" name="index_7">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>index_7</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77550E4C-7FB8-4A8C-8F98-A2C487953E5C" sortOrder="DESC"/>
+<colUsage columnID="0D147B22-A456-7855-798E-48FC61DBA83C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7043028E-A981-975D-4EF0-18A9146F74B9" name="terminos_estados_relaciones_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>terminos_estados_relaciones_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7770A3B-2D2F-67E0-047D-B8E7E677E8B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A69989CB-31AC-9BD0-C737-EB6D4B745B55" name="terminos_materiasjoin_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>terminos_materiasjoin_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7660DAC9-7904-C5D3-FDA4-9F25559B4DBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84297B10-6F2C-65EE-77C3-873F3BC93225" name="terminos_tiposcausas_fk">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>terminos_tiposcausas_fk</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B97C34AA-B66D-FFB7-158A-6F3AB3891D63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E70CB6A5-C0C7-81CD-A424-114AAD1FF58E" name="fact_terminos__IDX">
+<createdBy>josez</createdBy>
+<createdTime>2022-10-21 17:20:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A57CE300-D24B-FC8E-55B6-73A172D8617D" sortOrder="DESC"/>
+<colUsage columnID="3EA0DF6D-E22B-557F-23C9-6C62E6581582" sortOrder="DESC"/>
+<colUsage columnID="D1A71394-A8BC-3B50-0615-C24B5B47EF7B"/>
+<colUsage columnID="044B5418-1862-99C5-FB16-777BEC713147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEFEDAA6-9360-BC06-67A3-59856017CAF9" name="FK_FACT_TER_REFERENCE_DIM_PROC">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A959572-B315-6193-BC3E-A1362910B30E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D65B34F-C141-15A7-70CD-6CA652785A05" name="fk_fact_ter_cortes_dim_cort">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D147B22-A456-7855-798E-48FC61DBA83C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D582431D-6CC1-B058-BBDB-4265D212E8DA" name="fk_fact_ter_ref_dim_tipo">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="044B5418-1862-99C5-FB16-777BEC713147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46946AD6-2CB5-46DD-895B-1A616D3441CE" name="fk_fact_ter_ref_dim_part">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5529A7FD-249E-17B1-7DC0-5270155AD505"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6571FD9-CF8E-28D1-D14A-2377EEA04209" name="fk_fact_ter_term_dim_esta">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7770A3B-2D2F-67E0-047D-B8E7E677E8B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2A63C7A-F176-6B46-4723-7AA295E483E2" name="fk_fact_ter_dimmate">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7660DAC9-7904-C5D3-FDA4-9F25559B4DBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83083E4A-BBE2-BFE5-0D79-9720762B2FA6" name="fk_fact_ter_term_dim_tipo">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B97C34AA-B66D-FFB7-158A-6F3AB3891D63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CC6CEB5-34DB-7B22-7B0A-8294D2F2B5AF" name="fact_terminos_dim_causas_FK">
+<createdBy>josez</createdBy>
+<createdTime>2022-10-21 17:16:57 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A57CE300-D24B-FC8E-55B6-73A172D8617D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1E556C2-75BD-7F67-5FE9-9F6D702B3361" name="fact_terminos_dim_tipos_terminos_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 17:32:29 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ABDD376-B5BA-C53A-FF15-3437093D2798"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

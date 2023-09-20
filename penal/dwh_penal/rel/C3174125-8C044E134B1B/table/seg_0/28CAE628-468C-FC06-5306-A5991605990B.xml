@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28CAE628-468C-FC06-5306-A5991605990B" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_tipos_delitos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_tipos_delitos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_delito" id="731BE8C8-4676-62BC-7ACB-83B5200C6F70">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_delitos</sourceObjSchema>
+<sourceObjName>id_tipo_delito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_delito" id="51F0F2D9-640D-525F-FA58-D9E045AC999D">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_delitos</sourceObjSchema>
+<sourceObjName>tip_delito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipdelito" id="735E2F47-5EFF-B51B-BFC6-CD51BB3608C0">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_tipos_delitos</sourceObjSchema>
+<sourceObjName>gls_tipdelito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,60,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0A21476-7A76-9A8C-7291-24442C9BAC9D" name="pk_dim_tipos_delitos">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_tipos_delitos</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="731BE8C8-4676-62BC-7ACB-83B5200C6F70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

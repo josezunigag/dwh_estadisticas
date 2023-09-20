@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FF7C1BD2-82EF-2E72-2856-0B5761CCF242" name="dim_paises">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:46:26 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_98</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pais" id="277DF883-03FF-92F1-F6CA-7C81DF862EF8">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:47:02 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_pais" id="B58E36D3-AC9F-7DD2-8BBD-60FDD10E7218">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:47:02 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_pais" id="269CD077-8DA6-D06F-302C-6ABF411BD3BB">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:47:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_nacionalidad" id="DCFFFC46-B591-BDF4-6B53-D0B18D2A6CF7">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:47:51 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7800815F-D59C-ADC5-7F14-00B3A5A27B7A" name="dim_paises_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:47:02 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="277DF883-03FF-92F1-F6CA-7C81DF862EF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

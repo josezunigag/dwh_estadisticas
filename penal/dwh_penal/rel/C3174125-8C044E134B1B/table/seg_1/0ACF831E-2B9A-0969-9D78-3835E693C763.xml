@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="0ACF831E-2B9A-0969-9D78-3835E693C763" name="dim_formas_cumplimiento">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:23:26 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_96</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_forma_cumplimiento" id="C0AF8136-84B9-E24D-DC91-DBC1E739A754">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:23:51 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_forma_cumplimiento" id="009D1718-4DD4-B7DC-DD2B-4EC907BF4B73">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:24:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_forma_cumplimiento" id="5FE9E397-6167-31D3-5A7F-C242F0D8993F">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:24:52 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_unificado" id="BFEEADDB-E4ED-FEE5-D4D4-0B495F2E60EA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-29 17:29:06 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A363DADD-42AA-ECB9-2EC2-F9624D0C7E96" name="dim_formas_cumplimiento_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:24:52 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0AF8136-84B9-E24D-DC91-DBC1E739A754"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_doc_pdf" directorySegmentName="seg_0" id="E8C2BA43-363F-611B-EF26-17AB48863889">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_solicitud" id="75F0D835-2F84-C3D9-16D1-B19F12FB6A76">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tip_referenciapdf" id="C8790A1A-1805-95BA-38C0-E497E26498C6">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idpdf" id="D40BEAD2-4527-CC8E-8800-F909ACDF8843">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="dim_doc_pdf_fact_solicitudes_FK" id="D71FCFBD-40CA-AB76-23C4-C1924AEEC19D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="dim_doc_pdf_PK" id="4E6BB2F1-0385-EE71-0981-8FC38895F39C">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

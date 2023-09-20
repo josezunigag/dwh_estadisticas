@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="0E48201C-7857-D73C-3223-63C4B5C72B42" containerWithKeyObject="DCD92E5C-46CF-8BAF-99DC-B1D794A8037F" localFKIndex="BD479B96-AE12-D145-2096-122C42CF513F" name="fact_medidas_cautelares_dim_lugar_reclusion_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-10 19:32:20 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_lugar_reclusion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>23D10B6A-E1F3-8889-A841-FB9E79D1D401</referredTableID>
+<keyObject>35E669E1-07F7-FF79-243F-4A8E41DA9C18</keyObject>
+<referredKeyID>35E669E1-07F7-FF79-243F-4A8E41DA9C18</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_lugar_reclusion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

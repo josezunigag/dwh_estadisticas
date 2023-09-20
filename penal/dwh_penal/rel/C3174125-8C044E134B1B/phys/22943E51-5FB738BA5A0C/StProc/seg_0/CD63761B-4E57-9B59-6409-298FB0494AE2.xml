@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_participantes_actualizaciones" directorySegmentName="seg_0" id="CD63761B-4E57-9B59-6409-298FB0494AE2">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_participantes_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[-- EXEC sp_participantes_actualizaciones
+CREATE PROCEDURE [dbo].[sp_participantes_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+
+
+	MERGE dim_participantes AS p
+	USING participantes_tmp AS tmp 
+	ON (p.crr_idparticipante = tmp.crr_idparticipante) 
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET crr_idcausa				= tmp.crr_causa
+			,crr_persona			= tmp.crr_persona
+			,tip_participante		= tmp.tip_participante
+			,cod_sitlibertad		= tmp.cod_sitlibertad
+			,flg_confidencialidad	= tmp.flg_confidencialidad
+			,flg_menor				= tmp.flg_menor
+			,flg_nn					= tmp.flg_nn
+			,flg_caratula			= tmp.flg_caratula
+			,fec_digitacion			= tmp.fec_digitacion
+			,idf_usuariodigita		= tmp.idf_usuariodigita
+			,fec_sistema			= tmp.fec_sistema
+			,idf_usuario			= tmp.idf_usuario
+			,flg_solicitante		= tmp.flg_solicitante
+			,flg_ilegalidaddet		= tmp.flg_ilegalidaddet
+			,crr_fiscal				= tmp.crr_fiscal
+			,crr_defensor			= tmp.crr_defensor
+			,flg_vigenciafiscal		= tmp.flg_vigenciafiscal
+			,gls_mail				= tmp.gls_mail
+			,flg_rpa				= tmp.flg_rpa
+			,flg_vif				= tmp.flg_vif
+			,flg_ttd				= tmp.flg_ttd
+			,flg_ojv				= tmp.flg_ojv
+			,flg_parte_presenta		= tmp.flg_parte_presenta
+			,crr_idsolicitud		= tmp.crr_idsolicitud
+			,cod_usuariohaceparte	= tmp.cod_usuariohaceparte
+			,fec_haceparte			= tmp.fec_haceparte
+			,est_haceparte			= tmp.est_haceparte
+			,flg_accesoportal		= tmp.flg_accesoportal
+			,flg_nomostrar			= tmp.flg_nomostrar
+			,gls_fonos				= tmp.gls_fonos
+			
+	WHEN NOT MATCHED 
+	THEN INSERT (crr_idparticipante		,crr_idcausa		,crr_persona		,tip_participante		,cod_sitlibertad
+				,flg_confidencialidad	,flg_menor			,flg_nn				,flg_caratula			,fec_digitacion
+				,idf_usuariodigita		,fec_sistema		,idf_usuario		,flg_solicitante		,flg_ilegalidaddet
+				,crr_fiscal				,crr_defensor		,flg_vigenciafiscal	,gls_mail				,flg_rpa
+				,flg_vif				,flg_ttd			,flg_ojv			,flg_parte_presenta		,crr_idsolicitud
+				,cod_usuariohaceparte	,fec_haceparte		,est_haceparte		,flg_accesoportal		,flg_nomostrar
+				,gls_fonos) 
+		 VALUES (tmp.crr_idparticipante		,tmp.crr_causa			,tmp.crr_persona		,tmp.tip_participante		,tmp.cod_sitlibertad
+				,tmp.flg_confidencialidad	,tmp.flg_menor			,tmp.flg_nn				,tmp.flg_caratula			,tmp.fec_digitacion
+				,tmp.idf_usuariodigita		,tmp.fec_sistema		,tmp.idf_usuario		,tmp.flg_solicitante		,tmp.flg_ilegalidaddet
+				,tmp.crr_fiscal				,tmp.crr_defensor		,tmp.flg_vigenciafiscal	,tmp.gls_mail				,tmp.flg_rpa
+				,tmp.flg_vif				,tmp.flg_ttd			,tmp.flg_ojv			,tmp.flg_parte_presenta		,tmp.crr_idsolicitud
+				,tmp.cod_usuariohaceparte	,tmp.fec_haceparte		,tmp.est_haceparte		,tmp.flg_accesoportal		,tmp.flg_nomostrar
+				,tmp.gls_fonos);
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97309DC3-D339-03A8-6260-D52A0DFB865B" containerWithKeyObject="4F99A391-5599-5AC4-0694-9770F281A4B8" localFKIndex="23DA1680-507E-66BE-A012-5951FB9F1163" name="fk_dim_mate_relations_dim_proc">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_dim_mate_relations_dim_proc</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<usedAsRemoteObject>true</usedAsRemoteObject>
+<referredTableLongName>dim_procedimientos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0AAAC101-7285-BD03-F0BF-2A1C5C8CC97F</referredTableID>
+<keyObject>D64EDAB5-ADF3-6978-0EE2-2CE127CBFACD</keyObject>
+<referredKeyID>D64EDAB5-ADF3-6978-0EE2-2CE127CBFACD</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_procedimiento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

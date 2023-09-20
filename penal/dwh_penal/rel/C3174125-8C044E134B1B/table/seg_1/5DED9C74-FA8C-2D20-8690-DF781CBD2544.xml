@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="5DED9C74-FA8C-2D20-8690-DF781CBD2544" name="dim_estados_firmas">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-08-30 13:25:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_95</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_firma" id="FE85CFB5-89A0-F0D6-AECF-41B42F1F06ED">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-08-30 13:26:40 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_estado_firma" id="9AE07DE7-C9C2-73D0-D18F-AB9851ECD330">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-08-30 13:27:21 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estfirma" id="BB6A3E7A-03A3-3DAF-5FBA-D372386F35DF">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-08-30 13:27:21 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0168FD75-3FD4-763F-01E2-9F837E391552" name="dim_estados_firmas_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-08-30 13:26:51 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE85CFB5-89A0-F0D6-AECF-41B42F1F06ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

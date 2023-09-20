@@ -1,0 +1,334 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="093E2827-B904-999A-D79F-B7DEF5393A27" name="dim_penas_corporales">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 12:43:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_92</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pena_corporal" id="5564AE87-A6A6-859B-8A7A-8B1433853A26">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 14:38:41 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_pena_corporal" id="74E055EB-7456-E6FF-FCA2-008AF29E044D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 12:44:45 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_resultado" id="6D37E564-81CB-CFFC-3E85-DA849F9D4A97">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 17:57:57 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1994CF44-A65D-86E6-BAA8-E0DCD4801383" referredColumn="64334D24-BCF9-E297-C7DB-E24C0461D85A"/>
+</associations>
+</Column>
+<Column name="flg_solo_multa" id="BADA0D13-7EF0-96E6-3086-8282BC257D22">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 17:58:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="era_corporal" id="7BB3D8CC-4067-A6A3-EC45-3226F6A141C6">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 17:59:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mes_corporal" id="EE13E921-BE13-4721-8DD8-4F529B20C49B">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 17:59:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_corporal" id="2A27CA21-036D-0D68-2AB1-1EFA129AF9BF">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 17:59:36 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_grado_participacion" id="B58307DC-6EE6-2795-190C-E56FBBF75EFE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:00:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DB776C1-38E8-8D84-DB13-05FBF52F7E6D" referredColumn="F01273DE-85E9-F1FB-C84B-9A28D019FC3F"/>
+</associations>
+</Column>
+<Column name="id_grado_ejecucion" id="A5C4536C-DB2F-A475-5F6A-2FF8FCC4DC52">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:01:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CEE8C81-23F4-2012-4D29-FA10CA003271" referredColumn="130268D1-504F-708A-E891-0AAD8D754DEC"/>
+</associations>
+</Column>
+<Column name="id_tipo_pena" id="AEF80DC7-3ECC-9961-89F2-651EBE8056F4">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:04:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6640BA09-825C-1A24-B437-45E190829F75" referredColumn="E49E95FA-FF50-D7AB-4CD4-7D6197F48FAA"/>
+</associations>
+</Column>
+<Column name="id_grado_penal" id="FE8EFA00-096D-2A92-866E-E9E6F5168DBA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 16:18:51 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AA6DB20-89EB-AB8C-CD86-D0DDAF6EE5F2" referredColumn="74720652-E699-9318-BB24-B2D3C420A34A"/>
+</associations>
+</Column>
+<Column name="id_cuantia" id="C606296A-E56C-018D-6904-BB5FD2563170">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:06:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DB53236-8105-3564-7AEF-CF0BAEAADEDA" referredColumn="51C17A0B-6469-4D6A-7E19-632E974C824E"/>
+</associations>
+</Column>
+<Column name="id_estado_pena" id="422F1F11-21F9-A8C1-F465-AFB3DC706856">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 13:13:35 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D7EEDB2-50C4-6420-5DD9-200CC152E07F" referredColumn="13917266-8FBA-5F93-49C5-E6AF6C23AE2E"/>
+</associations>
+</Column>
+<Column name="id_tipo_presidio" id="36B0B419-1743-A23E-CE10-293AC25CA1D7">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:15:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0D81B95-2E0E-8AB8-6573-86453557C61F" referredColumn="F4605039-6C27-12F8-55AF-BF8BD3580580"/>
+</associations>
+</Column>
+<Column name="flg_unificacion_pena" id="71DC7F3B-ABD4-148A-8844-0090B43ECC02">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 20:57:00 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_sentenciado_delito" id="DB69B8A8-499D-1621-E5BA-F8D0200CC486">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-31 13:07:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03F14EE8-35BE-3567-30AE-0ACCA7660BE5" referredColumn="6F73F418-4E5E-5641-91BC-89B111C439B9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F2C0E64-960C-50A5-CBA9-07F8B9C966C2" name="dim_penas_corporales_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 13:55:40 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5564AE87-A6A6-859B-8A7A-8B1433853A26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73E041B9-0591-1190-2939-1AA9C680A3DC" name="dim_penas_corporales__IDX">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-07-03 15:59:10 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74E055EB-7456-E6FF-FCA2-008AF29E044D" sortOrder="DESC"/>
+<colUsage columnID="DB69B8A8-499D-1621-E5BA-F8D0200CC486" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0BBE7EE-B8E0-1F58-DAEB-D7698E9C100F" name="dim_penas_corporales_dim_estados_penas_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 13:13:35 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="422F1F11-21F9-A8C1-F465-AFB3DC706856"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C65F35A9-21D5-09D3-A1A2-B1A66D52461C" name="dim_penas_corporales_dim_grados_penal_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 16:18:51 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE8EFA00-096D-2A92-866E-E9E6F5168DBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F68E298-EE06-9C69-6988-0127E82A5748" name="dim_penas_corporales_dim_tipos_resultados_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 17:57:57 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D37E564-81CB-CFFC-3E85-DA849F9D4A97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A240C42B-500D-DD1F-6179-AAE24045129F" name="dim_penas_corporales_dim_grados_participaciones_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:00:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B58307DC-6EE6-2795-190C-E56FBBF75EFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51518E3B-DE5D-D6D2-D3BA-B6E3C34DC55A" name="dim_penas_corporales_dim_grados_ejecuciones_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:01:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5C4536C-DB2F-A475-5F6A-2FF8FCC4DC52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48350F3A-D73D-5634-72FC-707608C40232" name="dim_penas_corporales_dim_tipos_penas_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:04:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEF80DC7-3ECC-9961-89F2-651EBE8056F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60B574AB-B7E3-DE3E-C28B-E34D41CDFA0C" name="dim_penas_corporales_dim_cuantia_penal_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:06:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C606296A-E56C-018D-6904-BB5FD2563170"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCC77EC7-4B0D-12F9-8C49-614B109F66C8" name="dim_penas_corporales_dim_tipos_presidio_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:15:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36B0B419-1743-A23E-CE10-293AC25CA1D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5B34334-71AA-EC05-204B-023E41A3D20C" name="dim_penas_corporales_dim_sentenciado_delito_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-31 13:07:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB69B8A8-499D-1621-E5BA-F8D0200CC486"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

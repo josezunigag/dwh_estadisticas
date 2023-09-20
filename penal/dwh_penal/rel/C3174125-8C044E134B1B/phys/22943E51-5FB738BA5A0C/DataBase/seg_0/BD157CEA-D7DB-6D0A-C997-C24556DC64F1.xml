@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataBaseSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataBaseSqlServerv2k5" name="penal" directorySegmentName="seg_0" id="BD157CEA-D7DB-6D0A-C997-C24556DC64F1">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjName>penal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroups>
+<FileGroup class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FileGroupSqlServerv2k5" name="PRIMARY" id="04D8EBA6-D03A-767A-4695-DC6EC68460A6">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="DB1_Data.MDF" id="DF8AECBB-415A-81A2-771D-42E2E8CF5330">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileName>c:\program files\microsoft sql server\mssql\data\DB1_Data.MDF</fileName>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="penal" id="EE4A10D5-7666-FB9C-32FA-D6F2ED405ECE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileName>E:\Data\penal.mdf</fileName>
+<growthValue>8192</growthValue>
+<initialSize>23377536</initialSize>
+</DataFile>
+</dataFiles>
+</FileGroup>
+</fileGroups>
+</DataBaseSqlServerv2k5>

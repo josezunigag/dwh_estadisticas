@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B23EBC75-3D1D-0A00-DB3F-7C5CE02E9327" name="dim_situacion_libertad">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:15:02 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_88</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_situacion_libertad" id="2C0B8822-94D9-1A78-D9C0-FB5070B21EC0">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:15:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_sitlibertad" id="A94C1C6B-2025-06B9-23F4-69BCAB0742E0">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:15:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_sitlibertad" id="D6E15E51-7873-4638-A042-3B122EB9148E">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:15:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0493845-FC51-DA35-339E-0DD51BBCB008" name="dim_situacion_libertad_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-18 05:15:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C0B8822-94D9-1A78-D9C0-FB5070B21EC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

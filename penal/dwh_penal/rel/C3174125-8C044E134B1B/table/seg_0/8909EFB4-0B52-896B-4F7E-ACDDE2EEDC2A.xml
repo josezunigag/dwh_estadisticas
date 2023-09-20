@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8909EFB4-0B52-896B-4F7E-ACDDE2EEDC2A" name="dim_estados_medidas_cautelares">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-12-22 15:44:44 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_60</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_medida_cautelar" id="A50A0389-3B9E-EEF5-9BAC-800FCD9A800D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-12-22 15:45:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_medcautelar" id="1B794F88-EEB7-0680-428D-23127B99CCBF">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-12-22 15:45:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estmedcautelar" id="538979BA-3C4D-7F23-CD5B-9F36E5B2D28F">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-12-22 15:45:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D18D76E-AE83-1026-6F8F-D26661552725" name="dim_estados_medidas_cautelares_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-12-22 15:45:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A50A0389-3B9E-EEF5-9BAC-800FCD9A800D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

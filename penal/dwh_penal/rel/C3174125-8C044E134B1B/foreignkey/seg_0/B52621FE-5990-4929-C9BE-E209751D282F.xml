@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B52621FE-5990-4929-C9BE-E209751D282F" containerWithKeyObject="25CEB831-1F1B-1F91-71B9-075F4F685B60" localFKIndex="3527D7CA-2C41-9B6C-063C-FC5C654DBE7C" name="fk_dim_sub__relations_dim_etap">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_dim_sub__relations_dim_etap</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_etapas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9CACFE59-8C1A-4845-B3DE-F753D00929E2</referredTableID>
+<keyObject>25F91022-F2EE-EECC-C745-937A86D7263B</keyObject>
+<referredKeyID>25F91022-F2EE-EECC-C745-937A86D7263B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_etapa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

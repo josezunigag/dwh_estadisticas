@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="E6C15793-6E29-BC61-3F46-D9B2964842E1" containerWithKeyObject="4AE599D4-B902-5862-857F-4CD770AC9DF7" localFKIndex="EB394305-2CEB-DC5B-CEFB-4EB9260B2070" name="dim_sentenciado_delito_fact_sentencias_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 16:02:39 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>fact_sentencias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C8AD559-FC15-3156-C674-260C72B71332</referredTableID>
+<keyObject>627E0277-0B79-C04F-9638-3DB39FE3F107</keyObject>
+<referredKeyID>627E0277-0B79-C04F-9638-3DB39FE3F107</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>crr_idsentencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

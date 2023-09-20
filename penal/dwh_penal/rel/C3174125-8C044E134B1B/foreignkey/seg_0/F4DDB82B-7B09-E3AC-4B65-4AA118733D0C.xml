@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F4DDB82B-7B09-E3AC-4B65-4AA118733D0C" containerWithKeyObject="8954C6F5-C999-F0F8-2CFB-B79ABCA3D959" localFKIndex="22926729-EE53-C6E1-44A0-D2256CB99473" name="dim_participantes_dim_causas_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-30 12:20:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_causas</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>916141F2-614E-0673-5A34-788226689415</referredTableID>
+<keyObject>EC462B94-A654-3CCC-5114-8B10F24AF843</keyObject>
+<referredKeyID>EC462B94-A654-3CCC-5114-8B10F24AF843</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>crr_idcausa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

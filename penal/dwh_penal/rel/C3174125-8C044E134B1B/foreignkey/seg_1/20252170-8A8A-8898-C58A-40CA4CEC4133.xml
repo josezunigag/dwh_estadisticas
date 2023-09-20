@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="20252170-8A8A-8898-C58A-40CA4CEC4133" containerWithKeyObject="64F4C4A3-6E28-D833-B091-C9EBBA411EBB" localFKIndex="7C9A2062-902B-CD29-5382-B83D4D1DA3C8" name="fact_notificaciones_dim_participantes_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-01-20 13:16:23 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.dim_participantes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8954C6F5-C999-F0F8-2CFB-B79ABCA3D959</referredTableID>
+<keyObject>83B28542-56D6-96C2-A44C-5C58871D4809</keyObject>
+<referredKeyID>83B28542-56D6-96C2-A44C-5C58871D4809</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>crr_idparticipante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

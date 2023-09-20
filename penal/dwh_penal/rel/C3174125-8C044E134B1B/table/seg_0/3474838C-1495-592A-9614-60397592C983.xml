@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3474838C-1495-592A-9614-60397592C983" name="dim_causas_relaciones">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:01:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_67</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_causa_relacion" id="967523AE-8E21-C2C6-FEB3-0714E9F65B49">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:01:44 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idcausa" id="439DFE37-BC12-1688-2F5D-CDCA32208A2D">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-12 17:53:00 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20683D94-A9F5-7B7B-EE72-69993DB05B52" referredColumn="AF4B65AE-6B85-6E01-36B9-67A2B6BE3A92"/>
+</associations>
+</Column>
+<Column name="crr_iddelito" id="2E77950B-2699-87F5-DD94-DB28562801D4">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:02:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idrelacion" id="751369C2-1AFC-F6E1-E8EC-C7F6C609023B">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:03:24 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_estado_relacion" id="9542265A-E7F7-4E11-48A0-F10CF3F6557E">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:11:13 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C4DDB52-609D-0846-C55E-7B5D1199326F" referredColumn="79BC042F-D680-F8C5-D855-4E463DC4B113"/>
+</associations>
+</Column>
+<Column name="crr_idparticipante" id="3EAAFFC0-DE1F-DDFE-9106-FBBC4C5D2DD0">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-12 17:58:47 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="452F8A80-FD80-0611-DCCB-BF4D89B9E083" referredColumn="6370531E-CCFD-7B93-B34F-674A4D8216FE"/>
+</associations>
+</Column>
+<Column name="id_materia" id="2A7F695E-B939-C811-7B0D-4970F43E619D">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:08:48 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECDEDC44-9A62-BD70-932E-9CBEFF5FF8E8" referredColumn="D870ED2C-CC39-7982-6E9D-E31E380594ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFA388A7-1A3C-8E78-8130-3990FA16538E" name="dim_cautelares_delitos_PK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:04:11 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="967523AE-8E21-C2C6-FEB3-0714E9F65B49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C25870C-4E47-1B0D-27B5-D9AFC29B5666" name="dim_cautelares_delitos_dim_materias_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:08:48 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A7F695E-B939-C811-7B0D-4970F43E619D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="689AB17D-FA87-E80D-1EA0-2CC610B693DB" name="dim_cautelares_delitos_dim_estados_relaciones_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 13:11:13 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9542265A-E7F7-4E11-48A0-F10CF3F6557E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8A93A71-FF84-2B2B-8CE3-8E1630491692" name="dim_causas_relaciones_dim_causas_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-12 17:53:00 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="439DFE37-BC12-1688-2F5D-CDCA32208A2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FC66758-CB34-EC1C-7CCD-50CC872102F6" name="dim_causas_relaciones_dim_participantes_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-12 17:58:47 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EAAFFC0-DE1F-DDFE-9106-FBBC4C5D2DD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

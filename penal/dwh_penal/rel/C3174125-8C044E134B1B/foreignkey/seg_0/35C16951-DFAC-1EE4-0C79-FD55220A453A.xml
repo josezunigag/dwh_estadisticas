@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="35C16951-DFAC-1EE4-0C79-FD55220A453A" containerWithKeyObject="4D2E6683-71DE-2BD0-881B-9F6FD33BEAF7" localFKIndex="4F1CE2F9-8DAA-EBCC-1A5E-F290203A8CB1" name="fk_dim_term_reference_fact_ter">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_dim_term_reference_fact_ter</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.fact_terminos</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>3F837571-0F51-2BB2-8182-3920525FCC3E</referredTableID>
+<keyObject>CC2041A7-9B71-264E-70CB-AD4D25F47178</keyObject>
+<referredKeyID>CC2041A7-9B71-264E-70CB-AD4D25F47178</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_termino</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

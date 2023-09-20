@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="248EF8A3-F3AA-DEC0-95C8-CD2B5EF82A40" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_sit_procesales">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_sit_procesales</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sit_procesal" id="C6E08DF2-9D00-ED8D-759E-32647919BA74">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_sit_procesales</sourceObjSchema>
+<sourceObjName>id_sit_procesal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_sitprocesal" id="D47FB269-B19F-B0D2-A6B8-66780DA6E5BA">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_sit_procesales</sourceObjSchema>
+<sourceObjName>cod_sitprocesal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_sitprocesal" id="A03A58A8-9D23-3740-3D84-D01576BA7057">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_sit_procesales</sourceObjSchema>
+<sourceObjName>gls_sitprocesal</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="572C41BA-DDCD-72A2-35DD-C90D3271F8E9" name="pk_dim_sit_procesales">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_sit_procesales</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6E08DF2-9D00-ED8D-759E-32647919BA74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

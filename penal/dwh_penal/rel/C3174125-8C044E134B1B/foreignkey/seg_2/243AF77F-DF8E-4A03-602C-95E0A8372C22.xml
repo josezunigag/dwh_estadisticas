@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="243AF77F-DF8E-4A03-602C-95E0A8372C22" containerWithKeyObject="CC43DDA8-A54E-853D-ADFD-535EF795ADD9" localFKIndex="BF9958CE-5646-F398-AF0E-E0EA12067722" name="dim_inhabilidades_dim_tipos_inhabilidades_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 16:31:46 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_tipos_inhabilidades</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97F8ACE3-34E5-7D2E-19A5-D5F05CB44B2B</referredTableID>
+<keyObject>0100A20A-9AAD-83C3-CAEB-0F8ACDFFA433</keyObject>
+<referredKeyID>0100A20A-9AAD-83C3-CAEB-0F8ACDFFA433</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_inhabilidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

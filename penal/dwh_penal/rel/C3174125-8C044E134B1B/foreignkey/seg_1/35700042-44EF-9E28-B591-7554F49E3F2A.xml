@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="35700042-44EF-9E28-B591-7554F49E3F2A" containerWithKeyObject="64F4C4A3-6E28-D833-B091-C9EBBA411EBB" localFKIndex="A4403CD3-740F-4148-F07B-A68EC950AACB" name="fact_notificaciones_dim_cortes_tribunales_FK">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:20:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_cortes_tribunales</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>44518621-92A5-5ECD-2E97-58D3A0387290</referredTableID>
+<keyObject>2B4A45DC-31ED-0134-30E6-DFF8EDED046F</keyObject>
+<referredKeyID>2B4A45DC-31ED-0134-30E6-DFF8EDED046F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_corte_tribunal</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="31CA6481-9663-E1A5-180D-AAB6064F3D48" containerWithKeyObject="3B769FC0-B784-7083-3313-D408BB3EDD67" localFKIndex="5DC06199-7C2E-3F79-054A-E645E8B93856" name="dim_medidas_cautelares_dim_estados_medidas_cautelares_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-12-22 15:46:17 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_estados_medidas_cautelares</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8909EFB4-0B52-896B-4F7E-ACDDE2EEDC2A</referredTableID>
+<keyObject>2D18D76E-AE83-1026-6F8F-D26661552725</keyObject>
+<referredKeyID>2D18D76E-AE83-1026-6F8F-D26661552725</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_medida_cautelar</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

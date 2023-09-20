@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="648B9507-2E67-BF4E-487F-16F7EC07C0A2" containerWithKeyObject="85412B33-54C0-2524-7D9E-C7A98339B1BA" localFKIndex="F01D23C6-72AC-8574-BEC8-E5695E658E4C" name="dim_penas_sustitutivas_dim_formas_cumplimiento_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 19:25:56 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_formas_cumplimiento</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0ACF831E-2B9A-0969-9D78-3835E693C763</referredTableID>
+<keyObject>A363DADD-42AA-ECB9-2EC2-F9624D0C7E96</keyObject>
+<referredKeyID>A363DADD-42AA-ECB9-2EC2-F9624D0C7E96</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_forma_cumplimiento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

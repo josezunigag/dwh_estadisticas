@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81DEE428-CBEE-7ED0-CDBE-FAB9CEFB2906" name="dim_cautelares_ordenes">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:23:44 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_68</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cautelar_orden" id="0117DFA6-99AB-27E4-0EC5-44684EB2B818">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:27:17 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idmedcautelar" id="9725A178-C456-88BA-6364-21CF202A71DB">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:24:02 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A253E777-2222-0857-57AD-39CA281A56A4" referredColumn="4EE5275E-1DBC-1ADB-1B52-FABCCB0CF805"/>
+</associations>
+</Column>
+<Column name="crr_idorden" id="52986FAD-C305-FFE7-F07B-75C947B97C0D">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:25:36 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_orden" id="5B3AD3D0-C754-4EE8-57BA-52B193E85013">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:25:58 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tiporden" id="35E447D7-AC37-D94B-060B-8A2CDA80F663">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:26:12 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_orden" id="C0D5518E-79DC-A88B-D165-DDF2EA7C5E45">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:26:36 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_vigencia" id="FA311BD7-569D-F258-9DB1-D318CBBA9051">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:26:47 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A383384E-E381-F043-D2EC-6C3F3C6EAF04" name="dim_cautelares_ordenes_PK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:27:26 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0117DFA6-99AB-27E4-0EC5-44684EB2B818"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C728604F-385C-0AA7-50AD-7B76EC7C9C80" name="dim_cautelares_ordenes_fact_medidas_cautelares_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-01-11 15:24:02 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9725A178-C456-88BA-6364-21CF202A71DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

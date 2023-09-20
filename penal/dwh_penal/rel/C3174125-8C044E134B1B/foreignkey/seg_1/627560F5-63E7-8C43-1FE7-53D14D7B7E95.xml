@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="627560F5-63E7-8C43-1FE7-53D14D7B7E95" containerWithKeyObject="64F4C4A3-6E28-D833-B091-C9EBBA411EBB" localFKIndex="C4569E40-5E43-C935-483D-112647056C41" name="fact_notificaciones_dim_tipos_notificaciones_FK">
+<createdBy>josez</createdBy>
+<createdTime>2022-12-05 18:27:38 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_tipos_notificaciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>93A4F34E-20A2-3614-7C7B-F269B2D27DF6</referredTableID>
+<keyObject>8E3E1C0C-EFA7-E0C3-D36E-DA7880D1A703</keyObject>
+<referredKeyID>8E3E1C0C-EFA7-E0C3-D36E-DA7880D1A703</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_notificacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

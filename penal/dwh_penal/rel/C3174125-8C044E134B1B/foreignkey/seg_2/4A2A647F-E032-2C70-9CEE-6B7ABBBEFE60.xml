@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="4A2A647F-E032-2C70-9CEE-6B7ABBBEFE60" containerWithKeyObject="E5F1D594-ADB3-7710-2CD0-79DDE9464BD0" localFKIndex="2A254BC0-B76B-9187-3A73-C45CB5E4810A" name="dim_agravantes_dim_tipos_agravante_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:27:55 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_tipos_agravantes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9485F4B9-289B-A7C4-66EE-6BB642DBD9AE</referredTableID>
+<keyObject>5F96D962-EB1C-AE4A-0EA6-866F25CFB50B</keyObject>
+<referredKeyID>5F96D962-EB1C-AE4A-0EA6-866F25CFB50B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_agravante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

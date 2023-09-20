@@ -1,0 +1,674 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_resumenes_indicadores" directorySegmentName="seg_0" id="BF29AE96-310A-7C2A-C534-D44EDDF13016">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_resumenes_indicadores</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_resumenes_indicadores](@year int)
+AS
+BEGIN
+
+	-----ACTUALIZA RESUMENES ACTUACIONES
+	-- Exec [dbo].[sp_resumenes_indicadores]
+	update res set actuaciones = t.actuaciones
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(1) as actuaciones
+		FROM fact_actuaciones act
+		inner join generales.dbo.dim_fecha fec
+			ON act.id_fecha = fec.idfecha
+		inner join dim_cortes_tribunales ct
+			ON act.id_corte_tribunal = ct.id_corte_tribunal
+		inner join dim_personas p
+			ON p.crr_litigante_id = act.crr_persona_firma
+		WHERE fec.año >= @year
+		AND act.id_estado_evento = 24
+		AND EXISTS (
+			SELECT top(1)1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = act.crr_idcausa
+			AND cau.id_tipo_causa IN (1, 2, 4, 5)
+		)
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+	update res set actuaciones = t.actuaciones
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(1) as actuaciones
+		FROM fact_actuaciones act
+		inner join generales.dbo.dim_fecha fec
+			ON act.id_fecha = fec.idfecha
+		inner join dim_cortes_tribunales ct
+			ON act.id_corte_tribunal = ct.id_corte_tribunal
+		inner join dim_personas p
+			ON p.crr_litigante_id = act.crr_persona_firma
+		WHERE fec.año >= @year
+		AND act.id_estado_evento = 24
+		AND EXISTS (
+			SELECT top(1) 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = act.crr_idcausa
+			AND cau.id_tipo_causa IN (1, 4, 5)
+		)
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+-----ACTUALIZA RESUMENES ESCRITOS RESUELTOS------
+	update res set escritos_resueltos = t.escritos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(1) as escritos
+		FROM fact_solicitudes sol
+		inner join generales.dbo.dim_fecha fec
+			ON sol.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON sol.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND sol.id_estado_evento = 16 --resueltos
+		AND EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = sol.crr_idcausa			  
+			AND cau.id_tipo_causa IN (1, 2, 4, 5)
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)			   
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+	
+	update res set escritos_resueltos = t.escritos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(1) as escritos
+		FROM fact_solicitudes sol
+		INNER JOIN generales.dbo.dim_fecha fec
+			ON sol.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON sol.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND sol.id_estado_evento = 16 --resueltos
+		AND EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = sol.crr_idcausa  
+			AND cau.id_tipo_causa IN (1, 4, 5) -- Excluyo exhortos.
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)			   
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+-----ACTUALIZA RESUMENES ESCRITOS PENDIENTES------
+	update res set escritos_pendientes = t.escritos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(1) as escritos
+		FROM fact_solicitudes sol
+		inner join generales.dbo.dim_fecha fec
+			ON sol.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON sol.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND sol.id_estado_evento <> 16 --resueltos
+		AND EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = sol.crr_idcausa			  
+			AND cau.id_tipo_causa IN (1, 2, 4, 5)
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)			   
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+	
+	update res set escritos_pendientes = t.escritos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(1) as escritos
+		FROM fact_solicitudes sol
+		INNER JOIN generales.dbo.dim_fecha fec
+			ON sol.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON sol.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND sol.id_estado_evento <> 16 --resueltos
+		AND EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = sol.crr_idcausa  
+			AND cau.id_tipo_causa IN (1, 4, 5) -- Excluyo exhortos.
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)			   
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+	
+	
+-----ACTUALIZA RESUMENES ESCRITOS---------
+	update res set escritos = t.escritos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(1) as escritos
+		FROM fact_solicitudes sol
+		inner join generales.dbo.dim_fecha fec
+			ON sol.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON sol.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = sol.crr_idcausa			  
+			AND cau.id_tipo_causa IN (1, 2, 4, 5)
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)			   
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+
+	update res set escritos = t.escritos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(1) as escritos
+		FROM fact_solicitudes sol
+		INNER JOIN generales.dbo.dim_fecha fec
+			ON sol.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON sol.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND EXISTS (
+			SELECT 1
+			FROM dim_causas AS cau                      
+			WHERE cau.crr_idcausa = sol.crr_idcausa  
+			AND cau.id_tipo_causa IN (1, 4, 5) -- Excluyo exhortos.
+			AND cau.id_estado_relacion != 6 -- Invalidada
+		)			   
+		GROUP BY ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+	-----ACTUALIZA RESUMENES RESOLUCIONES
+
+
+
+	update res set resoluciones = t.resoluciones
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(1) as resoluciones
+		FROM fact_resoluciones res
+		inner join generales.dbo.dim_fecha fec
+			ON res.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON res.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND res.id_estado_evento = 10 -- Firmada.
+		AND EXISTS (
+				SELECT TOP(1)1
+				FROM dim_causas AS cau                      
+				WHERE cau.crr_idcausa = res.crr_idcausa
+				AND cau.id_tipo_causa IN (1, 2, 4, 5)
+			)
+		AND EXISTS (
+				SELECT TOP(1)1 
+				FROM dim_resoluciones_jueces AS rj
+				WHERE rj.id_resolucion  = res.id_resolucion		
+			)
+		GROUP BY ct.cod_corte,
+				ct.cod_tribunal,
+				fec.año,
+				fec.mes
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+
+	update res set resoluciones = t.resoluciones
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(1) as resoluciones
+		FROM fact_resoluciones res
+		inner join generales.dbo.dim_fecha fec
+			ON res.id_fecha = fec.idfecha
+		INNER JOIN dim_cortes_tribunales ct
+			ON res.id_corte_tribunal = ct.id_corte_tribunal
+		WHERE fec.año >= @year  
+		AND res.id_estado_evento = 10 -- Firmada.
+		AND EXISTS (
+				SELECT TOP(1)1
+				FROM dim_causas AS cau                      
+				WHERE cau.crr_idcausa = res.crr_idcausa
+				AND cau.id_tipo_causa IN (1, 4, 5)
+			)
+		AND EXISTS (
+				SELECT TOP(1)1 
+				FROM dim_resoluciones_jueces AS rj
+				WHERE rj.id_resolucion  = res.id_resolucion		
+			)
+		GROUP BY ct.cod_corte,
+				ct.cod_tribunal,
+				fec.año,
+				fec.mes
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+	-----ACTUALIZA RESUMENES TERMINOS MATERIAS	
+	update res set terminos_materias = t.terminos_materias
+	from resumenes_indicadores res
+	inner join (
+
+			SELECT ter.ano
+					,ter.mes
+					,ter.cod_corte
+					,ter.cod_tribunal
+					,1 flg_exhorto
+					,SUM(cantidad) as terminos_materias
+			FROM (
+				SELECT	 ct.cod_corte
+						,ct.cod_tribunal
+						,fec.año as ano
+						,fec.mes
+						,m.id_materia
+						,COUNT(distinct f.crr_idcausa) as cantidad
+				FROM fact_terminos f with(nolock)
+				INNER JOIN generales.dbo.dim_fecha fec with(nolock)
+					ON f.id_fecha_concluida = fec.idfecha
+				INNER JOIN dim_cortes_tribunales ct with(nolock)
+					ON f.id_corte_tribunal = ct.id_corte_tribunal
+				INNER JOIN dim_materias m with(nolock)
+					ON f.id_materia = m.id_materia
+				WHERE fec.año >= @year 
+				GROUP BY ct.cod_corte
+						,ct.cod_tribunal
+						,fec.año
+						,fec.mes
+						,m.id_materia
+			) ter
+			GROUP BY ter.ano
+					,ter.mes
+					,ter.cod_corte
+					,ter.cod_tribunal
+	) t
+    on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto     
+
+	update res set terminos_materias = t.terminos_materias
+	from resumenes_indicadores res
+	inner join (
+
+			SELECT ter.ano
+					,ter.mes
+					,ter.cod_corte
+					,ter.cod_tribunal
+					,0 flg_exhorto
+					,SUM(cantidad) as terminos_materias
+			FROM (
+				SELECT	 ct.cod_corte
+						,ct.cod_tribunal
+						,fec.año as ano
+						,fec.mes
+						,m.id_materia
+						,COUNT(distinct f.crr_idcausa) as cantidad
+				FROM fact_terminos f with(nolock)
+				INNER JOIN generales.dbo.dim_fecha fec with(nolock)
+					ON f.id_fecha_concluida = fec.idfecha
+				INNER JOIN dim_cortes_tribunales ct with(nolock)
+					ON f.id_corte_tribunal = ct.id_corte_tribunal
+				INNER JOIN dim_materias m with(nolock)
+					ON f.id_materia = m.id_materia
+				WHERE fec.año >= @year 
+				GROUP BY ct.cod_corte
+						,ct.cod_tribunal
+						,fec.año
+						,fec.mes
+						,m.id_materia
+			) ter
+			GROUP BY ter.ano
+					,ter.mes
+					,ter.cod_corte
+					,ter.cod_tribunal
+	) t
+    on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto     
+
+	-----ACTUALIZA RESUMENES TERMINOS RELACIONES
+	update res set terminos_relaciones = t.terminos_relaciones
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				--,1 as flg_exhorto
+				,count(1) as terminos_relaciones
+		FROM fact_terminos ter
+		inner join dim_cortes_tribunales ct
+			on ct.id_corte_tribunal = ter.id_corte_tribunal
+		inner join generales.dbo.dim_fecha fec
+			ON ter.id_fecha = fec.idfecha
+		WHERE fec.año >= @year
+		group by  ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	--and res.flg_exhorto = t.flg_exhorto
+
+
+
+	-----ACTUALIZA RESUMENES TERMINOS
+
+	update res set terminos = t.terminos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(distinct ter.crr_idcausa) as terminos
+		FROM fact_terminos ter
+		INNER JOIN dim_cortes_tribunales ct
+			on ct.id_corte_tribunal = ter.id_corte_tribunal
+		INNER JOIN generales.dbo.dim_fecha fec
+			ON ter.id_fecha_concluida = fec.idfecha
+		WHERE fec.año >= @year 
+		GROUP BY  ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	AND res.cod_tribunal = t.cod_tribunal
+	AND res.ano = t.ano
+	AND res.mes = t.mes
+	AND res.flg_exhorto = t.flg_exhorto
+
+	UPDATE res set terminos = t.terminos
+	from resumenes_indicadores res
+	inner join (
+		SELECT ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(distinct ter.crr_idcausa) as terminos
+		FROM fact_terminos ter
+		inner join dim_cortes_tribunales ct
+			on ct.id_corte_tribunal = ter.id_corte_tribunal
+		inner join generales.dbo.dim_fecha fec
+			ON ter.id_fecha_concluida = fec.idfecha
+		WHERE fec.año >= @year 
+		group by  ct.cod_corte
+				,ct.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+	-----ACTUALIZA RESUMENES INGRESOS
+	update res set ingresos = t.ingresos
+	from resumenes_indicadores res
+	inner join (
+		SELECT c.cod_corte
+				,c.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,1 as flg_exhorto
+				,count(1) as ingresos
+		FROM dim_causas c
+		inner join generales.dbo.dim_fecha fec
+			ON c.fecha_id = fec.idfecha
+		WHERE c.id_estado_relacion != 6  -- Invalidadas
+		AND fec.año >= @year 
+		group by  c.cod_corte
+				,c.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+	update res set ingresos = t.ingresos
+	from resumenes_indicadores res
+	inner join (
+		SELECT c.cod_corte
+				,c.cod_tribunal
+				,fec.año as  ano
+				,fec.mes 
+				,0 as flg_exhorto
+				,count(1) as ingresos
+		FROM dim_causas c
+		inner join generales.dbo.dim_fecha fec
+			ON c.fecha_id = fec.idfecha
+		WHERE c.id_estado_relacion != 6  -- Invalidadas
+		AND c.id_tipo_causa <> 2
+		AND fec.año >= @year 
+		group by  c.cod_corte
+				,c.cod_tribunal
+				,fec.año
+				,fec.mes 
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+
+	-----ACTUALIZA RESUMENES AUDIENCIAS
+	update res set audiencias = t.audiencias
+					,aud_realizadas = t.audiencias_realizadas
+	from resumenes_indicadores res
+	inner join (
+			SELECT ct.cod_corte
+				   ,ct.cod_tribunal
+				   ,fec.año as ano
+				   ,fec.mes
+				   ,SUM(CASE WHEN aud.id_estado_audiencia_est in (1,2,3,4,5,8) THEN 1
+						ELSE 0 END) AS audiencias
+				   ,SUM(CASE WHEN aud.id_estado_audiencia_est in (1,2,3) THEN 1 ELSE 0 END) AS audiencias_realizadas
+				   ,1 AS flg_exhorto
+			FROM fact_audiencias AS aud
+			INNER JOIN dim_cortes_tribunales ct
+				ON ct.id_corte_tribunal = aud.id_corte_tribunal
+			INNER JOIN generales.dbo.dim_fecha fec
+				ON aud.id_fecha = fec.idfecha
+				AND aud.id_estado_audiencia_est in (1,2,3,4,5,8)
+				AND aud.flg_novalido = 0
+			WHERE fec.año >= @year 
+			GROUP BY ct.cod_corte,
+				   ct.cod_tribunal,
+				   fec.año,
+				   fec.mes
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+
+	update res set audiencias = t.audiencias
+					,aud_realizadas = t.audiencias_realizadas
+	from resumenes_indicadores res
+	inner join (
+			SELECT ct.cod_corte
+				   ,ct.cod_tribunal
+				   ,fec.año as ano
+				   ,fec.mes
+				   ,SUM(CASE WHEN aud.id_estado_audiencia_est in (1,2,3,4,5,8) THEN 1
+						ELSE 0 END) AS audiencias
+				   ,SUM(CASE WHEN aud.id_estado_audiencia_est in (1,2,3) THEN 1 ELSE 0 END) AS audiencias_realizadas
+				   ,0 AS flg_exhorto
+			FROM fact_audiencias AS aud
+			INNER JOIN dim_cortes_tribunales ct
+				ON ct.id_corte_tribunal = aud.id_corte_tribunal
+			INNER JOIN generales.dbo.dim_fecha fec
+				ON aud.id_fecha = fec.idfecha
+				AND aud.id_estado_audiencia_est in (1,2,3,4,5,8)
+				AND aud.flg_novalido = 0
+			INNER JOIN dim_causas cau
+				ON cau.crr_idcausa = aud.crr_idcausa
+			WHERE cau.id_tipo_causa <> 2
+			AND fec.año >= @year 
+			GROUP BY ct.cod_corte,
+				   ct.cod_tribunal,
+				   fec.año,
+				   fec.mes
+	) as t
+	on res.cod_corte = t.cod_corte
+	and res.cod_tribunal = t.cod_tribunal
+	and res.ano = t.ano
+	and res.mes = t.mes
+	and res.flg_exhorto = t.flg_exhorto
+
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

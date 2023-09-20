@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8C2BA43-363F-611B-EF26-17AB48863889" name="dim_doc_pdf">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 17:55:13 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_59</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="crr_idpdf" id="D40BEAD2-4527-CC8E-8800-F909ACDF8843">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 17:55:37 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_referenciapdf" id="C8790A1A-1805-95BA-38C0-E497E26498C6">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 17:56:58 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_solicitud" id="75F0D835-2F84-C3D9-16D1-B19F12FB6A76">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 18:00:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="613137DB-2FC0-1E10-F7D6-0E7695BA6DA7" referredColumn="5BF2C3FA-DF9A-5ED0-ED79-0FCD194B0A01"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E6BB2F1-0385-EE71-0981-8FC38895F39C" name="dim_doc_pdf_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 17:56:32 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D40BEAD2-4527-CC8E-8800-F909ACDF8843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D71FCFBD-40CA-AB76-23C4-C1924AEEC19D" name="dim_doc_pdf_fact_solicitudes_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-16 18:00:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75F0D835-2F84-C3D9-16D1-B19F12FB6A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

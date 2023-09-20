@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="958D4761-4E0B-8C78-B549-15DCBAE5CB02" containerWithKeyObject="B0E96972-F9A4-8C13-AA5C-D4ACC056F0BA" localFKIndex="2450E471-AD5C-5B21-86D6-FCE47DED311E" name="fk_dim_reso_reference_factreshito">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_dim_reso_reference_factreshito</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>fact_resoluciones</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>72A62CB6-3A14-EA0B-84DC-706219BA24C1</referredTableID>
+<keyObject>64ED1C95-C0D6-BE76-B343-ABC821FB3641</keyObject>
+<referredKeyID>64ED1C95-C0D6-BE76-B343-ABC821FB3641</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_resolucion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

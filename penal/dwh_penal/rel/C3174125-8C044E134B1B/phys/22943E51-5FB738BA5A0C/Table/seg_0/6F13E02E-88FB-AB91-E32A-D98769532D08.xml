@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_tipos_ingresos" directorySegmentName="seg_0" id="6F13E02E-88FB-AB91-E32A-D98769532D08">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<schemaObject>98C42462-4E13-C0DB-D54B-1179E036D239</schemaObject>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+<filegroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_tipingreso" id="100A7F9D-41A1-053C-9B2A-2954BFF37672">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<collation>Modern_Spanish_100_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_tipo_ingreso" id="34280643-7E30-3AFD-AB49-94AEEB6ABE15">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_modificacion" id="9C8BB26F-0640-DEA6-F24B-944A0E08E0C3">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<defaultValue>getdate()</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="cod_tipingreso" id="B1DD2642-889E-24E8-9156-28BA1B205D6D">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<defaultValue>(0)</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fecha_creacion" id="D4EBC4C4-26AA-9E7D-A5D4-87A298533758">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<defaultValue>getdate()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK_dim_tipos_ingresos" id="DC0C4F8D-A7B9-C1D0-98E5-6895AA81914E">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

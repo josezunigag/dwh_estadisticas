@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EC2ED294-5CD6-9A97-C646-E407894F9167" containerWithKeyObject="751C532F-D339-C235-FBF1-27BAD895224A" localFKIndex="A8EFCE5D-F7F1-E75B-4F5A-CDBCD3DB3BEE" name="fk_fact_aud_reference_dim_soli">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_fact_aud_reference_dim_soli</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.dim_solicitudes_audiencias</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D39F0376-0631-208F-1EB7-58468D6A0A0C</referredTableID>
+<keyObject>E7261F45-9082-9574-6E96-BABC1828549E</keyObject>
+<referredKeyID>E7261F45-9082-9574-6E96-BABC1828549E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_solicitud_audiencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

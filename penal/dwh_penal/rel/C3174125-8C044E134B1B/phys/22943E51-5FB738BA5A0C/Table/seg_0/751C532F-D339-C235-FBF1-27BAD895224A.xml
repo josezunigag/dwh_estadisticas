@@ -1,0 +1,318 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="fact_audiencias" directorySegmentName="seg_0" id="751C532F-D339-C235-FBF1-27BAD895224A">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+<filegroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_defensor" id="0353C895-290F-906F-88C3-5EA2C090A72C">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_djvg" id="0625B6FB-01DA-1836-6E0F-F4CBD6DBFBDC">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_notificacion" id="0732ED0B-C8D1-B999-4AA3-376E41474863">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="persona_programacion" id="0839E138-99A9-E812-0FD0-96C7CBECA365">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idcausa" id="0B6FAA96-7DF0-9900-5D2E-8626CCB2FA5B">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_suspension" id="184485B6-EC50-70B9-27F0-5C319C364387">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_inicioprg" id="1A1CE599-5B3E-DC65-3B2C-17E021F801EC">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="tipo_audiencia" id="1A6418FF-1FBB-5801-2EC3-0B2916BA47D4">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<collation>Modern_Spanish_100_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_sacardemeta" id="213E3E18-94E1-A485-AD73-12378E91676F">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_agenda" id="26F13612-8A7F-EFB1-599E-25FA2BB27462">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_audiencia_confidencial" id="2AD81C60-5E3D-655E-9949-1A2F1CB0C2F9">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="rut_usuario_programacion" id="2FC954DB-D1BA-2F03-9BCC-4FDA2DE7A07C">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_hora_terminoprg" id="30C5258F-3958-62EF-4224-118C792C14C0">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_audnorealizada" id="356EC401-9051-5406-529A-E7EC1055D45C">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_semipresencial" id="4028C27E-EA6B-0072-B3A2-5F8D814DD460">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_prg" id="508A3062-FE0A-57B7-69C5-F46EBF3ECFAB">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_eventoprg" id="55F87ADB-4CE7-794E-52DC-4354A277F760">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="flg_videoconferencia" id="591EB9DD-9547-8469-B269-A17D9C5672B3">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha" id="5F69316F-151E-091A-AEBF-F5527EB6D6E0">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="duracion_dias" id="65F983CA-C056-3A41-1EC6-7F3A92EEA174">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_hora_terminoreal" id="7C3FDBD0-07FF-C3FB-3EEA-485E4DB1AFA2">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_estado_evento" id="7F980E00-6D43-2FF3-07CA-6B83EE4A93F0">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="plazo" id="8163545D-FBA5-79B6-1CCA-A33BCB4BDB3E">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_inicioreal" id="88A76AAF-140D-0DA7-FFB6-74A6F1C2F96E">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_idaudiencia" id="8C1E2699-5388-F617-B893-E7168AF8590D">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_sistema" id="9279321E-7BA4-1FFA-229F-E2A1ACC57BFC">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_hora_inicioprg" id="A0A25E27-8327-A629-91A9-0E76D900F75A">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_evento" id="A2093448-6037-A6F5-BCF6-CC88A247E142">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="crr_fiscal" id="A3092C40-6711-2361-1428-D286CB4B587A">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_creacion" id="AABDAEE9-01CA-A8C5-BDBB-8D9F3B4C4EFA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_hora_prg" id="ACBB8BB9-292D-8517-3018-92BB2D980327">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_corte_tribunal" id="B7860934-40E3-8F23-E3C4-25A9078B0528">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="idf_usuario" id="BCF158EB-D9B9-3442-28E1-CF89A573BBDA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<collation>Modern_Spanish_100_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_terminoprg" id="BFF2C352-35FF-7617-1FF7-19F94043FFCB">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_estado_audiencia" id="D74AC93F-E36D-A384-79CD-52F386B339F2">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_solicitud_audiencia" id="D7745357-33A8-A37C-A09A-1F64EE9C9B59">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_hora_inicioreal" id="DFF05129-197F-65EF-74DF-47B36DB1C846">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fec_modificacion" id="E600C5FE-5A9D-7CBF-A650-8998803E0A12">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="gls_sala" id="E62D231A-1CEB-ED7E-D435-8FFD0F1720BE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 12:56:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_fecha_terminoreal" id="E999C8A4-B9AC-0DDB-BFBA-0ACAA39C0164">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_motivo_suspension_audiencia" id="F1106864-AF48-36BC-3038-C0984290810C">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_estado_audiencia_est" id="F1B0E011-8FA8-940F-99BB-07D476753900">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id_motivo_audiencia" id="F5081D8F-380C-61F5-EDB7-9A9A8A57DB2E">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="duracion_minutos" id="F9240E47-E5C5-9E26-65A9-E093EAD9E8C9">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="k_index_audestadisticasSEaux" id="1D8C4932-0CDF-05F0-5D92-0FEBBD97E520">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>OFF</recomputeStatistics>
+<includeColumns>5F69316F-151E-091A-AEBF-F5527EB6D6E0, 3A3A8A1D-7D21-148E-631F-1C3D2DB974F5</includeColumns>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="index_crridaudiencia" id="3A1F571C-47E6-A7BF-9F28-FA7C2B417BA6">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>OFF</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="k_index_audestaditicasSE" id="54BC454D-5AC6-237C-AC3B-71A485E9247F">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>OFF</recomputeStatistics>
+<includeColumns>5F69316F-151E-091A-AEBF-F5527EB6D6E0, B7860934-40E3-8F23-E3C4-25A9078B0528, 3A3A8A1D-7D21-148E-631F-1C3D2DB974F5</includeColumns>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="k_index_audestadisticas" id="62C009E2-1844-D274-BC5F-0B526FC46BDC">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>OFF</recomputeStatistics>
+<includeColumns>5F69316F-151E-091A-AEBF-F5527EB6D6E0, B7860934-40E3-8F23-E3C4-25A9078B0528</includeColumns>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_audrefe_dim_esta" id="273E7169-65FF-1967-AA3F-9DE53CEF2133">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_aud_reference_dim_moti" id="6A986FFF-03A5-EE86-9124-EED0FCA99533">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_audiencias_dim_causas_FK" id="70D06BE8-929D-2500-3D00-9CEACFC62AF7">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-28 11:43:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_aud_refe_dim_cort" id="7DB08A97-2062-0805-D3FA-7A0600D38F31">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_aud_refe_dim_esta" id="8B3C0AAD-6B52-B073-4817-8A76522BB999">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_aud_reference_dim_soli" id="A8EFCE5D-F7F1-E75B-4F5A-CDBCD3DB3BEE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_aud_refere_dim_moti" id="E4FC4CEE-19EF-8245-F5D6-0672BE77AAE8">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fk_fact_aud_reference_dim_esta" id="FBC72FE9-3297-BB7B-5528-52ABEE4E88EA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>Penal</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="pk_fact_audiencias" id="0DEC0670-893A-0DDC-824B-53C8E74E14E2">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<fileGroup>04D8EBA6-D03A-767A-4695-DC6EC68460A6</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

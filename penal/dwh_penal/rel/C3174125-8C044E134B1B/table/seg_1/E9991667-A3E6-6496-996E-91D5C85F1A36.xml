@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E9991667-A3E6-6496-996E-91D5C85F1A36" name="dim_tipos_penas">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-17 21:11:53 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_79</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_pena" id="E49E95FA-FF50-D7AB-4CD4-7D6197F48FAA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-17 21:12:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_pena" id="E6757BAA-C3CB-099C-B3EC-9CE5FF45D3FA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-17 21:12:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tippena" id="31264D25-EB90-5BF2-8648-8DC724CB9FDE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-17 21:12:59 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="flg_unificado" id="08D751C9-2542-FC7E-7D81-7FEE50E89E47">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-29 16:56:08 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAE4233E-139C-8D1E-8F60-C8AD269DFF7E" name="dim_tipos_penas_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-17 21:13:16 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E49E95FA-FF50-D7AB-4CD4-7D6197F48FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

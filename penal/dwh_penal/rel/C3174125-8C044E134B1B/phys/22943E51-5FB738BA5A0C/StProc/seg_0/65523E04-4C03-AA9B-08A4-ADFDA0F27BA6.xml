@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_eventos_hitos_actualizaciones" directorySegmentName="seg_0" id="65523E04-4C03-AA9B-08A4-ADFDA0F27BA6">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_eventos_hitos_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_eventos_hitos_actualizaciones]
+AS
+BEGIN
+-- EXEC sp_eventos_hitos_actualizaciones
+	SET NOCOUNT ON;
+	-- Creo Variable Tabla.
+
+	MERGE dim_eventos_hitos AS deh
+	USING view_eventos_hitos_tmp AS tmp
+	ON (deh.crr_idhito = tmp.crr_idhito
+	AND deh.crr_evento = tmp.crr_evento
+	AND deh.crr_idhitoact = tmp.crr_idhitoact
+	AND	deh.crr_causa  = tmp.crr_causa 
+	AND deh.cod_corte  = tmp.cod_corte
+	AND deh.cod_tribunal = tmp.cod_tribunal 
+	) 
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET 
+			deh.[id_estado_hito] = tmp.[id_estado_hito],
+			deh.[fec_cambioest] = tmp.[fec_cambioest],
+			deh.[fec_digitacion] = tmp.[fec_digitacion],
+			deh.[idf_usuariodigita] = tmp.[idf_usuariodigita],
+			deh.[fec_sistema] = tmp.[fec_sistema],
+			deh.[idf_usuario] = tmp.[idf_usuario],
+			deh.[crr_documento] = tmp.[crr_documento],
+			deh.[cod_hitoact] = tmp.[cod_hitoact],
+			deh.[gls_hitoact] = tmp.[gls_hitoact],
+			deh.[id_tipo_evento] = tmp.[id_tipo_evento],
+			deh.[num_peso] = tmp.[num_peso],
+			deh.[flg_apelable] = tmp.[flg_apelable],
+			deh.[flg_apelableambos] = tmp.[flg_apelableambos],
+			deh.[flg_asignacontroldet] = tmp.[flg_asignacontroldet],
+			deh.[flg_vigencia] = tmp.[flg_vigencia],
+			deh.[flg_concentrada] = tmp.[flg_concentrada],
+			deh.[flg_imprimesol] = tmp.[flg_imprimesol],
+			deh.[flg_word] = tmp.[flg_word]
+	WHEN NOT MATCHED 
+	THEN INSERT ([cod_corte],[cod_tribunal],[fecha_id],[crr_idhito],[crr_evento],[crr_idhitoact],[crr_causa],[id_estado_hito],[fec_cambioest],[fec_digitacion],
+				 [idf_usuariodigita],[fec_sistema],[idf_usuario],[crr_documento],[cod_hitoact],[gls_hitoact],[id_tipo_evento],[num_peso],[flg_apelable],[flg_apelableambos],
+				 [flg_asignacontroldet],[flg_vigencia],[flg_concentrada],[flg_imprimesol],[flg_word]) 
+		 VALUES (tmp.[cod_corte],tmp.[cod_tribunal],tmp.[fecha_id],tmp.[crr_idhito],tmp.[crr_evento],tmp.[crr_idhitoact],tmp.[crr_causa],tmp.[id_estado_hito],
+				 tmp.[fec_cambioest],tmp.[fec_digitacion],tmp.[idf_usuariodigita],tmp.[fec_sistema],tmp.[idf_usuario],tmp.[crr_documento],tmp.[cod_hitoact],
+				 tmp.[gls_hitoact],tmp.[id_tipo_evento],tmp.[num_peso],tmp.[flg_apelable],tmp.[flg_apelableambos],tmp.[flg_asignacontroldet],tmp.[flg_vigencia],
+				 tmp.[flg_concentrada],tmp.[flg_imprimesol],tmp.[flg_word]);
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

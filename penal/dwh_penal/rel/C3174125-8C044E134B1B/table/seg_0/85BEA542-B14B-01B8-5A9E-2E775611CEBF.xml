@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85BEA542-B14B-01B8-5A9E-2E775611CEBF" name="dim_audiencias_jueces">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:28:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_65</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_audiencia_juez" id="53768C5B-E5A0-493F-34B6-F12DED5B77F9">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:30:21 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idaudiencia" id="63BBC41A-EE02-29CB-A221-394A043D1AFA">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:29:00 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FC5B13F-8C6D-5EA3-0A1F-0E6386BA8D47" referredColumn="8C1E2699-5388-F617-B893-E7168AF8590D"/>
+</associations>
+</Column>
+<Column name="crr_persona" id="BF5303EE-D1E2-F0E8-CB2E-2BCB9240A04C">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:28:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="C06CA31F-9218-46F3-9711-F121088E07C6">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:31:23 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="juez" id="0C3DC38B-D7D8-C3DD-9616-DE422F494EE6">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:32:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_calidad" id="2A173F71-550C-5B88-CD5D-7AD9D9D6A3A1">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:32:35 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipcargo" id="D8003047-436F-A798-C616-6E00B30A67CE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:33:05 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C5F8C63-376E-9C0B-949F-DA188EC36494" name="dim_audiencias_jueces_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:33:49 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53768C5B-E5A0-493F-34B6-F12DED5B77F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC5AE487-42C9-4027-87DD-B62528F27DAE" name="dim_audiencias_jueces_fact_audiencias_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-04-20 18:29:00 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63BBC41A-EE02-29CB-A221-394A043D1AFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

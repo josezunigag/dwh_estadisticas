@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA7F2165-0E36-7AB5-EA67-89E15D36B736" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_estados_audiencias_estadisticas">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_estados_audiencias_estadisticas</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_audiencia_est" id="17A3813F-3A75-7834-DBF5-98A32C260F29">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_estados_audiencias_estadisticas</sourceObjSchema>
+<sourceObjName>id_estado_audiencia_est</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_estado_audiencia" id="AF1369F5-62CB-C150-40D0-F75F7D748788">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_estados_audiencias_estadisticas</sourceObjSchema>
+<sourceObjName>gls_estado_audiencia</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98450367-2F03-FA84-57C4-ADDA76206101" name="pk_dim_estados_audiencias_esta">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_estados_audiencias_esta</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17A3813F-3A75-7834-DBF5-98A32C260F29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24F6E1A9-3ED2-4596-A0DD-5F234AB8B64C" name="index_1v3">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>index_1</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17A3813F-3A75-7834-DBF5-98A32C260F29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

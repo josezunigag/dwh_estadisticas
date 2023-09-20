@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4349E71B-7F76-1572-972F-04DFAFFA9DC9" containerWithKeyObject="8A7F41C6-74A6-399F-4A3C-49DC7A03BEED" localFKIndex="56FD880D-8355-879B-0A14-C4D5C471E82F" name="dim_audiencias_hitos_dim_tipos_hitos_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2022-11-14 12:36:34 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.dim_tipos_hitos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E5183A43-5713-D052-1388-8F38C93F3FE6</referredTableID>
+<keyObject>71EA6B69-7A8F-C13F-747E-DEC8D0110EF6</keyObject>
+<referredKeyID>71EA6B69-7A8F-C13F-747E-DEC8D0110EF6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_hito</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="E0D81B95-2E0E-8AB8-6573-86453557C61F" containerWithKeyObject="093E2827-B904-999A-D79F-B7DEF5393A27" localFKIndex="BCC77EC7-4B0D-12F9-8C49-614B109F66C8" name="dim_penas_corporales_dim_tipos_presidio_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-24 18:15:18 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_tipos_presidio</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>84EA5CCA-D781-EC2F-3DE4-63D18AE0ED8C</referredTableID>
+<keyObject>7757C5EF-5FB8-155D-51AA-5F713A815A53</keyObject>
+<referredKeyID>7757C5EF-5FB8-155D-51AA-5F713A815A53</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_presidio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

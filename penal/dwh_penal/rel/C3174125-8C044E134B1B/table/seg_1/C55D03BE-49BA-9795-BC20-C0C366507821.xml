@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="C55D03BE-49BA-9795-BC20-C0C366507821" name="dim_sentenciados_atenuantes">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:29:25 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<ordsAlias>table_105</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sentenciado_atenuante" id="6C4485E0-F201-E3A0-337A-B9DCDF4ADA32">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:29:46 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_atenuante" id="7E3BEC33-D169-40EE-54B1-B66D422E4A2B">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:30:03 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_atenuante" id="26A38EBB-7D12-FC81-DAE6-7AE1C5D71D9B">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:31:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A773DAD2-008C-E567-888C-BC5F94A28824" referredColumn="109FCAAC-6678-937D-D7EC-1636DC687977"/>
+</associations>
+</Column>
+<Column name="crr_idsentencia" id="D344645B-2CB5-9AB1-369F-008B5BB53806">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-30 19:49:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="382EC11A-EFBC-5574-38B3-C06372E8DAC8" referredColumn="2809D79F-F99E-AA5C-FC68-C11406E56716"/>
+</associations>
+</Column>
+<Column name="crr_idsentenciado" id="3855DCB8-A589-D2CE-BE36-78354924DBDC">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-30 19:50:14 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59E0E6FE-0770-FA33-5FB7-3F25E9CB7954" name="dim_atenuante_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:30:33 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C4485E0-F201-E3A0-337A-B9DCDF4ADA32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A608C46-8783-06F9-E9ED-517E3CAAB10D" name="dim_atenuante_dim_tipos_atenuantes_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-25 19:31:28 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26A38EBB-7D12-FC81-DAE6-7AE1C5D71D9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AB6DB46-27C2-004D-A221-66F0CE3B7A79" name="dim_atenuantes_fact_sentencias_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-05-30 19:49:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D344645B-2CB5-9AB1-369F-008B5BB53806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.StoredProcedureSqlServerv2k5" name="sp_ingresos_actualizaciones" directorySegmentName="seg_0" id="1F1E1B49-85A9-944D-3CB8-4BB06ABFB198">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sp_ingresos_actualizaciones</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<body><![CDATA[CREATE PROCEDURE [dbo].[sp_ingresos_actualizaciones]
+AS
+SET NOCOUNT ON;
+BEGIN
+
+	DECLARE @id_fecha_inicial int, @id_fecha_final int
+
+
+	SELECT @id_fecha_inicial = min(id_fecha)
+			,@id_fecha_final = max(id_fecha)
+	FROM view_ingresos_tmp
+
+-- EXEC sp_ingresos_actualizaciones
+
+	MERGE fact_ingresos AS ing
+	USING view_ingresos_tmp AS tmp 
+	ON (
+		ing.crr_idcausa = tmp.crr_idcausa 
+	AND ing.id_corte_tribunal = tmp.id_corte_tribunal
+	AND ing.id_materia = tmp.id_materia 
+	) 
+	WHEN MATCHED 
+	THEN UPDATE 
+		SET 
+			ing.id_fecha = tmp.id_fecha
+			,ing.id_tipo_ingreso = tmp.id_tipo_ingreso
+			,ing.fec_modificacion = getdate()
+	WHEN NOT MATCHED BY TARGET
+	THEN INSERT (id_fecha,	id_corte_tribunal,	crr_idcausa,	id_materia,	id_tipo_ingreso,	fec_creacion) 
+		 VALUES (id_fecha,	id_corte_tribunal,	crr_idcausa,	id_materia,	id_tipo_ingreso,	getdate())
+	WHEN NOT MATCHED BY SOURCE AND ing.id_fecha between @id_fecha_inicial and @id_fecha_final
+	THEN DELETE;
+
+END]]></body>
+<schema>1</schema>
+<database>BD157CEA-D7DB-6D0A-C997-C24556DC64F1</database>
+</StoredProcedureSqlServerv2k5>

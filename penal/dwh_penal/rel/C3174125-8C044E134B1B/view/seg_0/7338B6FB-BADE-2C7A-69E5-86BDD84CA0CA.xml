@@ -1,0 +1,560 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7338B6FB-BADE-2C7A-69E5-86BDD84CA0CA" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="view_escritos_detalles">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>view_escritos_detalles</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW [dbo].[view_escritos_detalles] as
+SELECT
+      ct.cod_corte
+    , ct.gls_corte 
+    , ct.cod_tribunal
+    , ct.gls_tribunal
+    , dto.gls_tribunal as gls_tribunal_origen
+    , fs.crr_idevento
+    , fs.crr_idcausa
+    , dcau.id_tipo_causa
+    , dtc.gls_tipcausaref
+    , dti.gls_tipingreso as gls_tipo_ingreso
+    , dfi.gls_formainicio
+    , fs.id_tipo_evento
+    , dte.tip_evento
+    , dcau.id_estado_relacion
+    , der.gls_estrelacion
+    , fs.id_estado_evento
+    , dee.est_evento
+    , dee.gls_estevento
+    , fs.gls_observacion
+    , dcau.idf_rolinterno
+    , dcau.fec_era
+    , CONCAT(dcau.idf_rolinterno,'-',dcau.fec_era) as rit
+    , convert(varchar, dcau.fec_ingreso, 103) as fec_ingreso
+    , convert(varchar, df.fecha, 103) as fec_solicitud
+    , df.año ano
+    , df.mes
+    , df.dia
+    , fs.fec_firma
+    , fs.fec_cambioest
+    , fs.crr_tramjuez
+    , fs.crr_documento
+    , fs.flg_confidencialidad
+    , fs.flg_estdiario
+    , fs.flg_masivo
+    , fs.fec_digitacion
+    , fs.fec_sistema
+    , fs.fec_proveer
+    , fs.fec_asigna
+    , fs.flg_nomostrar
+    , fs.id_tipo_ingreso
+	, convert(varchar,fs.fec_cambioest,103) as fec_resuelto
+	, fs.dias_duracion
+	, ct.tip_jurisdiccion
+FROM [penal].[dbo].[fact_solicitudes] fs with(nolock)
+INNER JOIN dim_cortes_tribunales ct with(nolock)
+	ON ct.id_corte_tribunal = fs.id_corte_tribunal
+INNER JOIN generales.dbo.dim_fecha df with(nolock)
+	ON fs.id_fecha = df.idfecha
+INNER JOIN dim_causas dcau with(nolock)
+	ON fs.crr_idcausa = dcau.crr_idcausa
+INNER JOIN dim_tipos_causas dtc with(nolock)
+	ON dcau.id_tipo_causa = dtc.id_tipo_causa
+INNER JOIN dim_tipos_ingresos dti with(nolock)
+	ON fs.id_tipo_ingreso = dti.id_tipo_ingreso
+INNER JOIN dim_formas_inicios dfi with(nolock)
+	ON dcau.id_forma_inicio = dfi.id_forma_inicio
+INNER JOIN dim_tipos_eventos dte with(nolock)
+	ON fs.id_tipo_evento = dte.id_tipo_evento
+INNER JOIN dim_estados_relaciones der with(nolock)
+	ON dcau.id_estado_relacion = der.id_estado_relacion
+INNER JOIN dim_estados_eventos dee with(nolock)
+	ON fs.id_estado_evento = dee.id_estado_evento
+LEFT JOIN generales.dbo.dim_tribunales dto 
+	ON dcau.cod_tribunalorigen = dto.cod_tribunal
+WHERE  dcau.id_estado_relacion != 6]]></userDefinedSQL>
+<syntaxProvider>MSSQL</syntaxProvider>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cod_corte" id="7BB250CA-5DB4-46FF-8A8C-A2E71DC399EA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>cod_corte</alias>
+<dataType>UNKNOWN</dataType>
+<expression>cod_corte</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_corte" id="6669BD7F-792C-4354-ACFC-84B8A6B6A4F5">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_corte</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_corte</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cod_tribunal" id="DBA3211F-B298-49B9-5839-76F2CDB2A9D5">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>cod_tribunal</alias>
+<dataType>UNKNOWN</dataType>
+<expression>cod_tribunal</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_tribunal" id="2370D3F2-6EF8-A239-0838-E6C00C28F877">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_tribunal</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_tribunal</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="COL_5" id="82333C30-32F0-C10E-02DB-CF24A4AA10CE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_tribunal_origen</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>gls_tribunal_origen</headerAlias>
+<expression>gls_tribunal</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="crr_idevento" id="BBD8A062-DAFF-9F97-5781-BED280494C63">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>crr_idevento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>crr_idevento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="crr_idcausa" id="BF9ADECE-E33A-CB7C-4192-A67DEF4CA10F">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>crr_idcausa</alias>
+<dataType>UNKNOWN</dataType>
+<expression>crr_idcausa</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_tipo_causa" id="808B0A7A-75E0-505E-3919-A89FE48DF932">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_tipo_causa</alias>
+<dataType>UNKNOWN</dataType>
+<expression>id_tipo_causa</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_tipcausaref" id="A57A4971-804B-69CB-A61D-07B32EFF59A4">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_tipcausaref</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_tipcausaref</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_tipingreso" id="BFA58D11-2140-A8B6-011A-7F9A24CEB101">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_tipo_ingreso</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>gls_tipo_ingreso</headerAlias>
+<expression>gls_tipingreso</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_formainicio" id="4E0374E7-2DF8-33A3-1E47-23466764CAC6">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_formainicio</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_formainicio</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_tipo_evento" id="D82BB9B3-DE7C-E1CD-2291-DD475455266F">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_tipo_evento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>id_tipo_evento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tip_evento" id="9EBC91A0-792B-1F9B-E1BB-25CABF16675F">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>tip_evento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>tip_evento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_estado_relacion" id="39AE4567-6F00-07BF-8861-BC3E101C52D0">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_estado_relacion</alias>
+<dataType>UNKNOWN</dataType>
+<expression>id_estado_relacion</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_estrelacion" id="2006FF53-E9CD-CD6A-3BA2-0D3339D4C6BE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_estrelacion</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_estrelacion</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_estado_evento" id="A828DAAF-FFFA-3E6E-0EFB-E46C09EC4111">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_estado_evento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>id_estado_evento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="est_evento" id="70A563B0-5367-A600-66B9-66A1570A8FB5">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>est_evento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>est_evento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_estevento" id="D20D76EB-4840-C334-5D94-E182FCC02A23">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_estevento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_estevento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="gls_observacion" id="BF13E5A2-425F-11A3-B813-73E24075F547">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>gls_observacion</alias>
+<dataType>UNKNOWN</dataType>
+<expression>gls_observacion</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="idf_rolinterno" id="5DD09CDC-DB99-EDC0-7DEF-A5B86CA29A46">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>idf_rolinterno</alias>
+<dataType>UNKNOWN</dataType>
+<expression>idf_rolinterno</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_era" id="49D86BAC-FED7-0DB2-B97C-F0234B68DBB0">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_era</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_era</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CONCAT(dcau.idf_rolinterno,&apos;-&apos;,dcau.fec_era)" id="350F6734-9030-3C31-34C9-01B0BEC7525D">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>rit</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>rit</headerAlias>
+<expression>CONCAT(dcau.idf_rolinterno,&apos;-&apos;,dcau.fec_era)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="convert(varchar,dcau.fec_ingreso,103)" id="248F797E-8EB0-7E62-A1CF-2B0A134CDAFA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_ingreso</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>fec_ingreso</headerAlias>
+<expression>convert(varchar,dcau.fec_ingreso,103)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="convert(varchar,df.fecha,103)" id="7F4A43BB-1279-8138-0E24-89A1C4FF9C20">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_solicitud</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>fec_solicitud</headerAlias>
+<expression>convert(varchar,df.fecha,103)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="año" id="3280B9AE-7A51-2C09-1AA9-38AA99856D5A">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ano</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>ano</headerAlias>
+<expression>año</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="mes" id="51B8FA04-3432-1052-4B38-52667111994B">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>mes</alias>
+<dataType>UNKNOWN</dataType>
+<expression>mes</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="dia" id="20B4AFCD-837F-736D-EB63-B714521CF1AD">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>dia</alias>
+<dataType>UNKNOWN</dataType>
+<expression>dia</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_firma" id="D5DB52C0-2CA5-840D-3CE2-6B295C6C63E4">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_firma</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_firma</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_cambioest" id="5BDC4CF0-119B-BDD0-BE1B-43610A937117">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_cambioest</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_cambioest</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="crr_tramjuez" id="1CD99AE0-0EAD-6432-8C04-1ED3B442B732">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>crr_tramjuez</alias>
+<dataType>UNKNOWN</dataType>
+<expression>crr_tramjuez</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="crr_documento" id="3305E4A6-9E4D-C1F8-57A5-379322C5B53B">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>crr_documento</alias>
+<dataType>UNKNOWN</dataType>
+<expression>crr_documento</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="flg_confidencialidad" id="68066583-A084-8694-830D-A173019720CA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>flg_confidencialidad</alias>
+<dataType>UNKNOWN</dataType>
+<expression>flg_confidencialidad</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="flg_estdiario" id="92B20C8F-4FC7-CA01-73B8-CC78A88F0ABE">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>flg_estdiario</alias>
+<dataType>UNKNOWN</dataType>
+<expression>flg_estdiario</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="flg_masivo" id="2703CE84-265D-46C0-E746-71E38FD100A8">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>flg_masivo</alias>
+<dataType>UNKNOWN</dataType>
+<expression>flg_masivo</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_digitacion" id="CECA0B69-395B-ADF7-0127-016EC27BDB92">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_digitacion</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_digitacion</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_sistema" id="08139787-F9B3-FFE1-901D-F1EA90F7CB41">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_sistema</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_sistema</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_proveer" id="6AD2F325-0BE2-178A-0635-F2E58E790B3C">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_proveer</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_proveer</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fec_asigna" id="BF81C09E-0A0D-47C0-450F-CCAEE26B5E2D">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_asigna</alias>
+<dataType>UNKNOWN</dataType>
+<expression>fec_asigna</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="flg_nomostrar" id="BF65ECDC-8032-5FE0-5134-55F1CDE4D4B3">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>flg_nomostrar</alias>
+<dataType>UNKNOWN</dataType>
+<expression>flg_nomostrar</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_tipo_ingreso" id="5BA52149-AF46-3819-36F0-F75BF15AFC68">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_tipo_ingreso</alias>
+<dataType>UNKNOWN</dataType>
+<expression>id_tipo_ingreso</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="convert(varchar,fs.fec_cambioest,103)" id="5A4C4F34-7C27-4C06-9E78-231776543BB3">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>fec_resuelto</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>fec_resuelto</headerAlias>
+<expression>convert(varchar,fs.fec_cambioest,103)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="dias_duracion" id="D270333C-30C6-B73F-94CA-6D203027CB76">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>dias_duracion</alias>
+<dataType>UNKNOWN</dataType>
+<expression>dias_duracion</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tip_jurisdiccion" id="42012F4C-5717-7AD9-4A00-27E21C0E7BCA">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:31 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>tip_jurisdiccion</alias>
+<dataType>UNKNOWN</dataType>
+<expression>tip_jurisdiccion</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

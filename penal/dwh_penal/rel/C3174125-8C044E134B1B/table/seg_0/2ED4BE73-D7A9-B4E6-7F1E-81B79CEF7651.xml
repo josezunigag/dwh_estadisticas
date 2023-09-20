@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ED4BE73-D7A9-B4E6-7F1E-81B79CEF7651" name="dim_resoluciones_jueces">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>dim_resoluciones_jueces</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_resolucion_juez" id="B707B44B-0F86-88C9-07FB-CD2F0A6216CB">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>id_resolucion_juez</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_resolucion" id="77F748F1-AFF5-6B90-DFC8-82C8D53CD185">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>id_resolucion</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="992DAC0A-2C38-4FD8-84C2-644B4A6D8683" referredColumn="544978E5-C773-DD20-36BC-3615DFD7FCFA"/>
+</associations>
+</Column>
+<Column name="crr_persona" id="847CDEBB-170D-C90E-EBCD-72E5771B6D8E">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>crr_persona</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="7199BAFF-CD46-5501-7A4F-5B09729484F5">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>rut</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="juez" id="4B569493-C1C6-BBBD-03F5-1D243ADF82F9">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>juez</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_calidad" id="6A45D439-9BD5-7B80-8BEF-42A311FCFFAA">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>gls_calidad</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gls_tipcargo" id="76AFCBB2-8A9E-255B-7DA6-D7B79F7AF39C">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dim_resoluciones_jueces</sourceObjSchema>
+<sourceObjName>gls_tipcargo</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4C17A9F-51F2-0AB3-F932-E62A222CBB11" name="pk_dim_resoluciones_jueces">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pk_dim_resoluciones_jueces</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B707B44B-0F86-88C9-07FB-CD2F0A6216CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2864069-D3E0-D8BD-5850-7CFDDBCAC3E8" name="k_index_resjueces">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>k_index_resjueces</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:19 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F748F1-AFF5-6B90-DFC8-82C8D53CD185"/>
+<colUsage columnID="847CDEBB-170D-C90E-EBCD-72E5771B6D8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5F4E4C0-DC54-1268-8E3C-34CDEA6B1624" name="fk_dim_reso_reference_fact_res">
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F748F1-AFF5-6B90-DFC8-82C8D53CD185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

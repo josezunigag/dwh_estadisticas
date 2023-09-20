@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1FE3AA3-4E7E-62D7-6C44-771BE856E332" containerWithKeyObject="F010B3D2-77DC-4697-FC2D-C0CCCCEABAC0" localFKIndex="280F421E-EE5A-A49F-3447-94EBBB5ABE18" name="fk_dim_actu_reference_dim_esta">
+<sourceConnName>datawarehouse estadisticas</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>fk_dim_actu_reference_dim_esta</sourceObjName>
+<createdBy>josez</createdBy>
+<createdTime>2022-09-08 20:25:30 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.dim_estados_hitos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>84F02223-D27A-4513-9C28-9B8BEAB05C4C</referredTableID>
+<keyObject>422373EC-D46C-8C4B-6664-25DC52AE4C6C</keyObject>
+<referredKeyID>422373EC-D46C-8C4B-6664-25DC52AE4C6C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_estado_hito</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
