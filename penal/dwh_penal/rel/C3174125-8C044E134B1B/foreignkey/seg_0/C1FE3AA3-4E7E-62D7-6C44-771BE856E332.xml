@@ -6,12 +6,12 @@
 <createdBy>josez</createdBy>
 <createdTime>2022-09-08 20:25:30 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
-<referredTableLongName>penal_dbo.dim_estados_hitos</referredTableLongName>
+<referredTableLongName>dim_estados_hitos</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>84F02223-D27A-4513-9C28-9B8BEAB05C4C</referredTableID>
 <keyObject>422373EC-D46C-8C4B-6664-25DC52AE4C6C</keyObject>
 <referredKeyID>422373EC-D46C-8C4B-6664-25DC52AE4C6C</referredKeyID>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 <refColNames>id_estado_hito</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

@@ -11,7 +11,7 @@
 <referredTableID>894DE79F-B2AD-8961-4450-68F96AC79C95</referredTableID>
 <keyObject>73BF3333-4E69-6067-E68C-86D264535CEB</keyObject>
 <referredKeyID>73BF3333-4E69-6067-E68C-86D264535CEB</referredKeyID>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 <refColNames>id_estado_evento</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

@@ -56,7 +56,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 <dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="D5E7484F-0778-CCCC-576C-A55810774A70" referredColumn="2AC05971-05F7-0FC8-8A21-FF092AC6BCE1"/>
@@ -147,7 +147,7 @@
 <dataTypePrecision>5</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="BE7E31A8-0389-3E75-F0A5-7EAF8EC31B99" referredColumn="34280643-7E30-3AFD-AB49-94AEEB6ABE15"/>
@@ -355,6 +355,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_estado_firma" id="722E7BCC-0C64-016F-8AC9-F82801A6EF46">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-08-30 13:28:42 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="480F16A5-849E-73F3-8C6D-4416A8F24743" referredColumn="FE85CFB5-89A0-F0D6-AECF-41B42F1F06ED"/>
+</associations>
+</Column>
 <Column name="fec_creacion" id="81319603-0F87-8EA7-AB94-7AD5A48B7D0A">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>fact_resoluciones</sourceObjSchema>
@@ -366,10 +381,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
-<dataTypePrecision>23</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<dataTypeSize>8</dataTypeSize>
-<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fec_modificacion" id="235F02FC-6738-15ED-217E-E868D5E3F5E3">
@@ -385,36 +397,6 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fact_resoluciones_id_resolucion" id="83D259CB-96A1-8554-B04D-8F27D217FCA2">
-<createdBy>jzunigag</createdBy>
-<createdTime>2023-08-30 13:28:31 UTC</createdTime>
-<ownerDesignName>dwh_penal</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="34D8D8FA-FA29-C9CD-D5A7-209A6349E41B" referredColumn="544978E5-C773-DD20-36BC-3615DFD7FCFA"/>
-</associations>
-</Column>
-<Column name="dim_estados_firmas_id_estado_firma" id="722E7BCC-0C64-016F-8AC9-F82801A6EF46">
-<createdBy>jzunigag</createdBy>
-<createdTime>2023-08-30 13:28:42 UTC</createdTime>
-<ownerDesignName>dwh_penal</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="480F16A5-849E-73F3-8C6D-4416A8F24743" referredColumn="FE85CFB5-89A0-F0D6-AECF-41B42F1F06ED"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -531,16 +513,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D0389CEC-12C3-0427-EEB7-D55A82888688"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="15459190-D702-3929-01DC-16A56606D6AE" name="fact_resoluciones_fact_resoluciones_FK">
-<createdBy>jzunigag</createdBy>
-<createdTime>2023-08-30 13:28:31 UTC</createdTime>
-<ownerDesignName>dwh_penal</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="83D259CB-96A1-8554-B04D-8F27D217FCA2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="ED3C4577-FB16-9384-5E4B-434E7BF56902" name="fact_resoluciones_dim_estados_firmas_FK">

@@ -6,12 +6,12 @@
 <createdBy>josez</createdBy>
 <createdTime>2022-09-08 20:25:31 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
-<referredTableLongName>penal_dbo.fact_actuaciones</referredTableLongName>
+<referredTableLongName>fact_actuaciones</referredTableLongName>
 <deleteRule>CASCADE</deleteRule>
 <referredTableID>3329D59A-25F7-EDF8-5118-E7EE05EE6308</referredTableID>
 <keyObject>D8FB7327-3EC0-19EA-7813-4EE627967948</keyObject>
 <referredKeyID>D8FB7327-3EC0-19EA-7813-4EE627967948</referredKeyID>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 <refColNames>id_actuacion</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

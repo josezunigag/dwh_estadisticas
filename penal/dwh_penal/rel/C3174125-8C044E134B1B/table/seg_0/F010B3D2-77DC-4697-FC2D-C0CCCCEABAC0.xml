@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F010B3D2-77DC-4697-FC2D-C0CCCCEABAC0" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_actuaciones_hitos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F010B3D2-77DC-4697-FC2D-C0CCCCEABAC0" name="dim_actuaciones_hitos">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>dbo</sourceObjSchema>
 <sourceObjName>dim_actuaciones_hitos</sourceObjName>
@@ -35,7 +35,6 @@
 <createdBy>josez</createdBy>
 <createdTime>2022-09-08 20:25:29 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -89,7 +88,6 @@
 <createdBy>josez</createdBy>
 <createdTime>2022-09-08 20:25:29 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -109,7 +107,6 @@
 <createdBy>josez</createdBy>
 <createdTime>2022-09-08 20:25:29 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

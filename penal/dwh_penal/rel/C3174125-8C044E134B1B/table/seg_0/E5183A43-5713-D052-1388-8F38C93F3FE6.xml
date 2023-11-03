@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5183A43-5713-D052-1388-8F38C93F3FE6" schemaObject="98C42462-4E13-C0DB-D54B-1179E036D239" name="dim_tipos_hitos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5183A43-5713-D052-1388-8F38C93F3FE6" name="dim_tipos_hitos">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>dbo</sourceObjSchema>
 <sourceObjName>dim_tipos_hitos</sourceObjName>

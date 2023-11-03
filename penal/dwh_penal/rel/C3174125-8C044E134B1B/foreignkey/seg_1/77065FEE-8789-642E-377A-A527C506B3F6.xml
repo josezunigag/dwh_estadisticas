@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="77065FEE-8789-642E-377A-A527C506B3F6" containerWithKeyObject="3329D59A-25F7-EDF8-5118-E7EE05EE6308" localFKIndex="FDC08B0B-BD9F-382A-91E9-86FDE710C2C7" name="fact_actuaciones_dim_estados_firmas_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-09-20 19:58:21 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>dim_estados_firmas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5DED9C74-FA8C-2D20-8690-DF781CBD2544</referredTableID>
+<keyObject>0168FD75-3FD4-763F-01E2-9F837E391552</keyObject>
+<referredKeyID>0168FD75-3FD4-763F-01E2-9F837E391552</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_firma</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

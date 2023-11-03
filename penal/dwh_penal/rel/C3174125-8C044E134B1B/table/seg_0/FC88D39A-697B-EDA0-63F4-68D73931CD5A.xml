@@ -499,6 +499,17 @@
 <ownDataTypeParameters>4,10,0</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="flg_unificado" id="E2BFC33C-CF52-F311-7C95-7E15742B6535">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-02 14:08:44 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="35ADC762-2015-5B40-599D-99B6DF20CED4" name="pk_dim_personas">

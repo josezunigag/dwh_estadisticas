@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="sub_view" objectID="1803DAD4-FE68-AACD-844F-24ACC9DC81C3" name="Actuaciones" visible="false"/>
-   <object objectType="sub_view" objectID="36F2BB76-9EDF-02EB-552C-D1B12A633096" name="Ingresos" visible="false"/>
-   <object objectType="sub_view" objectID="4434BC22-0335-2DE9-2693-9BCC700E076E" name="Sentencias" visible="false"/>
    <object objectType="main_view" objectID="7A8F47E5-D9F9-796C-777E-EFDC95FA68E3" name="DTM_PENAL" visible="false"/>
+   <object objectType="sub_view" objectID="1803DAD4-FE68-AACD-844F-24ACC9DC81C3" name="Actuaciones" visible="false"/>
    <object objectType="sub_view" objectID="8E4B764D-C9A2-B30A-060A-ED834BB8D2D9" name="Audiencias" visible="false"/>
-   <object objectType="sub_view" objectID="B7BF1AB7-41AE-AD4B-7D6E-C7495185F5FB" name="Terminos" visible="false"/>
-   <object objectType="sub_view" objectID="B985DC9A-E663-DCBD-F95A-E86D2796F77D" name="Solicitudes" visible="false"/>
    <object objectType="sub_view" objectID="C614AE60-66E5-672A-0905-5F7ABE337BB0" name="Delitos" visible="false"/>
-   <object objectType="sub_view" objectID="C7BDF4AA-3102-9DB8-3249-21EBDE0BBB6B" name="Resoluciones" visible="false"/>
+   <object objectType="sub_view" objectID="36F2BB76-9EDF-02EB-552C-D1B12A633096" name="Ingresos" visible="false"/>
    <object objectType="sub_view" objectID="E3A72752-F645-406C-C677-27584E409FDA" name="Medidas Cautelares" visible="false"/>
    <object objectType="sub_view" objectID="FAA68E36-6B69-2F82-42DB-15FE24A75CC9" name="Notificaciones" visible="false"/>
+   <object objectType="sub_view" objectID="C7BDF4AA-3102-9DB8-3249-21EBDE0BBB6B" name="Resoluciones" visible="false"/>
+   <object objectType="sub_view" objectID="4434BC22-0335-2DE9-2693-9BCC700E076E" name="Sentencias" visible="false"/>
+   <object objectType="sub_view" objectID="B985DC9A-E663-DCBD-F95A-E86D2796F77D" name="Solicitudes" visible="false"/>
+   <object objectType="sub_view" objectID="B7BF1AB7-41AE-AD4B-7D6E-C7495185F5FB" name="Terminos" visible="false"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>
