@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="655CAA6E-77D8-1686-85F6-878A7CB124F6" name="dim_documentos">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-03 13:12:54 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<ordsAlias>table_43</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="crr_iddocumento" id="9FA2C4AA-70E9-4A21-6E36-9FA686F0879D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-03 13:13:52 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crr_idtramite" id="077BD343-2D1A-CECC-0C23-1BD8D715D532">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-03 13:14:07 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_tramite_id" id="B675ED21-C162-4F17-E957-187A837856BB">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-03 13:14:28 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21F1FC03-8564-7EAC-0E24-034E993E9B8F" referredColumn="4625A5E2-4E9D-DB63-8B50-E006A920D371"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF9B45C8-9397-DB59-92AB-EDACF15F5B4D" name="dim_documentos_PK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-03 13:14:42 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FA2C4AA-70E9-4A21-6E36-9FA686F0879D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B010D550-8CD3-03B6-9046-CE0E0523AA99" name="dim_documentos_dim_tipos_tramites_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-03 13:14:28 UTC</createdTime>
+<ownerDesignName>dwh_familia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B675ED21-C162-4F17-E957-187A837856BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
