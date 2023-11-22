@@ -188,6 +188,21 @@
 <ownDataTypeParameters>8,23,3</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_estado_procesal" id="11E47C53-D82B-ADAD-DDD0-FA4D4AD3FE68">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-15 14:27:47 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="529A92EF-34B7-EBE9-CB6A-D90702E4C146" referredColumn="78208365-8756-993C-B642-A64394C4E1C5"/>
+</associations>
+</Column>
 <Column name="id_estado_relacion" id="428B6AEB-4747-535E-F8CA-30D98E2147AF">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>dim_causas</sourceObjSchema>
@@ -705,6 +720,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E75F698B-C82A-DA08-439F-5A69A77EAFE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B11D31CA-16CA-0D65-3C7D-A391B709F191" name="dim_causas_dim_estados_procesales_FK">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-15 14:27:46 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E47C53-D82B-ADAD-DDD0-FA4D4AD3FE68"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

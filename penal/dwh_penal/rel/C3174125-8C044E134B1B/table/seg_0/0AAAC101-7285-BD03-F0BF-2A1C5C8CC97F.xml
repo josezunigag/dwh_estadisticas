@@ -144,6 +144,17 @@
 <ownDataTypeParameters>8,23,3</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="cod_procedimiento_int" id="E845558D-EF83-DA75-ABD2-D5FC6A04F338">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-15 14:29:36 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D64EDAB5-ADF3-6978-0EE2-2CE127CBFACD" name="pk_dim_procedimientos">
