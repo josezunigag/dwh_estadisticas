@@ -20,21 +20,18 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="crr_idaudiencia" id="63BBC41A-EE02-29CB-A221-394A043D1AFA">
+<Column name="id_audiencia" id="134EB301-E967-6561-3E48-C0A8B3A09691">
 <createdBy>jzunigag</createdBy>
-<createdTime>2023-04-20 18:29:00 UTC</createdTime>
+<createdTime>2023-12-04 15:37:17 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="2FC5B13F-8C6D-5EA3-0A1F-0E6386BA8D47" referredColumn="8C1E2699-5388-F617-B893-E7168AF8590D"/>
+<colAssociation fkAssociation="2FC5B13F-8C6D-5EA3-0A1F-0E6386BA8D47" referredColumn="DCCA73C9-B3E7-3B7A-2331-7ADF101E250D"/>
 </associations>
 </Column>
 <Column name="crr_persona" id="BF5303EE-D1E2-F0E8-CB2E-2BCB9240A04C">
@@ -116,7 +113,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="63BBC41A-EE02-29CB-A221-394A043D1AFA"/>
+<colUsage columnID="134EB301-E967-6561-3E48-C0A8B3A09691"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

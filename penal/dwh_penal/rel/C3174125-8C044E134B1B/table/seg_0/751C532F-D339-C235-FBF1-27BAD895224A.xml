@@ -10,6 +10,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_audiencia" id="DCCA73C9-B3E7-3B7A-2331-7ADF101E250D">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-12-04 15:37:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="id_fecha" id="5F69316F-151E-091A-AEBF-F5527EB6D6E0">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>fact_audiencias</sourceObjSchema>
@@ -34,10 +44,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="33941F47-4E3D-1EEB-9D0A-EC6D66A4921B" referredColumn="2AC05971-05F7-0FC8-8A21-FF092AC6BCE1"/>
@@ -107,7 +114,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 <dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="766EEDB2-8870-E2A9-68E3-30C0A313FBC9" referredColumn="729C59ED-7EC5-EAEB-A131-7F0002499426"/>
@@ -167,7 +174,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 <dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="6D10A3AC-81D3-6818-A53B-B0B4EEA213EA" referredColumn="17A3813F-3A75-7834-DBF5-98A32C260F29"/>
@@ -241,8 +248,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_fecha_prg" id="508A3062-FE0A-57B7-69C5-F46EBF3ECFAB">
@@ -394,10 +401,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypePrecision>50</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="flg_agenda" id="26F13612-8A7F-EFB1-599E-25FA2BB27462">
@@ -559,8 +564,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="flg_notificacion" id="0732ED0B-C8D1-B999-4AA3-376E41474863">
@@ -693,7 +698,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8C1E2699-5388-F617-B893-E7168AF8590D"/>
+<colUsage columnID="DCCA73C9-B3E7-3B7A-2331-7ADF101E250D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="3A1F571C-47E6-A7BF-9F28-FA7C2B417BA6" name="index_crridaudiencia">
@@ -707,6 +712,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8C1E2699-5388-F617-B893-E7168AF8590D" sortOrder="DESC"/>
+<colUsage columnID="B7860934-40E3-8F23-E3C4-25A9078B0528"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="62C009E2-1844-D274-BC5F-0B526FC46BDC" name="k_index_audestadisticas">

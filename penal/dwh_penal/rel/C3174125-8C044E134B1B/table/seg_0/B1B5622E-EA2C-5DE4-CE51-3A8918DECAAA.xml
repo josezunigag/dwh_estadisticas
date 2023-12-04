@@ -42,6 +42,17 @@
 <ownDataTypeParameters>4,10,0</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_hora" id="3ED7AEF5-B811-C6CE-0DC6-AEC496A90BDE">
+<createdBy>jzunigag</createdBy>
+<createdTime>2023-11-23 14:03:22 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="id_corte_tribunal" id="56818F93-ED53-2948-4432-F10CCE50E2C7">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>fact_solicitudes</sourceObjSchema>
@@ -164,7 +175,7 @@
 <dataTypePrecision>5</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 <dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="F4AE77B9-67D4-D267-06B2-70435D2C17F9" referredColumn="34280643-7E30-3AFD-AB49-94AEEB6ABE15"/>

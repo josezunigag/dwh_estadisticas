@@ -20,21 +20,18 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="crr_idaudiencia" id="3E135B60-AC9C-2E29-8FC1-7E0D47ADE4B5">
+<Column name="id_audiencia" id="4143C120-3386-D77F-578A-8159E43E8C2F">
 <createdBy>jzunigag</createdBy>
-<createdTime>2022-11-14 12:28:43 UTC</createdTime>
+<createdTime>2023-12-04 15:37:17 UTC</createdTime>
 <ownerDesignName>dwh_penal</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A2D7B39A-2B4B-5A95-6F74-2437A3E5D5DF" referredColumn="8C1E2699-5388-F617-B893-E7168AF8590D"/>
+<colAssociation fkAssociation="A2D7B39A-2B4B-5A95-6F74-2437A3E5D5DF" referredColumn="DCCA73C9-B3E7-3B7A-2331-7ADF101E250D"/>
 </associations>
 </Column>
 <Column name="crr_idhito" id="66676EFF-633C-370B-15C3-491358A8F264">
@@ -153,7 +150,6 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3E135B60-AC9C-2E29-8FC1-7E0D47ADE4B5" sortOrder="DESC"/>
 <colUsage columnID="66676EFF-633C-370B-15C3-491358A8F264"/>
 <colUsage columnID="68963ABC-E1D5-1D7C-572B-3036052EAC3A"/>
 </indexColumnUsage>
@@ -165,7 +161,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3E135B60-AC9C-2E29-8FC1-7E0D47ADE4B5"/>
+<colUsage columnID="4143C120-3386-D77F-578A-8159E43E8C2F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="56FD880D-8355-879B-0A14-C4D5C471E82F" name="dim_audiencias_hitos_dim_tipos_hitos_FK">
