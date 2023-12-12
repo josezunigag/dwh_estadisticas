@@ -9,6 +9,6 @@
    <object objectType="sub_view" objectID="FAA68E36-6B69-2F82-42DB-15FE24A75CC9" name="Notificaciones" visible="false"/>
    <object objectType="sub_view" objectID="C7BDF4AA-3102-9DB8-3249-21EBDE0BBB6B" name="Resoluciones" visible="false"/>
    <object objectType="sub_view" objectID="4434BC22-0335-2DE9-2693-9BCC700E076E" name="Sentencias" visible="false"/>
-   <object objectType="sub_view" objectID="B985DC9A-E663-DCBD-F95A-E86D2796F77D" name="Solicitudes" visible="true"/>
+   <object objectType="sub_view" objectID="B985DC9A-E663-DCBD-F95A-E86D2796F77D" name="Solicitudes" visible="false"/>
    <object objectType="sub_view" objectID="B7BF1AB7-41AE-AD4B-7D6E-C7495185F5FB" name="Terminos" visible="false"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

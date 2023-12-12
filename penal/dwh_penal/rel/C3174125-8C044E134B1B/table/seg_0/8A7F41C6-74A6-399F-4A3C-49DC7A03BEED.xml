@@ -98,8 +98,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_tipo_evento" id="BAA73465-3678-334A-F9A5-8B662C129895">
@@ -150,6 +150,7 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="4143C120-3386-D77F-578A-8159E43E8C2F" sortOrder="DESC"/>
 <colUsage columnID="66676EFF-633C-370B-15C3-491358A8F264"/>
 <colUsage columnID="68963ABC-E1D5-1D7C-572B-3036052EAC3A"/>
 </indexColumnUsage>

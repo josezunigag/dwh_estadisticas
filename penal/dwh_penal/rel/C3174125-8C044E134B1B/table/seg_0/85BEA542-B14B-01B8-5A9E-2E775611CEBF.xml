@@ -106,6 +106,15 @@
 <colUsage columnID="53768C5B-E5A0-493F-34B6-F12DED5B77F9"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="80793E51-965A-1690-C3DD-87416BFA8C29" name="dim_audiencias_jueces__IDX">
+<createdBy>josez</createdBy>
+<createdTime>2023-12-12 14:48:43 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="134EB301-E967-6561-3E48-C0A8B3A09691" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="FC5AE487-42C9-4027-87DD-B62528F27DAE" name="dim_audiencias_jueces_fact_audiencias_FK">
 <createdBy>jzunigag</createdBy>
 <createdTime>2023-04-20 18:29:00 UTC</createdTime>
