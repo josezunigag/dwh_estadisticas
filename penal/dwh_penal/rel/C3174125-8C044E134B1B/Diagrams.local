@@ -1,6 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
    <object objectType="sub_view" objectID="1803DAD4-FE68-AACD-844F-24ACC9DC81C3" name="Actuaciones" visible="false"/>
+<<<<<<< HEAD
+=======
+   <object objectType="sub_view" objectID="8E4B764D-C9A2-B30A-060A-ED834BB8D2D9" name="Audiencias" visible="false"/>
+   <object objectType="sub_view" objectID="C614AE60-66E5-672A-0905-5F7ABE337BB0" name="Delitos" visible="true"/>
+>>>>>>> 5ea33e0127f286926993a80c5715a46b83dd820e
    <object objectType="sub_view" objectID="36F2BB76-9EDF-02EB-552C-D1B12A633096" name="Ingresos" visible="false"/>
    <object objectType="sub_view" objectID="4434BC22-0335-2DE9-2693-9BCC700E076E" name="Sentencias" visible="false"/>
    <object objectType="main_view" objectID="7A8F47E5-D9F9-796C-777E-EFDC95FA68E3" name="DTM_PENAL" visible="false"/>

@@ -199,6 +199,21 @@
 <colAssociation fkAssociation="70328BC0-15F8-3E55-92E1-8D86A7C052B6" referredColumn="8C854458-D57A-C3CD-88A3-7A9A667BDE0A"/>
 </associations>
 </Column>
+<Column name="id_estado_firma" id="2AB2DB49-5B72-DE58-390E-A9F3B35186E1">
+<createdBy>josez</createdBy>
+<createdTime>2023-12-13 17:36:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A99AA9A-4180-9DFF-782C-F904B5A8BA47" referredColumn="FE85CFB5-89A0-F0D6-AECF-41B42F1F06ED"/>
+</associations>
+</Column>
 <Column name="crr_evento" id="A2093448-6037-A6F5-BCF6-CC88A247E142">
 <sourceConnName>datawarehouse estadisticas</sourceConnName>
 <sourceObjSchema>fact_audiencias</sourceObjSchema>
@@ -832,6 +847,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0B6FAA96-7DF0-9900-5D2E-8626CCB2FA5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B5268C2-8E09-B88D-6A34-708A3C78CAED" name="fact_audiencias_dim_estados_firmas_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-12-13 17:36:09 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AB2DB49-5B72-DE58-390E-A9F3B35186E1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

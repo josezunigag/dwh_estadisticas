@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="EF8D81A9-8DAB-4F9B-6674-DADBC14DE188" containerWithKeyObject="1384942D-139C-B5A0-ECC8-A35B486BD3B5" localFKIndex="4B276678-8E14-0D3F-4ADC-CE60F76433EC" name="fact_delitos_test_dim_tipos_terminos_FK">
+<createdBy>josez</createdBy>
+<createdTime>2023-12-20 13:09:04 UTC</createdTime>
+<ownerDesignName>dwh_penal</ownerDesignName>
+<referredTableLongName>penal_dbo.dim_tipos_terminos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D329AB30-285F-37C9-D2A0-19E447767C1E</referredTableID>
+<keyObject>E9A983DF-7CC9-445D-E2B5-A81E728B8E38</keyObject>
+<referredKeyID>E9A983DF-7CC9-445D-E2B5-A81E728B8E38</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_tipo_termino</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
